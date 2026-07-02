@@ -48,7 +48,7 @@ export default function Contact() {
 
             {/* Location */}
             <a
-              href="#"
+              href="https://www.google.com/maps/place/Andhra+Pradesh,+India"
               aria-label="View Ashok Pasala's Location in India"
               className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               style={{ animationDelay: '200ms' }}
