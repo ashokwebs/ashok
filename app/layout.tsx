@@ -67,18 +67,58 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: 'Ashok Pasala',
-    url: 'https://ashokpasala.com',
-    jobTitle: 'Full Stack Developer & AI Systems Engineer',
-    worksFor: {
-      '@type': 'Organization',
-      name: 'Norveth'
-    },
-    sameAs: [
-      'https://github.com/ashokwebs',
-      'https://www.linkedin.com/in/ashok-raj-p-1b8539317/',
-      'https://instagram.com/_ashok.dev'
+    '@graph': [
+      {
+        '@type': 'Person',
+        '@id': 'https://ashokpasala.com/#person',
+        name: 'Ashok Pasala',
+        url: 'https://ashokpasala.com',
+        jobTitle: 'Full Stack Developer & AI Systems Engineer',
+        description: 'Full stack developer, AI systems engineer, and founder of Norveth.',
+        alumniOf: {
+          '@type': 'CollegeOrUniversity',
+          name: 'VIT-AP University'
+        },
+        knowsAbout: ['Artificial Intelligence', 'Full Stack Development', 'Next.js', 'Python', 'Cybersecurity', 'Web3', 'Blockchain'],
+        worksFor: {
+          '@id': 'https://ashokpasala.com/#organization'
+        },
+        sameAs: [
+          'https://github.com/ashokwebs',
+          'https://www.linkedin.com/in/ashok-raj-p-1b8539317/',
+          'https://instagram.com/_ashok.dev'
+        ]
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://ashokpasala.com/#organization',
+        name: 'Norveth',
+        url: 'https://ashokpasala.com',
+        founder: {
+          '@id': 'https://ashokpasala.com/#person'
+        }
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://ashokpasala.com/#website',
+        url: 'https://ashokpasala.com',
+        name: 'Ashok Pasala - Portfolio',
+        publisher: {
+          '@id': 'https://ashokpasala.com/#person'
+        }
+      },
+      {
+        '@type': 'ProfilePage',
+        '@id': 'https://ashokpasala.com/#webpage',
+        url: 'https://ashokpasala.com',
+        name: 'Ashok Pasala – Full Stack Developer & AI Systems Engineer',
+        isPartOf: {
+          '@id': 'https://ashokpasala.com/#website'
+        },
+        about: {
+          '@id': 'https://ashokpasala.com/#person'
+        }
+      }
     ]
   }
 
