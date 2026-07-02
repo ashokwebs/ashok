@@ -89,6 +89,16 @@ export default function Footer() {
                   Instagram
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://x.com/ashokfounds"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
+                >
+                  X (Twitter)
+                </a>
+              </li>
             </ul>
           </div>
         </div>
