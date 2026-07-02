@@ -25,7 +25,8 @@ export default function Contact() {
             {/* Email */}
             <a
               href="mailto:ashokashishms@gmail.com"
-              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block"
+              aria-label="Send an email to Ashok Raj Pasala"
+              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
             >
               <div className="space-y-5">
                 <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center group-hover:bg-slate-200 transition-colors">
@@ -48,7 +49,8 @@ export default function Contact() {
             {/* Phone */}
             <a
               href="tel:+919491111675"
-              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block"
+              aria-label="Call Ashok Pasala"
+              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               style={{ animationDelay: '100ms' }}
             >
               <div className="space-y-5">
@@ -72,7 +74,8 @@ export default function Contact() {
             {/* Location */}
             <a
               href="#"
-              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block"
+              aria-label="View Ashok Pasala's Location in India"
+              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               style={{ animationDelay: '200ms' }}
             >
               <div className="space-y-5">

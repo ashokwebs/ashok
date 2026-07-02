@@ -13,41 +13,56 @@ const syne = Syne({ variable: '--font-syne', subsets: ['latin'], weight: ['400',
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ashokpasala.com'),
-  title: 'Ashok Pasala – Full Stack Developer & AI Systems Engineer',
-  description: 'Full stack developer, AI systems engineer, and founder of Norveth. Building scalable software, intelligent AI systems, and transformative digital products.',
-  keywords: ['Full Stack Developer', 'AI Engineer', 'Systems Architect', 'Next.js', 'Python', 'Web3', 'Norveth', 'Cybersecurity', 'Blockchain'],
-  generator: 'Next.js',
+  title: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
+  description: 'Ashok Raj Pasala is a Full Stack Developer, AI Systems Engineer, and founder of Norveth. Specializing in Next.js, React, Python, and intelligent AI automation.',
+  keywords: [
+    'Ashok Pasala', 'Ashok Raj Pasala', 'Full Stack Developer', 'AI Systems Engineer', 
+    'AI Developer', 'AI Automation Engineer', 'Backend Developer', 'React Developer', 
+    'Next.js Developer', 'Python Developer', 'Software Engineer', 'Computer Science Student', 
+    'VIT-AP University', 'Norveth', 'Founder of Norveth'
+  ],
+  authors: [{ name: 'Ashok Pasala', url: 'https://ashokpasala.com' }],
+  creator: 'Ashok Pasala',
+  publisher: 'Ashok Pasala',
+  category: 'Technology',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   alternates: {
     canonical: '/',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: 'Ashok Pasala – Full Stack Developer & AI Systems Engineer',
-    description: 'Full stack developer, AI systems engineer, and founder of Norveth. Building scalable software, intelligent AI systems, and transformative digital products.',
+    title: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
+    description: 'Ashok Raj Pasala is a Full Stack Developer, AI Systems Engineer, and founder of Norveth. Specializing in Next.js, React, Python, and intelligent AI automation.',
     url: 'https://ashokpasala.com',
-    siteName: 'Ashok Pasala',
+    siteName: 'Ashok Pasala Portfolio',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ashok Pasala – Full Stack Developer & AI Systems Engineer',
-    description: 'Full stack developer, AI systems engineer, and founder of Norveth.',
+    title: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
+    description: 'Ashok Raj Pasala is a Full Stack Developer, AI Systems Engineer, and founder of Norveth.',
     creator: '@ashokwebs',
   },
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
+      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
     ],
     apple: '/apple-icon.png',
   },
@@ -55,9 +70,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#fafaf7' },
-  ],
+  themeColor: '#ffffff',
 }
 
 export default function RootLayout({
@@ -71,15 +84,16 @@ export default function RootLayout({
       {
         '@type': 'Person',
         '@id': 'https://ashokpasala.com/#person',
-        name: 'Ashok Pasala',
+        name: 'Ashok Raj Pasala',
+        alternateName: 'Ashok Pasala',
         url: 'https://ashokpasala.com',
-        jobTitle: 'Full Stack Developer & AI Systems Engineer',
-        description: 'Full stack developer, AI systems engineer, and founder of Norveth.',
+        jobTitle: ['Full Stack Developer', 'AI Systems Engineer', 'Software Engineer'],
+        description: 'Ashok Raj Pasala is a Full Stack Developer, AI Systems Engineer, and founder of Norveth.',
         alumniOf: {
           '@type': 'CollegeOrUniversity',
           name: 'VIT-AP University'
         },
-        knowsAbout: ['Artificial Intelligence', 'Full Stack Development', 'Next.js', 'Python', 'Cybersecurity', 'Web3', 'Blockchain'],
+        knowsAbout: ['Artificial Intelligence', 'Full Stack Development', 'Next.js', 'React', 'Python', 'Cybersecurity', 'Web3', 'Blockchain', 'Backend Development'],
         worksFor: {
           '@id': 'https://ashokpasala.com/#organization'
         },
@@ -102,7 +116,8 @@ export default function RootLayout({
         '@type': 'WebSite',
         '@id': 'https://ashokpasala.com/#website',
         url: 'https://ashokpasala.com',
-        name: 'Ashok Pasala - Portfolio',
+        name: 'Ashok Pasala',
+        description: 'Portfolio of Ashok Raj Pasala',
         publisher: {
           '@id': 'https://ashokpasala.com/#person'
         }
@@ -111,13 +126,36 @@ export default function RootLayout({
         '@type': 'ProfilePage',
         '@id': 'https://ashokpasala.com/#webpage',
         url: 'https://ashokpasala.com',
-        name: 'Ashok Pasala – Full Stack Developer & AI Systems Engineer',
+        name: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
         isPartOf: {
           '@id': 'https://ashokpasala.com/#website'
         },
         about: {
           '@id': 'https://ashokpasala.com/#person'
         }
+      },
+      {
+        '@type': 'ContactPage',
+        '@id': 'https://ashokpasala.com/#contact',
+        url: 'https://ashokpasala.com/#contact',
+        name: 'Contact Ashok Pasala',
+        isPartOf: {
+          '@id': 'https://ashokpasala.com/#website'
+        }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://ashokpasala.com/#breadcrumb',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            item: {
+              '@id': 'https://ashokpasala.com',
+              name: 'Home'
+            }
+          }
+        ]
       }
     ]
   }

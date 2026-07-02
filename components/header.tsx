@@ -35,8 +35,9 @@ export default function Header() {
           {/* Logo */}
           <Link 
             href="/" 
-            className="text-base font-bold text-foreground hover:opacity-70 transition-opacity duration-300"
+            className="text-base font-bold text-foreground hover:opacity-70 transition-opacity duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
             style={{ fontFamily: 'var(--font-syne)' }}
+            aria-label="Ashok Pasala - Full Stack Developer Home"
           >
             AP
           </Link>
@@ -56,9 +57,11 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground hover:opacity-70 transition-opacity"
+            className="md:hidden text-foreground hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
+            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -66,7 +69,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 space-y-2 border-t border-border mt-2 absolute top-full left-0 right-0 bg-white/90 backdrop-blur-xl px-4 shadow-md rounded-b-[1.25rem]">
+          <div id="mobile-navigation" className="md:hidden py-4 space-y-2 border-t border-border mt-2 absolute top-full left-0 right-0 bg-white/90 backdrop-blur-xl px-4 shadow-md rounded-b-[1.25rem]">
             {navItems.map((item) => (
               <a
                 key={item.label}
