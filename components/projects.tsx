@@ -73,7 +73,7 @@ export default function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="group p-8 bg-white border border-border rounded-3xl hover:border-foreground/20 hover:shadow-md transition-all duration-300 flex flex-col animate-slide-in-up"
+                className="group p-8 glass-card flex flex-col animate-slide-in-up"
               >
                 <div className="space-y-6 flex-1">
                   <div className="space-y-3">

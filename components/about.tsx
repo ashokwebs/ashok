@@ -27,8 +27,8 @@ export default function About() {
 
           {/* Stats grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat) => (
-              <div key={stat.label} className="space-y-2 animate-slide-in-up">
+            {stats.map((stat, index) => (
+              <div key={stat.label} className="space-y-2 animate-slide-in-up" style={{ animationDelay: `${index * 100}ms` }}>
                 <div 
                   className="text-4xl sm:text-5xl font-bold text-foreground tracking-tight"
                   style={{ fontFamily: 'var(--font-syne)' }}

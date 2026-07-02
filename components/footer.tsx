@@ -11,7 +11,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative border-t border-border bg-white">
+    <footer className="relative border-t border-border bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
         {/* Footer content grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
