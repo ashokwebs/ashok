@@ -86,6 +86,10 @@ export default function RootLayout({
         '@id': 'https://ashokpasala.com/#person',
         name: 'Ashok Raj Pasala',
         alternateName: 'Ashok Pasala',
+        image: [
+          'https://ashokpasala.com/ashok-profile.jpg',
+          'https://ashokpasala.com/ashok-profile-transparent.png'
+        ],
         url: 'https://ashokpasala.com',
         jobTitle: ['Full Stack Developer', 'AI Systems Engineer', 'Software Engineer'],
         description: 'Ashok Raj Pasala is a Full Stack Developer, AI Systems Engineer, and founder of Norveth.',
