@@ -110,7 +110,7 @@ export default function Contact() {
                 href="https://github.com/ashokwebs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300"
+                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               >
                 <Code2 size={20} className="text-foreground" strokeWidth={1.5} />
                 <span className="text-sm font-medium">GitHub</span>
@@ -119,7 +119,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/ashok-raj-p-1b8539317/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300"
+                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               >
                 <Share2 size={20} className="text-foreground" strokeWidth={1.5} />
                 <span className="text-sm font-medium">LinkedIn</span>
@@ -128,7 +128,7 @@ export default function Contact() {
                 href="https://instagram.com/_ashok.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300"
+                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               >
                 <Share2 size={20} className="text-foreground" strokeWidth={1.5} />
                 <span className="text-sm font-medium">Instagram</span>
