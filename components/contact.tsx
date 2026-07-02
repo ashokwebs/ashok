@@ -21,7 +21,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Methods Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Email */}
             <a
               href="mailto:ashokashishms@gmail.com"
@@ -41,31 +41,6 @@ export default function Contact() {
                   </h3>
                   <p className="text-sm text-muted-foreground font-light">
                     ashokashishms@gmail.com
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            {/* Phone */}
-            <a
-              href="tel:+919491111675"
-              aria-label="Call Ashok Pasala"
-              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
-              style={{ animationDelay: '100ms' }}
-            >
-              <div className="space-y-5">
-                <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center group-hover:bg-slate-200 transition-colors">
-                  <Phone className="w-6 h-6 text-foreground" strokeWidth={1.5} />
-                </div>
-                <div className="space-y-2">
-                  <h3 
-                    className="text-lg font-bold text-foreground"
-                    style={{ fontFamily: 'var(--font-syne)' }}
-                  >
-                    Phone
-                  </h3>
-                  <p className="text-sm text-muted-foreground font-light">
-                    +91 9491 111 675
                   </p>
                 </div>
               </div>
