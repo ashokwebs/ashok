@@ -4,27 +4,27 @@ export default function TechStack() {
   const categories = [
     {
       title: 'Languages',
-      skills: ['Python', 'TypeScript', 'JavaScript', 'Java', 'C', 'C++']
+      skills: ['Python', 'TypeScript', 'JavaScript', 'Java', 'C', 'C++', 'SQL', 'Bash', 'Rust', 'Go']
     },
     {
       title: 'Frontend',
-      skills: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion']
+      skills: ['React', 'Next.js', 'HTML5', 'CSS3', 'Tailwind CSS', 'Redux', 'Framer Motion', 'Three.js', 'GSAP']
     },
     {
       title: 'Backend',
-      skills: ['FastAPI', 'Node.js', 'Express', 'Django']
+      skills: ['Node.js', 'Express', 'FastAPI', 'Django', 'REST APIs', 'GraphQL', 'WebSockets', 'gRPC', 'Microservices']
     },
     {
       title: 'Databases',
-      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Supabase']
+      skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Firebase', 'SQLite', 'Supabase', 'Prisma ORM', 'Vector DBs']
     },
     {
       title: 'AI',
-      skills: ['LangChain', 'RAG', 'OpenAI', 'Multi-Agent Systems']
+      skills: ['AI Agents', 'Multi-Agent Systems', 'LangChain', 'RAG', 'Prompt Engineering', 'Vector Search', 'Knowledge Retrieval', 'OpenAI']
     },
     {
-      title: 'DevOps',
-      skills: ['Docker', 'Linux', 'AWS', 'GitHub Actions']
+      title: 'DevOps & Infra',
+      skills: ['Linux', 'Docker', 'Kubernetes', 'Git', 'GitHub Actions', 'CI/CD', 'AWS', 'Nginx', 'Terraform']
     }
   ]
 
