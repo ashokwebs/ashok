@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://ashokpasala.com'),
   title: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
   description: 'Ashok Raj Pasala is a Full Stack Developer, AI Systems Engineer, and founder of Norveth. Specializing in Next.js, React, Python, and intelligent AI automation.',
+  verification: {
+    google: 'O0fymhvn25v7YUKhQs7MYjCdNjLKiaJ4-944i_48IG4',
+  },
   keywords: [
     'Ashok Pasala', 'Ashok Raj Pasala', 'Full Stack Developer', 'AI Systems Engineer', 
     'AI Developer', 'AI Automation Engineer', 'Backend Developer', 'React Developer', 
