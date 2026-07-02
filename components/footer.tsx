@@ -41,7 +41,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                   >
                     {link.label}
                   </a>
@@ -62,7 +62,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                 >
                   Consulting
                 </a>
@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                 >
                   Development
                 </a>
@@ -78,7 +78,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                 >
                   Architecture
                 </a>

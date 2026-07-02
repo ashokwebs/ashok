@@ -71,7 +71,7 @@ export default function Projects() {
           {/* Projects grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <div
+              <article
                 key={index}
                 className="group p-8 glass-card flex flex-col animate-slide-in-up"
               >
@@ -105,20 +105,22 @@ export default function Projects() {
                 <div className="flex gap-4 pt-6 mt-6 border-t border-border">
                   <a
                     href={project.link}
-                    className="flex items-center gap-2 text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
+                    aria-label={`View live demo for ${project.title}`}
+                    className="flex items-center gap-2 text-sm font-medium text-foreground hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                   >
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
                   <a
                     href={project.github}
-                    className="flex items-center gap-2 text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
+                    aria-label={`View source code for ${project.title}`}
+                    className="flex items-center gap-2 text-sm font-medium text-foreground hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                   >
                     <Code2 size={16} />
                     GitHub
                   </a>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
