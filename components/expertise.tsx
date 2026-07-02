@@ -60,7 +60,8 @@ export default function Expertise() {
               return (
                 <div 
                   key={index} 
-                  className="group p-8 bg-white border border-border rounded-3xl hover:border-foreground/20 hover:shadow-md transition-all duration-300 animate-slide-in-up"
+                  className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300"
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="space-y-5">
                     <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">

@@ -55,7 +55,7 @@ export default function Experience() {
 
             <div className="space-y-8">
               {experiences.map((exp, index) => (
-                <div key={index} className="pb-8 border-b border-border last:border-b-0 animate-slide-in-up">
+                <div key={index} className="pb-8 border-b border-border last:border-b-0 animate-slide-in-up" style={{ animationDelay: `${index * 100}ms` }}>
                   <div className="space-y-3">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                       <h3 
@@ -90,7 +90,8 @@ export default function Experience() {
               {activities.map((activity, index) => (
                 <div
                   key={index}
-                  className="p-5 bg-white border border-border rounded-2xl hover:border-foreground/20 transition-all duration-300 animate-slide-in-up"
+                  className="p-5 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300"
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
                   <p className="text-sm text-foreground font-light">{activity}</p>
                 </div>
@@ -111,7 +112,8 @@ export default function Experience() {
               {interests.map((interest, index) => (
                 <div
                   key={index}
-                  className="p-5 bg-white border border-border rounded-2xl hover:border-foreground/20 transition-all duration-300 animate-slide-in-up"
+                  className="p-5 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300"
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
                   <p className="text-sm text-foreground font-light">{interest}</p>
                 </div>

@@ -11,18 +11,17 @@ export default function Hero() {
   return (
     <section id="hero" className="relative w-full min-h-screen flex items-center justify-center pt-24 pb-20 overflow-hidden">
       {/* Subtle background gradient */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-white" />
-        <div className="absolute top-0 right-1/3 w-80 h-80 rounded-full bg-gradient-to-br from-slate-100/30 to-transparent blur-3xl" />
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-gradient-to-tr from-slate-50/20 to-transparent blur-3xl" />
+      <div className="absolute inset-0 -z-10 bg-background">
+        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-neutral-100/80 blur-[100px] animate-gentle-glow" />
+        <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] rounded-full bg-slate-50/80 blur-[120px] animate-gentle-glow" style={{ animationDelay: '2s' }} />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="space-y-12 animate-fade-in">
           {/* Name - Premium display */}
           <div className="text-center space-y-10">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-sm font-medium text-slate-800 mb-4 animate-slide-in-up shadow-sm">
-              <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass text-sm font-medium text-foreground/80 mb-4 animate-slide-in-up">
+              <span className="flex h-2 w-2 rounded-full bg-foreground/40 animate-pulse"></span>
               Founder @ Norveth &mdash; Building AI Infrastructure &amp; Intelligent Software
             </div>
             <h1 
@@ -45,16 +44,16 @@ export default function Hero() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <button
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-3 bg-foreground text-white font-medium rounded-2xl hover:bg-opacity-90 transition-all duration-300 text-sm sm:text-base shadow-sm hover:shadow-md"
+              className="px-8 py-3.5 bg-foreground text-background font-medium rounded-[1.25rem] hover:opacity-90 transition-all duration-300 text-sm sm:text-base shadow-[0_4px_14px_0_rgb(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)]"
             >
               View Work
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="px-8 py-3 border border-border text-foreground font-medium rounded-2xl hover:bg-slate-50 transition-all duration-300 text-sm sm:text-base"
+              className="px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base"
             >
               Get In Touch
             </button>
