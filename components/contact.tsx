@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Phone, MapPin, Code2, Share2, Twitter } from 'lucide-react'
+import { Mail, Phone, MapPin, Code2, Share2, Twitter, Facebook } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -116,6 +116,15 @@ export default function Contact() {
               >
                 <Twitter size={20} className="text-foreground" strokeWidth={1.5} />
                 <span className="text-sm font-medium">X (Twitter)</span>
+              </a>
+              <a
+                href="https://www.facebook.com/ashokpasala.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
+              >
+                <Facebook size={20} className="text-foreground" strokeWidth={1.5} />
+                <span className="text-sm font-medium">Facebook</span>
               </a>
             </div>
           </div>

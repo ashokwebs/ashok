@@ -105,7 +105,8 @@ export default function RootLayout({
           'https://github.com/ashokwebs',
           'https://www.linkedin.com/in/ashok-raj-p-1b8539317/',
           'https://instagram.com/_ashok.dev',
-          'https://x.com/ashokfounds'
+          'https://x.com/ashokfounds',
+          'https://www.facebook.com/ashokpasala.dev'
         ]
       },
       {
