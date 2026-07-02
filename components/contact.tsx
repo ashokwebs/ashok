@@ -1,6 +1,18 @@
 'use client'
 
-import { Mail, Phone, MapPin, Code2, Share2, Twitter, Facebook } from 'lucide-react'
+import { Mail, MapPin, Code2, Share2 } from 'lucide-react'
+
+const XIcon = ({ size = 24, className = "" }: { size?: number, className?: string }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+)
+
+const FbIcon = ({ size = 24, className = "" }: { size?: number, className?: string }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
+  </svg>
+)
 
 export default function Contact() {
   return (
@@ -114,7 +126,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               >
-                <Twitter size={20} className="text-foreground" strokeWidth={1.5} />
+                <XIcon size={20} className="text-foreground" />
                 <span className="text-sm font-medium">X (Twitter)</span>
               </a>
               <a
@@ -123,7 +135,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               >
-                <Facebook size={20} className="text-foreground" strokeWidth={1.5} />
+                <FbIcon size={20} className="text-foreground" />
                 <span className="text-sm font-medium">Facebook</span>
               </a>
             </div>
