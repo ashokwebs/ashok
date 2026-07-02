@@ -99,6 +99,16 @@ export default function Footer() {
                   X (Twitter)
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/ashokpasala.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
+                >
+                  Facebook
+                </a>
+              </li>
             </ul>
           </div>
         </div>
