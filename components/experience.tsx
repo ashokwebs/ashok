@@ -3,7 +3,7 @@
 export default function Experience() {
   const experiences = [
     {
-      role: 'Independent Full Stack Developer',
+      role: 'Independent Software Engineer',
       period: '2024 — Present',
       description:
         'Building full-stack web applications, backend APIs, and AI-powered automation workflows for clients across multiple domains.',

@@ -38,7 +38,6 @@ export default function Hero() {
               </p>
               <div className="space-y-1 text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light pt-2">
                 <p>Computer Science Student @ VIT-AP University</p>
-                <p>Founder of Norveth</p>
               </div>
             </div>
           </div>
@@ -52,13 +51,15 @@ export default function Hero() {
             >
               View Work
             </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              aria-label="Contact Ashok Pasala for consulting or freelance work"
-              className="px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none"
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Ashok Pasala's Resume"
+              className="px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none flex items-center justify-center"
             >
-              Get In Touch
-            </button>
+              Download Resume
+            </a>
           </div>
 
           {/* Scroll indicator - subtle animation */}
