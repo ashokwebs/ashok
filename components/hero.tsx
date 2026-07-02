@@ -29,6 +29,7 @@ export default function Hero() {
               style={{ fontFamily: 'var(--font-syne)' }}
             >
               Ashok Pasala
+              <span className="sr-only"> - Full Stack Developer & AI Systems Engineer</span>
             </h1>
 
             {/* Subtitle section */}
