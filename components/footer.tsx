@@ -50,37 +50,43 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Socials */}
           <div className="space-y-4">
             <h4 
               className="text-sm font-bold text-foreground"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
-              Services
+              Socials
             </h4>
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/ashokwebs"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                 >
-                  Consulting
+                  GitHub
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/ashok-raj-p-1b8539317/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                 >
-                  Development
+                  LinkedIn
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://instagram.com/_ashok.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                 >
-                  Architecture
+                  Instagram
                 </a>
               </li>
             </ul>
