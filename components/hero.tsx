@@ -47,13 +47,15 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <button
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-3.5 bg-foreground text-background font-medium rounded-[1.25rem] hover:opacity-90 transition-all duration-300 text-sm sm:text-base shadow-[0_4px_14px_0_rgb(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)]"
+              aria-label="View Ashok Pasala's Full Stack AI Projects"
+              className="px-8 py-3.5 bg-foreground text-background font-medium rounded-[1.25rem] hover:opacity-90 transition-all duration-300 text-sm sm:text-base shadow-[0_4px_14px_0_rgb(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none"
             >
               View Work
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base"
+              aria-label="Contact Ashok Pasala for consulting or freelance work"
+              className="px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none"
             >
               Get In Touch
             </button>
