@@ -141,6 +141,9 @@ export default function RootLayout({
         },
         about: {
           '@id': 'https://ashokpasala.com/#person'
+        },
+        mainEntity: {
+          '@id': 'https://ashokpasala.com/#person'
         }
       },
       {
