@@ -15,7 +15,7 @@ const siteDescription =
   'Ashok Pasala is a Full Stack Developer, AI Systems Engineer, and founder of Norveth. He builds production-ready web applications, scalable backend platforms, AI automation systems, and multi-agent orchestration frameworks using Next.js, React, TypeScript, Python, and FastAPI.'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ashokpasala.com'),
+  metadataBase: new URL('https://ashokpasala.vercel.app'),
   title: {
     default: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
     template: '%s | Ashok Pasala',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     'Web3 Developer', 'Blockchain', 'Distributed Systems', 'SaaS Developer',
     'Computer Science Student', 'VIT-AP University', 'India',
   ],
-  authors: [{ name: 'Ashok Pasala', url: 'https://ashokpasala.com' }],
+  authors: [{ name: 'Ashok Pasala', url: 'https://ashokpasala.vercel.app' }],
   creator: 'Ashok Pasala',
   publisher: 'Ashok Pasala',
   category: 'Technology',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
     description: siteDescription,
-    url: 'https://ashokpasala.com',
+    url: 'https://ashokpasala.vercel.app',
     siteName: 'Ashok Pasala — Portfolio',
     locale: 'en_US',
     type: 'profile',
@@ -103,13 +103,13 @@ export default function RootLayout({
     '@graph': [
       {
         '@type': 'Person',
-        '@id': 'https://ashokpasala.com/#person',
+        '@id': 'https://ashokpasala.vercel.app/#person',
         name: 'Ashok Pasala',
         alternateName: ['Ashok Raj Pasala', 'Ashok Raj P'],
         givenName: 'Ashok',
         familyName: 'Pasala',
-        image: 'https://ashokpasala.com/ashok.jpeg',
-        url: 'https://ashokpasala.com',
+        image: 'https://ashokpasala.vercel.app/ashok.jpeg',
+        url: 'https://ashokpasala.vercel.app',
         email: ['mailto:ashokashishms@gmail.com', 'mailto:founder@norveth.app'],
         jobTitle: [
           'Full Stack Developer',
@@ -166,7 +166,7 @@ export default function RootLayout({
           'Linux',
         ],
         worksFor: {
-          '@id': 'https://ashokpasala.com/#organization',
+          '@id': 'https://ashokpasala.vercel.app/#organization',
         },
         sameAs: [
           'https://github.com/ashokwebs',
@@ -179,14 +179,14 @@ export default function RootLayout({
       },
       {
         '@type': 'Organization',
-        '@id': 'https://ashokpasala.com/#organization',
+        '@id': 'https://ashokpasala.vercel.app/#organization',
         name: 'Norveth',
-        url: 'https://ashokpasala.com',
+        url: 'https://ashokpasala.vercel.app',
         email: 'founder@norveth.app',
         description:
           'Norveth is an engineering-first technology initiative focused on building intelligent software, AI automation platforms, developer infrastructure, cybersecurity tooling, and scalable digital products.',
         founder: {
-          '@id': 'https://ashokpasala.com/#person',
+          '@id': 'https://ashokpasala.vercel.app/#person',
         },
         foundingDate: '2024',
         knowsAbout: [
@@ -202,39 +202,39 @@ export default function RootLayout({
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://ashokpasala.com/#website',
-        url: 'https://ashokpasala.com',
+        '@id': 'https://ashokpasala.vercel.app/#website',
+        url: 'https://ashokpasala.vercel.app',
         name: 'Ashok Pasala — Portfolio',
         description:
           'Portfolio of Ashok Pasala: Full Stack Developer, AI Systems Engineer, and founder of Norveth.',
         inLanguage: 'en',
         publisher: {
-          '@id': 'https://ashokpasala.com/#person',
+          '@id': 'https://ashokpasala.vercel.app/#person',
         },
       },
       {
         '@type': 'ProfilePage',
-        '@id': 'https://ashokpasala.com/#webpage',
-        url: 'https://ashokpasala.com',
+        '@id': 'https://ashokpasala.vercel.app/#webpage',
+        url: 'https://ashokpasala.vercel.app',
         name: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
         isPartOf: {
-          '@id': 'https://ashokpasala.com/#website',
+          '@id': 'https://ashokpasala.vercel.app/#website',
         },
         about: {
-          '@id': 'https://ashokpasala.com/#person',
+          '@id': 'https://ashokpasala.vercel.app/#person',
         },
         mainEntity: {
-          '@id': 'https://ashokpasala.com/#person',
+          '@id': 'https://ashokpasala.vercel.app/#person',
         },
         inLanguage: 'en',
       },
       {
         '@type': 'ProfessionalService',
-        '@id': 'https://ashokpasala.com/#services',
+        '@id': 'https://ashokpasala.vercel.app/#services',
         name: 'Ashok Pasala — Engineering Services',
-        url: 'https://ashokpasala.com/#services',
+        url: 'https://ashokpasala.vercel.app/#services',
         provider: {
-          '@id': 'https://ashokpasala.com/#person',
+          '@id': 'https://ashokpasala.vercel.app/#person',
         },
         areaServed: 'Worldwide',
         hasOfferCatalog: {
@@ -255,13 +255,13 @@ export default function RootLayout({
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': 'https://ashokpasala.com/#breadcrumb',
+        '@id': 'https://ashokpasala.vercel.app/#breadcrumb',
         itemListElement: [
           {
             '@type': 'ListItem',
             position: 1,
             item: {
-              '@id': 'https://ashokpasala.com',
+              '@id': 'https://ashokpasala.vercel.app',
               name: 'Home',
             },
           },

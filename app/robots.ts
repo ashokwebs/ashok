@@ -25,7 +25,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://ashokpasala.com/sitemap.xml',
-    host: 'https://ashokpasala.com',
+    sitemap: 'https://ashokpasala.vercel.app/sitemap.xml',
+    host: 'https://ashokpasala.vercel.app',
   }
 }

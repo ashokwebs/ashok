@@ -9,7 +9,7 @@
 - Education: Bachelor of Technology, Computer Science & Engineering, VIT-AP University, Andhra Pradesh, India (expected graduation 2028)
 - Location: Andhra Pradesh, India
 - Status: Available for freelance, consulting, collaborations, and open source
-- Website: https://ashokpasala.com
+- Website: https://ashokpasala.vercel.app
 - Email: ashokashishms@gmail.com
 - Business email (Norveth): founder@norveth.app
 - GitHub: https://github.com/ashokwebs
@@ -60,4 +60,4 @@ Build systems, not just software. Core principles: simplicity over unnecessary a
 
 ## Pages
 
-- [Home](https://ashokpasala.com): Portfolio home — about, expertise, tech stack, featured projects, experience, services, and contact
+- [Home](https://ashokpasala.vercel.app): Portfolio home — about, expertise, tech stack, featured projects, experience, services, and contact
