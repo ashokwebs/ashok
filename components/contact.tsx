@@ -1,18 +1,23 @@
 'use client'
 
-import { Mail, MapPin, Code2, Share2 } from 'lucide-react'
+import { Briefcase, Mail, MapPin } from 'lucide-react'
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  InstagramIcon,
+  XIcon,
+  FacebookIcon,
+  DevpostIcon,
+} from '@/components/social-icons'
 
-const XIcon = ({ size = 24, className = "" }: { size?: number, className?: string }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className}>
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-  </svg>
-)
-
-const FbIcon = ({ size = 24, className = "" }: { size?: number, className?: string }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className}>
-    <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
-  </svg>
-)
+const socials = [
+  { label: 'GitHub', href: 'https://github.com/ashokwebs', Icon: GitHubIcon },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ashok-raj-p-1b8539317/', Icon: LinkedInIcon },
+  { label: 'X (Twitter)', href: 'https://x.com/ashokfounds', Icon: XIcon },
+  { label: 'Instagram', href: 'https://instagram.com/_ashok.dev', Icon: InstagramIcon },
+  { label: 'Devpost', href: 'https://devpost.com/ashokashishms/', Icon: DevpostIcon },
+  { label: 'Facebook', href: 'https://www.facebook.com/ashokpasala.dev', Icon: FacebookIcon },
+]
 
 export default function Contact() {
   return (
@@ -21,7 +26,7 @@ export default function Contact() {
         <div className="space-y-16">
           {/* Heading */}
           <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <h2 
+            <h2
               className="text-5xl sm:text-6xl font-bold text-foreground tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
@@ -33,11 +38,11 @@ export default function Contact() {
           </div>
 
           {/* Contact Methods Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Email */}
             <a
               href="mailto:ashokashishms@gmail.com"
-              aria-label="Send an email to Ashok Raj Pasala"
+              aria-label="Send an email to Ashok Pasala"
               className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
             >
               <div className="space-y-5">
@@ -45,7 +50,7 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-foreground" strokeWidth={1.5} />
                 </div>
                 <div className="space-y-2">
-                  <h3 
+                  <h3
                     className="text-lg font-bold text-foreground"
                     style={{ fontFamily: 'var(--font-syne)' }}
                   >
@@ -58,11 +63,34 @@ export default function Contact() {
               </div>
             </a>
 
-            {/* Location */}
+            {/* Business / Norveth */}
             <a
-              href="https://www.google.com/maps/place/Andhra+Pradesh,+India"
-              aria-label="View Ashok Pasala's Location in India"
+              href="mailto:founder@norveth.app"
+              aria-label="Email Ashok Pasala at Norveth for business enquiries"
               className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
+              style={{ animationDelay: '100ms' }}
+            >
+              <div className="space-y-5">
+                <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center group-hover:bg-slate-200 transition-colors">
+                  <Briefcase className="w-6 h-6 text-foreground" strokeWidth={1.5} />
+                </div>
+                <div className="space-y-2">
+                  <h3
+                    className="text-lg font-bold text-foreground"
+                    style={{ fontFamily: 'var(--font-syne)' }}
+                  >
+                    Business
+                  </h3>
+                  <p className="text-sm text-muted-foreground font-light">
+                    founder@norveth.app
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            {/* Location */}
+            <div
+              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block"
               style={{ animationDelay: '200ms' }}
             >
               <div className="space-y-5">
@@ -70,74 +98,42 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-foreground" strokeWidth={1.5} />
                 </div>
                 <div className="space-y-2">
-                  <h3 
+                  <h3
                     className="text-lg font-bold text-foreground"
                     style={{ fontFamily: 'var(--font-syne)' }}
                   >
                     Location
                   </h3>
                   <p className="text-sm text-muted-foreground font-light">
-                    India
+                    Andhra Pradesh, India &mdash; working with clients worldwide
                   </p>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
 
           {/* Social Links */}
           <div className="pt-8 border-t border-border space-y-8">
-            <h3 
+            <h3
               className="text-2xl font-bold text-foreground"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
-              Follow
+              Elsewhere
             </h3>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="https://github.com/ashokwebs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
-              >
-                <Code2 size={20} className="text-foreground" strokeWidth={1.5} />
-                <span className="text-sm font-medium">GitHub</span>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ashok-raj-p-1b8539317/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
-              >
-                <Share2 size={20} className="text-foreground" strokeWidth={1.5} />
-                <span className="text-sm font-medium">LinkedIn</span>
-              </a>
-              <a
-                href="https://instagram.com/_ashok.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
-              >
-                <Share2 size={20} className="text-foreground" strokeWidth={1.5} />
-                <span className="text-sm font-medium">Instagram</span>
-              </a>
-              <a
-                href="https://x.com/ashokfounds"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
-              >
-                <XIcon size={20} className="text-foreground" />
-                <span className="text-sm font-medium">X (Twitter)</span>
-              </a>
-              <a
-                href="https://www.facebook.com/ashokpasala.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
-              >
-                <FbIcon size={20} className="text-foreground" />
-                <span className="text-sm font-medium">Facebook</span>
-              </a>
+              {socials.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Ashok Pasala on ${label}`}
+                  className="flex items-center gap-2 px-6 py-3 bg-white border border-border rounded-2xl hover:border-foreground/20 hover:shadow-sm transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
+                >
+                  <Icon size={20} className="text-foreground" />
+                  <span className="text-sm font-medium">{label}</span>
+                </a>
+              ))}
             </div>
           </div>
         </div>

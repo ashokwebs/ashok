@@ -1,0 +1,63 @@
+# Ashok Pasala
+
+> Ashok Pasala is a Full Stack Developer, AI Systems Engineer, and the founder of Norveth. He is a Computer Science student at VIT-AP University (B.Tech CSE, Class of 2028), based in Andhra Pradesh, India. He builds production-ready web applications, scalable backend platforms, AI automation systems, and multi-agent orchestration frameworks.
+
+## Identity
+
+- Full name: Ashok Pasala (also known as Ashok Raj Pasala)
+- Roles: Full Stack Developer, AI Systems Engineer, AI Automation Builder, Systems Architect, Founder of Norveth
+- Education: Bachelor of Technology, Computer Science & Engineering, VIT-AP University, Andhra Pradesh, India (expected graduation 2028)
+- Location: Andhra Pradesh, India
+- Status: Available for freelance, consulting, collaborations, and open source
+- Website: https://ashokpasala.com
+- Email: ashokashishms@gmail.com
+- Business email (Norveth): founder@norveth.app
+- GitHub: https://github.com/ashokwebs
+- LinkedIn: https://www.linkedin.com/in/ashok-raj-p-1b8539317/
+- X (Twitter): https://x.com/ashokfounds
+- Devpost: https://devpost.com/ashokashishms/
+
+## Norveth
+
+Ashok Pasala is the founder and systems architect of Norveth, an engineering-first technology initiative focused on building intelligent software, AI automation platforms, developer infrastructure, cybersecurity tooling, and scalable digital products. Its long-term vision is to develop production-grade AI systems, autonomous business software, developer tools, and enterprise platforms.
+
+## Core Expertise
+
+- Artificial Intelligence: AI agents, multi-agent systems, LLM applications, Retrieval-Augmented Generation (RAG), prompt engineering, vector search, workflow automation
+- Full Stack Development: React, Next.js, TypeScript, JavaScript, Tailwind CSS
+- Backend Engineering: Node.js, Express, FastAPI, Django, REST APIs, GraphQL, WebSockets, microservices, API design, authentication systems
+- Databases: PostgreSQL, MongoDB, MySQL, Redis, SQLite, Supabase, Prisma ORM, vector databases
+- Languages: Python, TypeScript, JavaScript, Java, C, C++, SQL, Bash, Rust, Go
+- DevOps & Infrastructure: Linux, Docker, Kubernetes, CI/CD, AWS, Nginx, Terraform
+- Cybersecurity: Linux hardening, network security, OWASP, cryptography, vulnerability assessment, security research
+- Blockchain & Web3: Solidity, smart contracts, Ethereum, Web3.js, Ethers.js, on-chain analysis
+
+## Featured Projects
+
+- Multi-Agent Orchestration Platform: AI orchestration framework where specialized agents collaborate to execute complex workflows autonomously (Python, FastAPI, LangChain, Redis)
+- AI Workflow Automation Dashboard: Visual workflow builder for AI-powered business automation (Next.js, Node.js, PostgreSQL, Docker)
+- Personal Knowledge Engine: Semantic search engine powered by embeddings and RAG (Python, ChromaDB, OpenAI, Streamlit)
+- SaaS Analytics Platform: Analytics dashboard with user tracking, funnels, and real-time events (Next.js, Express, MongoDB, WebSockets)
+- OSPRED Security Framework: Experimental AI-assisted cybersecurity platform for security automation and vulnerability research (Python, FastAPI, Docker)
+- API Integration Framework: Reusable API orchestration framework for scalable integrations (Node.js, Redis, TypeScript)
+- ShadowForge Crypto Intelligence: Research platform for blockchain intelligence and cryptographic security analysis (Python, FastAPI, Next.js, PostgreSQL)
+- DeFi Portfolio Tracker: Blockchain portfolio aggregation dashboard (React, Web3.js, Ethers.js)
+
+## Experience
+
+- Founder & Systems Architect, Norveth (2024–present)
+- Independent Full Stack Developer (2024–present): full-stack applications, backend APIs, database design, AI automation workflows, SaaS platforms, developer tooling
+- Technical Researcher (2023–present): AI systems, multi-agent systems, distributed systems, cybersecurity, Web3, backend architecture
+- Technical Writer (ongoing): technical notes, engineering essays, software documentation
+
+## Services
+
+Full stack development, backend and API development, AI automation and agent development, SaaS and dashboard development, system architecture and technical consulting, developer tooling and rapid prototyping.
+
+## Philosophy
+
+Build systems, not just software. Core principles: simplicity over unnecessary abstraction, automation wherever possible, performance through thoughtful architecture, security by design, long-term maintainability, and engineering with measurable impact.
+
+## Pages
+
+- [Home](https://ashokpasala.com): Portfolio home — about, expertise, tech stack, featured projects, experience, services, and contact

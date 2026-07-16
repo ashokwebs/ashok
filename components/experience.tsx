@@ -3,22 +3,28 @@
 export default function Experience() {
   const experiences = [
     {
-      role: 'Independent Software Engineer',
+      role: 'Founder & Systems Architect — Norveth',
       period: '2024 — Present',
       description:
-        'Building full-stack web applications, backend APIs, and AI-powered automation workflows for clients across multiple domains.',
+        'Building an engineering-first technology initiative focused on intelligent software, AI automation platforms, developer infrastructure, and scalable digital products. The long-term vision: production-grade AI systems and enterprise platforms that solve real-world engineering problems.',
     },
     {
-      role: 'Independent Technical Researcher',
+      role: 'Independent Full Stack Developer',
+      period: '2024 — Present',
+      description:
+        'Delivering full-stack web applications, backend APIs, scalable database designs, and AI-powered automation workflows for clients across multiple domains — from SaaS platforms to developer tooling.',
+    },
+    {
+      role: 'Technical Researcher',
       period: '2023 — Present',
       description:
-        'Deep research across AI systems, distributed systems, cybersecurity, and blockchain technology.',
+        'Deep research across AI and multi-agent systems, distributed systems, cybersecurity, Web3 architecture, and backend infrastructure.',
     },
     {
-      role: 'Founder of Norveth',
-      period: '2024 — Present',
+      role: 'Technical Writer',
+      period: 'Ongoing',
       description:
-        'Building an engineering-first initiative focused on intelligent software, AI automation platforms, and scalable products.',
+        'Writing technical notes, engineering essays, software documentation, and long-form research on modern software engineering.',
     },
   ]
 

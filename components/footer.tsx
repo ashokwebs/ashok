@@ -7,7 +7,9 @@ export default function Footer() {
     { label: 'About', href: '#about' },
     { label: 'Work', href: '#projects' },
     { label: 'Experience', href: '#experience' },
+    { label: 'Services', href: '#services' },
     { label: 'Contact', href: '#contact' },
+    { label: 'Resume', href: '/resume.pdf' },
   ]
 
   return (
@@ -25,6 +27,8 @@ export default function Footer() {
             </h3>
             <p className="text-sm text-muted-foreground font-light">
               Full Stack Developer &amp; AI Systems Engineer
+              <br />
+              Founder @ Norveth &mdash; Building AI Infrastructure &amp; Intelligent Software
             </p>
           </div>
 
@@ -97,6 +101,16 @@ export default function Footer() {
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
                 >
                   X (Twitter)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://devpost.com/ashokashishms/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-light focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
+                >
+                  Devpost
                 </a>
               </li>
               <li>
