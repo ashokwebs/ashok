@@ -43,7 +43,7 @@ export default function Contact() {
             <a
               href="mailto:ashokashishms@gmail.com"
               aria-label="Send an email to Ashok Pasala"
-              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
+              className="group p-6 sm:p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
             >
               <div className="space-y-5">
                 <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center group-hover:bg-slate-200 transition-colors">
@@ -67,7 +67,7 @@ export default function Contact() {
             <a
               href="mailto:founder@norveth.app"
               aria-label="Email Ashok Pasala at Norveth for business enquiries"
-              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
+              className="group p-6 sm:p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
               style={{ animationDelay: '100ms' }}
             >
               <div className="space-y-5">
@@ -90,7 +90,7 @@ export default function Contact() {
 
             {/* Location */}
             <div
-              className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block"
+              className="group p-6 sm:p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 block"
               style={{ animationDelay: '200ms' }}
             >
               <div className="space-y-5">

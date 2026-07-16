@@ -48,7 +48,7 @@ export default function TechStack() {
             {categories.map((category, index) => (
               <div 
                 key={index}
-                className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 flex flex-col"
+                className="group p-6 sm:p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300 flex flex-col"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <h3 
@@ -61,7 +61,7 @@ export default function TechStack() {
                   {category.skills.map((skill) => (
                     <span 
                       key={skill}
-                      className="px-4 py-2 text-sm font-medium rounded-full bg-slate-100 text-foreground/80 border border-slate-200"
+                      className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium rounded-full bg-slate-100 text-foreground/80 border border-slate-200"
                     >
                       {skill}
                     </span>

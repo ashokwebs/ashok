@@ -21,9 +21,10 @@ export default function Hero() {
         <div className="space-y-12 animate-fade-in">
           {/* Name - Premium display */}
           <div className="text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass text-sm font-medium text-foreground/80 mb-2 animate-slide-in-up">
-              <span className="flex h-2 w-2 rounded-full bg-emerald-500/80 animate-pulse"></span>
-              Founder @ Norveth &mdash; Building AI Infrastructure &amp; Intelligent Software
+            <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-full glass text-xs sm:text-sm font-medium text-foreground/80 mb-2 animate-slide-in-up">
+              <span className="flex h-2 w-2 shrink-0 rounded-full bg-emerald-500/80 animate-pulse"></span>
+              <span className="sm:hidden">Founder @ Norveth &mdash; AI Infrastructure</span>
+              <span className="hidden sm:inline">Founder @ Norveth &mdash; Building AI Infrastructure &amp; Intelligent Software</span>
             </div>
             <h1
               className="text-6xl sm:text-8xl md:text-9xl font-bold tracking-tighter leading-none text-foreground"
@@ -48,11 +49,11 @@ export default function Hero() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center pt-6 max-w-xs sm:max-w-none mx-auto">
             <button
               onClick={() => scrollToSection('projects')}
               aria-label="View Ashok Pasala's featured projects"
-              className="px-8 py-3.5 bg-foreground text-background font-medium rounded-[1.25rem] hover:opacity-90 transition-all duration-300 text-sm sm:text-base shadow-[0_4px_14px_0_rgb(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none"
+              className="w-full sm:w-auto px-8 py-3.5 bg-foreground text-background font-medium rounded-[1.25rem] hover:opacity-90 transition-all duration-300 text-sm sm:text-base shadow-[0_4px_14px_0_rgb(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none"
             >
               View Work
             </button>
@@ -61,14 +62,14 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Ashok Pasala's resume as PDF"
-              className="px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none flex items-center justify-center"
+              className="w-full sm:w-auto px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none flex items-center justify-center"
             >
               Download Resume
             </a>
             <button
               onClick={() => scrollToSection('contact')}
               aria-label="Get in touch with Ashok Pasala"
-              className="px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none"
+              className="w-full sm:w-auto px-8 py-3.5 glass text-foreground font-medium rounded-[1.25rem] hover:bg-slate-50/50 transition-all duration-300 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none"
             >
               Get in Touch
             </button>
