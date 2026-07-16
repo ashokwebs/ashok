@@ -1,7 +1,5 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import { Github, Linkedin, Mail, ExternalLink, ArrowDown, Code2, Zap, Network, Cpu } from 'lucide-react'
 import Header from '@/components/header'
 import Hero from '@/components/hero'
 import About from '@/components/about'
@@ -9,6 +7,7 @@ import Expertise from '@/components/expertise'
 import TechStack from '@/components/tech-stack'
 import Projects from '@/components/projects'
 import Experience from '@/components/experience'
+import Services from '@/components/services'
 import Contact from '@/components/contact'
 import Footer from '@/components/footer'
 
@@ -22,6 +21,7 @@ export default function Home() {
       <TechStack />
       <Projects />
       <Experience />
+      <Services />
       <Contact />
       <Footer />
     </main>

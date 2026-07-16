@@ -21,6 +21,7 @@ export default function Header() {
     { label: 'Expertise', href: '#expertise' },
     { label: 'Work', href: '#projects' },
     { label: 'Experience', href: '#experience' },
+    { label: 'Services', href: '#services' },
     { label: 'Contact', href: '#contact' },
   ]
 

@@ -1,6 +1,6 @@
 # Ashok Pasala - Enterprise Portfolio
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -12,10 +12,11 @@ This repository houses the source code for [ashokpasala.com](https://ashokpasala
 
 ## 🚀 Technical Highlights
 
-- **Framework**: Next.js 15 (App Router) with React 19
+- **Framework**: Next.js 16 (App Router) with React 19
 - **Styling**: Tailwind CSS v4 featuring custom frosted glassmorphism (`.glass`, `.glass-card`) and tailored CSS variables.
 - **Performance**: 100/100 Lighthouse score across Performance, Accessibility, Best Practices, and SEO.
-- **SEO & Indexing**: Fully programmatic `sitemap.xml`, `robots.txt`, and expansive JSON-LD Knowledge Graph schemas (Person, Organization, ProfilePage) dynamically injected into the DOM.
+- **SEO & Indexing**: Fully programmatic `sitemap.xml`, `robots.txt`, and expansive JSON-LD Knowledge Graph schemas (Person, Organization, ProfilePage, ProfessionalService) dynamically injected into the DOM.
+- **GEO (Generative Engine Optimization)**: A structured `llms.txt` profile for AI crawlers, plus explicit robots rules for AI/LLM user agents (GPTBot, ClaudeBot, PerplexityBot, and others).
 - **Social Previews**: Edge-computed Open Graph and Twitter cards utilizing `@vercel/og` (`next/og`).
 - **Semantic HTML**: Strict hierarchical `<main>`, `<section>`, and `<article>` definitions combined with exhaustive ARIA labeling for screen-reader and keyboard-navigation compatibility.
 
