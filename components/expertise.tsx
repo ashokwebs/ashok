@@ -60,7 +60,7 @@ export default function Expertise() {
               return (
                 <div 
                   key={index} 
-                  className="group p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300"
+                  className="group p-6 sm:p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="space-y-5">
