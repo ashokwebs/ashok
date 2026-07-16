@@ -8,7 +8,7 @@
 
 The personal portfolio and digital hub of **Ashok Pasala** — Full Stack Developer, AI Systems Engineer, and Founder of Norveth. 
 
-This repository houses the source code for [ashokpasala.com](https://ashokpasala.com), engineered with a strict adherence to premium minimalism, enterprise-grade technical SEO, and flawless accessibility standards.
+This repository houses the source code for [ashokpasala.vercel.app](https://ashokpasala.vercel.app), engineered with a strict adherence to premium minimalism, enterprise-grade technical SEO, and flawless accessibility standards.
 
 ## 🚀 Technical Highlights
 
