@@ -58,6 +58,12 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  other: {
+    'geo.region': 'IN-AP',
+    'geo.placename': 'Andhra Pradesh',
+    'geo.position': '16.5062;80.6480',
+    'ICBM': '16.5062, 80.6480',
+  },
   openGraph: {
     title: 'Ashok Pasala | Full Stack Developer & AI Systems Engineer',
     description: siteDescription,
