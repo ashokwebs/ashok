@@ -73,13 +73,13 @@ export default function Services() {
           </div>
 
           {/* Mandates Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {mandates.map((mandate, idx) => {
               const Icon = mandate.icon
               return (
                 <div
                   key={mandate.title}
-                  className="glass-card-interactive p-7 sm:p-8 flex flex-col justify-between border border-white/[0.08]"
+                  className="glass-card-interactive p-5 sm:p-7 md:p-8 flex flex-col justify-between border border-white/[0.08]"
                   style={{ animationDelay: `${idx * 80}ms` }}
                 >
                   <div className="space-y-5">
@@ -120,7 +120,7 @@ export default function Services() {
           </div>
 
           {/* CTA Banner */}
-          <div className="p-8 sm:p-12 rounded-[1.75rem] border border-white/[0.1] bg-[#121216] shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div className="p-6 sm:p-10 md:p-12 rounded-[1.75rem] border border-white/[0.1] bg-[#121216] shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-6">
             <div className="space-y-2 max-w-xl">
               <h3
                 className="text-2xl font-bold text-white tracking-tight"

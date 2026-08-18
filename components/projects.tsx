@@ -163,7 +163,7 @@ export default function Projects() {
           </div>
 
           {/* Interactive Filter Tabs */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-white/[0.08]">
+          <div className="flex items-center gap-2 overflow-x-auto pb-2.5 border-b border-white/[0.08] -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar">
             {[
               { key: 'all', label: 'All Architectures (22+)' },
               { key: 'ai', label: 'Autonomous AI & Swarms' },
@@ -174,7 +174,7 @@ export default function Projects() {
               <button
                 key={tab.key}
                 onClick={() => setActiveFilter(tab.key as any)}
-                className={`px-4 py-2 rounded-full text-xs font-mono transition-all cursor-pointer shrink-0 ${
+                className={`px-3.5 sm:px-4 py-2 rounded-full text-xs font-mono transition-all cursor-pointer shrink-0 active:scale-95 touch-manipulation ${
                   activeFilter === tab.key
                     ? 'bg-white text-black font-semibold shadow-md'
                     : 'text-neutral-400 hover:text-white hover:bg-white/[0.05]'

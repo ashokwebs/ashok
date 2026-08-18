@@ -73,13 +73,13 @@ export default function ResearchNotes() {
           </div>
 
           {/* Research Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {publications.map((item) => {
               const Icon = item.icon
               return (
                 <article
                   key={item.title}
-                  className="glass-card-interactive p-7 sm:p-9 flex flex-col justify-between group border border-white/[0.08]"
+                  className="glass-card-interactive p-5 sm:p-7 md:p-9 flex flex-col justify-between group border border-white/[0.08]"
                 >
                   <div className="space-y-5">
                     {/* Top Row */}

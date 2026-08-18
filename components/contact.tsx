@@ -68,19 +68,19 @@ export default function Contact() {
           </div>
 
           {/* Contact Channels Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Primary Direct Email */}
-            <div className="glass-card p-7 sm:p-8 space-y-5 flex flex-col justify-between border border-white/[0.08]">
+            <div className="glass-card p-5 sm:p-7 md:p-8 space-y-5 flex flex-col justify-between border border-white/[0.08]">
               <div className="space-y-4">
-                <div className="w-11 h-11 rounded-xl bg-white/[0.06] flex items-center justify-center text-white border border-white/[0.1]">
-                  <Mail size={22} strokeWidth={1.75} />
+                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/[0.06] flex items-center justify-center text-white border border-white/[0.1]">
+                  <Mail size={20} strokeWidth={1.75} />
                 </div>
                 <div>
                   <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
                     Primary Direct
                   </div>
                   <h3
-                    className="text-lg font-bold text-white mt-0.5"
+                    className="text-base sm:text-lg font-bold text-white mt-0.5 break-all sm:break-normal"
                     style={{ fontFamily: 'var(--font-syne)' }}
                   >
                     ashokashishms@gmail.com
@@ -109,17 +109,17 @@ export default function Contact() {
             </div>
 
             {/* Ventures / Institutional */}
-            <div className="glass-card p-7 sm:p-8 space-y-5 flex flex-col justify-between border border-white/[0.08]">
+            <div className="glass-card p-5 sm:p-7 md:p-8 space-y-5 flex flex-col justify-between border border-white/[0.08]">
               <div className="space-y-4">
-                <div className="w-11 h-11 rounded-xl bg-white/[0.06] flex items-center justify-center text-white border border-white/[0.1]">
-                  <Briefcase size={22} strokeWidth={1.75} />
+                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/[0.06] flex items-center justify-center text-white border border-white/[0.1]">
+                  <Briefcase size={20} strokeWidth={1.75} />
                 </div>
                 <div>
                   <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
                     Venture &amp; Enterprise
                   </div>
                   <h3
-                    className="text-lg font-bold text-white mt-0.5"
+                    className="text-base sm:text-lg font-bold text-white mt-0.5 break-all sm:break-normal"
                     style={{ fontFamily: 'var(--font-syne)' }}
                   >
                     founder@norveth.app
@@ -148,17 +148,17 @@ export default function Contact() {
             </div>
 
             {/* Location & Global Operations */}
-            <div className="glass-card p-7 sm:p-8 space-y-5 flex flex-col justify-between border border-white/[0.08]">
+            <div className="glass-card p-5 sm:p-7 md:p-8 space-y-5 flex flex-col justify-between border border-white/[0.08]">
               <div className="space-y-4">
-                <div className="w-11 h-11 rounded-xl bg-white/[0.06] flex items-center justify-center text-white border border-white/[0.1]">
-                  <MapPin size={22} strokeWidth={1.75} />
+                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/[0.06] flex items-center justify-center text-white border border-white/[0.1]">
+                  <MapPin size={20} strokeWidth={1.75} />
                 </div>
                 <div>
                   <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
                     Global Base &amp; Location
                   </div>
                   <h3
-                    className="text-lg font-bold text-white mt-0.5"
+                    className="text-base sm:text-lg font-bold text-white mt-0.5"
                     style={{ fontFamily: 'var(--font-syne)' }}
                   >
                     Andhra Pradesh, India
@@ -177,9 +177,9 @@ export default function Contact() {
           </div>
 
           {/* Interactive Direct Message Form & Verified Profiles */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
             {/* Form */}
-            <div className="lg:col-span-7 glass-card p-8 sm:p-10 space-y-6 border border-white/[0.08]">
+            <div className="lg:col-span-7 glass-card p-5 sm:p-8 md:p-10 space-y-6 border border-white/[0.08]">
               <div className="space-y-1">
                 <h3
                   className="text-2xl font-bold text-white tracking-tight"

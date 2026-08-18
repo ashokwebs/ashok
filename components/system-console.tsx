@@ -18,22 +18,30 @@ export default function SystemConsole() {
           <p className="text-emerald-400 font-bold">
             [SYS_OK] NEXUS://OS v2.6.0 Kernel Initialized.
           </p>
-          <p className="text-neutral-400">
+          <p className="text-neutral-400 text-[11px] sm:text-xs">
             Ashok Pasala &mdash; Founder @ Varellen Technologies &amp; Norveth | 31 Hackathons • 22+ Projects
           </p>
-          <p className="text-neutral-500 text-xs pt-1">
-            Type <span className="text-white font-bold">&apos;help&apos;</span> to list commands or click quick action buttons below.
+          <p className="text-neutral-500 text-[10px] sm:text-xs pt-0.5">
+            Type <span className="text-white font-bold">&apos;help&apos;</span> or tap quick run chips below.
           </p>
         </div>
       ),
     },
   ])
   const [copied, setCopied] = useState(false)
-  const bottomRef = useRef<HTMLDivElement>(null)
+  const isInitialMount = useRef(true)
+  const logContainerRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  // Scroll ONLY the inner terminal box when a new command is executed by the user (never the window on mount)
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+    if (isInitialMount.current) {
+      isInitialMount.current = false
+      return
+    }
+    if (logContainerRef.current) {
+      logContainerRef.current.scrollTop = logContainerRef.current.scrollHeight
+    }
   }, [history])
 
   const executeCommand = (rawCmd: string) => {
@@ -259,29 +267,29 @@ export default function SystemConsole() {
   }
 
   return (
-    <section id="console" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#09090b]">
+    <section id="console" className="relative w-full py-20 sm:py-32 overflow-hidden bg-[#09090b]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-12">
+        <div className="space-y-10 sm:space-y-12">
           {/* Header */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-4 max-w-2xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6">
+            <div className="space-y-3 sm:space-y-4 max-w-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
                 <span>09 // Developer Terminal</span>
               </div>
               <h2
-                className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
+                className="text-3xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Interactive System Console
               </h2>
-              <p className="text-base sm:text-lg text-neutral-400 font-light">
+              <p className="text-sm sm:text-lg text-neutral-400 font-light">
                 Inspect architecture parameters, Devpost hackathon projects (22+), and founder telemetry directly via command line.
               </p>
             </div>
 
             <button
               onClick={copyEmail}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.12] bg-white/[0.04] text-xs font-mono text-neutral-300 hover:text-white hover:border-white/[0.25] transition-all self-start md:self-auto cursor-pointer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-white/[0.12] bg-white/[0.04] text-xs font-mono text-neutral-300 hover:text-white hover:border-white/[0.25] transition-all self-start md:self-auto cursor-pointer active:scale-95"
             >
               {copied ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
               <span>{copied ? 'Copied ashokashishms@gmail.com' : 'Copy Executive Email'}</span>
@@ -289,32 +297,32 @@ export default function SystemConsole() {
           </div>
 
           {/* Terminal Box */}
-          <div className="rounded-[1.5rem] bg-[#0d0e11] border border-white/[0.1] shadow-2xl overflow-hidden font-mono text-neutral-200">
+          <div className="rounded-2xl sm:rounded-[1.5rem] bg-[#0d0e11] border border-white/[0.1] shadow-2xl overflow-hidden font-mono text-neutral-200">
             {/* Terminal Window Chrome */}
-            <div className="px-5 py-3.5 bg-[#141518] border-b border-white/[0.08] flex items-center justify-between">
+            <div className="px-4 sm:px-5 py-3 sm:py-3.5 bg-[#141518] border-b border-white/[0.08] flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-[#ff5f56]/80" />
-                <div className="w-3 h-3 rounded-full bg-[#ffbd2e]/80" />
-                <div className="w-3 h-3 rounded-full bg-[#27c93f]/80" />
-                <span className="text-xs text-neutral-400 ml-2 font-mono">
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#ff5f56]/80" />
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#ffbd2e]/80" />
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#27c93f]/80" />
+                <span className="text-[11px] sm:text-xs text-neutral-400 ml-1.5 sm:ml-2 font-mono truncate max-w-[160px] sm:max-w-none">
                   ashok@varellen:~ (zsh)
                 </span>
               </div>
-              <div className="text-[11px] text-neutral-500 uppercase tracking-widest hidden sm:block">
+              <div className="text-[10px] sm:text-[11px] text-neutral-500 uppercase tracking-widest hidden sm:block">
                 NEXUS://OS • LIVE
               </div>
             </div>
 
             {/* Quick Action Chips */}
-            <div className="px-5 py-2.5 bg-[#0f1013] border-b border-white/[0.06] flex items-center gap-2 overflow-x-auto text-xs">
-              <span className="text-neutral-500 text-[11px] uppercase tracking-wider shrink-0">
-                Quick Run:
+            <div className="px-3 sm:px-5 py-2 sm:py-2.5 bg-[#0f1013] border-b border-white/[0.06] flex items-center gap-1.5 sm:gap-2 overflow-x-auto text-xs no-scrollbar">
+              <span className="text-neutral-500 text-[10px] sm:text-[11px] uppercase tracking-wider shrink-0 mr-1">
+                Run:
               </span>
-              {['devpost', 'systems', 'varellen', 'norveth', 'thesis', 'stack', 'contact', 'geo', 'clear'].map((cmd) => (
+              {['devpost', 'systems', 'varellen', 'norveth', 'thesis', 'stack', 'contact', 'clear'].map((cmd) => (
                 <button
                   key={cmd}
                   onClick={() => handleQuickCommand(cmd)}
-                  className="px-2.5 py-1 rounded bg-white/[0.05] hover:bg-white/[0.1] text-neutral-300 text-xs shrink-0 transition-colors cursor-pointer border border-white/[0.06]"
+                  className="px-2.5 py-1 rounded bg-white/[0.05] hover:bg-white/[0.1] active:bg-white/[0.15] text-neutral-300 text-[11px] sm:text-xs shrink-0 transition-colors cursor-pointer border border-white/[0.06]"
                 >
                   {cmd}
                 </button>
@@ -323,44 +331,44 @@ export default function SystemConsole() {
 
             {/* Console Log Body */}
             <div
-              className="p-5 sm:p-7 space-y-4 max-h-[380px] overflow-y-auto"
+              ref={logContainerRef}
+              className="p-4 sm:p-6 md:p-7 space-y-3 sm:space-y-4 max-h-[300px] sm:max-h-[380px] overflow-y-auto"
               onClick={() => inputRef.current?.focus()}
             >
               {history.map((entry, index) => (
-                <div key={index} className="space-y-1.5">
-                  <div className="flex items-center gap-2 text-xs text-neutral-400">
+                <div key={index} className="space-y-1 sm:space-y-1.5">
+                  <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs text-neutral-400">
                     <span className="text-emerald-400">➜</span>
                     <span className="text-cyan-400">~</span>
                     <span className="text-white font-bold">{entry.command}</span>
                   </div>
-                  <div className="pl-4">{entry.output}</div>
+                  <div className="pl-3 sm:pl-4 text-xs sm:text-sm">{entry.output}</div>
                 </div>
               ))}
-              <div ref={bottomRef} />
             </div>
 
             {/* Input Line */}
-            <div className="px-5 py-4 bg-[#121316] border-t border-white/[0.08] flex items-center gap-3">
-              <span className="text-emerald-400 text-sm font-bold">➜</span>
-              <span className="text-cyan-400 text-sm font-bold">~</span>
+            <div className="px-4 sm:px-5 py-3 sm:py-4 bg-[#121316] border-t border-white/[0.08] flex items-center gap-2.5 sm:gap-3">
+              <span className="text-emerald-400 text-xs sm:text-sm font-bold">➜</span>
+              <span className="text-cyan-400 text-xs sm:text-sm font-bold">~</span>
               <input
                 ref={inputRef}
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Type command ('devpost', 'systems', 'varellen', 'norveth')..."
-                className="flex-1 bg-transparent text-sm text-white placeholder-neutral-500 outline-none font-mono"
+                placeholder="Type command ('devpost', 'systems')..."
+                className="flex-1 bg-transparent text-xs sm:text-sm text-white placeholder-neutral-500 outline-none font-mono"
                 aria-label="Interactive CLI command prompt"
                 autoComplete="off"
                 spellCheck="false"
               />
               <button
                 onClick={() => executeCommand(input)}
-                className="p-1.5 text-neutral-400 hover:text-white transition-colors cursor-pointer"
+                className="p-1 text-neutral-400 hover:text-white transition-colors cursor-pointer"
                 aria-label="Submit CLI Command"
               >
-                <CornerDownLeft size={16} />
+                <CornerDownLeft size={15} />
               </button>
             </div>
           </div>

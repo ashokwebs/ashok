@@ -32,7 +32,7 @@ export default function Ventures() {
           {/* Ventures Dual Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Venture 1: Varellen Technologies */}
-            <article className="glass-card-interactive p-8 sm:p-10 flex flex-col justify-between space-y-8 group border border-white/[0.08]">
+            <article className="glass-card-interactive p-6 sm:p-8 md:p-10 flex flex-col justify-between space-y-8 group border border-white/[0.08]">
               <div className="space-y-6">
                 {/* Badge row */}
                 <div className="flex items-center justify-between">
@@ -114,7 +114,7 @@ export default function Ventures() {
             </article>
 
             {/* Venture 2: Norveth */}
-            <article className="glass-card-interactive p-8 sm:p-10 flex flex-col justify-between space-y-8 group border border-white/[0.08]">
+            <article className="glass-card-interactive p-6 sm:p-8 md:p-10 flex flex-col justify-between space-y-8 group border border-white/[0.08]">
               <div className="space-y-6">
                 {/* Badge row */}
                 <div className="flex items-center justify-between">

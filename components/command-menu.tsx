@@ -133,7 +133,7 @@ export default function CommandMenu() {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-start justify-center pt-20 sm:pt-28 px-4 bg-black/60 backdrop-blur-md animate-fade-in"
+      className="fixed inset-0 z-50 flex items-start justify-center pt-14 sm:pt-28 px-3 sm:px-4 bg-black/70 backdrop-blur-md animate-fade-in"
       onClick={() => setIsOpen(false)}
     >
       <div

@@ -54,7 +54,7 @@ export default function About() {
           {/* Photo & Founder Narrative Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             {/* Image card */}
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-5 max-w-sm sm:max-w-md mx-auto lg:max-w-none w-full">
               <div className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden glass-card group border border-white/[0.1]">
                 <Image
                   src="/ashok.jpeg"
@@ -83,7 +83,7 @@ export default function About() {
 
             {/* Narrative */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="p-6 sm:p-7 rounded-2xl bg-white/[0.03] border border-white/[0.08] space-y-3">
+              <div className="p-5 sm:p-7 rounded-2xl bg-white/[0.03] border border-white/[0.08] space-y-3">
                 <div className="text-xs font-mono uppercase tracking-wider text-neutral-400 flex items-center gap-2">
                   <Terminal size={14} />
                   <span>The Founder Mandate</span>
@@ -107,29 +107,29 @@ export default function About() {
 
               {/* Badges / Credentials */}
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                <div className="p-3.5 rounded-xl border border-white/[0.08] bg-white/[0.02]">
-                  <div className="text-xs font-mono text-neutral-400 uppercase tracking-wider">
+                <div className="p-3 sm:p-3.5 rounded-xl border border-white/[0.08] bg-white/[0.02]">
+                  <div className="text-[11px] sm:text-xs font-mono text-neutral-400 uppercase tracking-wider">
                     Ventures
                   </div>
-                  <div className="text-sm font-semibold text-white mt-0.5">
+                  <div className="text-xs sm:text-sm font-semibold text-white mt-0.5">
                     Varellen &amp; Norveth
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-xl border border-white/[0.08] bg-white/[0.02]">
-                  <div className="text-xs font-mono text-neutral-400 uppercase tracking-wider">
+                <div className="p-3 sm:p-3.5 rounded-xl border border-white/[0.08] bg-white/[0.02]">
+                  <div className="text-[11px] sm:text-xs font-mono text-neutral-400 uppercase tracking-wider">
                     Academic Grounding
                   </div>
-                  <div className="text-sm font-semibold text-white mt-0.5">
+                  <div className="text-xs sm:text-sm font-semibold text-white mt-0.5">
                     CS &amp; Distributed Sys
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-xl border border-white/[0.08] bg-white/[0.02] col-span-2 sm:col-span-1">
-                  <div className="text-xs font-mono text-neutral-400 uppercase tracking-wider">
+                <div className="p-3 sm:p-3.5 rounded-xl border border-white/[0.08] bg-white/[0.02] col-span-2 sm:col-span-1">
+                  <div className="text-[11px] sm:text-xs font-mono text-neutral-400 uppercase tracking-wider">
                     Location &amp; Reach
                   </div>
-                  <div className="text-sm font-semibold text-white mt-0.5">
+                  <div className="text-xs sm:text-sm font-semibold text-white mt-0.5">
                     India &bull; Global Remote
                   </div>
                 </div>
@@ -146,13 +146,13 @@ export default function About() {
               Core Engineering Axioms
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {axioms.map((axiom, idx) => {
                 const Icon = axiom.icon
                 return (
                   <div
                     key={axiom.title}
-                    className="p-6 sm:p-8 glass-card space-y-4 hover:-translate-y-1 transition-transform border border-white/[0.08]"
+                    className="p-5 sm:p-7 md:p-8 glass-card space-y-4 hover:-translate-y-1 transition-transform border border-white/[0.08]"
                   >
                     <div className="w-10 h-10 rounded-xl bg-white/[0.06] flex items-center justify-center text-white border border-white/[0.1]">
                       <Icon size={20} strokeWidth={1.75} />
