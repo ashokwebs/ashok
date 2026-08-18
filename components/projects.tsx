@@ -1,12 +1,14 @@
 'use client'
 
-import { ArrowUpRight, Cpu, Layers, ShieldCheck, Database, Activity, Code2, Globe } from 'lucide-react'
+import { useState } from 'react'
+import { ArrowUpRight, Cpu, Layers, ShieldCheck, Database, Activity, Globe } from 'lucide-react'
 import { GitHubIcon } from '@/components/social-icons'
 
 const systems = [
   {
     icon: Cpu,
     category: 'Autonomous AI',
+    domainKey: 'ai',
     title: 'Multi-Agent Orchestration Platform',
     headline: 'Collaborative Multi-Agent Execution Kernel',
     description:
@@ -18,6 +20,7 @@ const systems = [
   {
     icon: Layers,
     category: 'Enterprise Automation',
+    domainKey: 'enterprise',
     title: 'AI Workflow Automation Engine',
     headline: 'Visual Pipeline Compiler & Distributed Workers',
     description:
@@ -29,6 +32,7 @@ const systems = [
   {
     icon: ShieldCheck,
     category: 'Cybersecurity',
+    domainKey: 'security',
     title: 'OSPRED Autonomous Security Engine',
     headline: 'Proactive Threat Surface & Vulnerability Scanner',
     description:
@@ -40,6 +44,7 @@ const systems = [
   {
     icon: Database,
     category: 'Neural Search',
+    domainKey: 'ai',
     title: 'Neural Knowledge Retrieval Engine',
     headline: 'Sub-Millisecond Dense Vector RAG Pipeline',
     description:
@@ -51,6 +56,7 @@ const systems = [
   {
     icon: Activity,
     category: 'High-Scale Analytics',
+    domainKey: 'enterprise',
     title: 'Enterprise SaaS Telemetry Platform',
     headline: 'Real-Time Event Stream Ingestion & Analytics',
     description:
@@ -62,6 +68,7 @@ const systems = [
   {
     icon: Globe,
     category: 'Distributed Ledgers',
+    domainKey: 'web3',
     title: 'ShadowForge On-Chain Intelligence',
     headline: 'Heuristic Pattern Recognition & Smart Contract Auditing',
     description:
@@ -73,15 +80,22 @@ const systems = [
 ]
 
 export default function Projects() {
+  const [activeFilter, setActiveFilter] = useState<'all' | 'ai' | 'enterprise' | 'security' | 'web3'>('all')
+
+  const filteredSystems =
+    activeFilter === 'all'
+      ? systems
+      : systems.filter((s) => s.domainKey === activeFilter)
+
   return (
-    <section id="projects" className="relative w-full py-24 sm:py-32 overflow-hidden bg-slate-50/50">
+    <section id="projects" className="relative w-full py-24 sm:py-32 overflow-hidden bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
-                <span>02 // Systems &amp; Architectures</span>
+                <span>03 // Systems &amp; Architectures</span>
               </div>
               <h2
                 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground tracking-tight"
@@ -98,16 +112,39 @@ export default function Projects() {
               href="https://github.com/ashokwebs"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-foreground hover:opacity-70 transition-opacity"
+              className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-foreground hover:opacity-70 transition-opacity self-start md:self-auto"
             >
               <span>View All on GitHub</span>
               <ArrowUpRight size={14} />
             </a>
           </div>
 
+          {/* Interactive Filter Tabs */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-border/70">
+            {[
+              { key: 'all', label: 'All Architectures' },
+              { key: 'ai', label: 'Autonomous AI & Agents' },
+              { key: 'enterprise', label: 'Enterprise & Telemetry' },
+              { key: 'security', label: 'Cybersecurity (OSPRED)' },
+              { key: 'web3', label: 'Distributed Ledgers' },
+            ].map((tab) => (
+              <button
+                key={tab.key}
+                onClick={() => setActiveFilter(tab.key as any)}
+                className={`px-4 py-2 rounded-full text-xs font-mono transition-all cursor-pointer shrink-0 ${
+                  activeFilter === tab.key
+                    ? 'bg-foreground text-background font-semibold shadow-xs'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-slate-100'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
           {/* Systems Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {systems.map((system) => {
+            {filteredSystems.map((system) => {
               const Icon = system.icon
               return (
                 <article

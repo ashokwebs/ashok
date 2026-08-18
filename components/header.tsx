@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, Terminal, ArrowUpRight } from 'lucide-react'
+import { Menu, X, Terminal, ArrowUpRight, Search } from 'lucide-react'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,10 +18,10 @@ export default function Header() {
 
   const navItems = [
     { label: 'Thesis', href: '#about' },
+    { label: 'Ventures', href: '#ventures' },
     { label: 'Systems', href: '#projects' },
     { label: 'Arsenal', href: '#expertise' },
-    { label: 'Trajectory', href: '#experience' },
-    { label: 'Advisory', href: '#services' },
+    { label: 'Research', href: '#research' },
     { label: 'Console', href: '#console' },
     { label: 'Contact', href: '#contact' },
   ]
@@ -32,11 +32,15 @@ export default function Header() {
     element?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const openCmdK = () => {
+    window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))
+  }
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/80 backdrop-blur-xl border-b border-black/[0.06] shadow-sm py-3.5'
+          ? 'bg-white/85 backdrop-blur-xl border-b border-black/[0.06] shadow-xs py-3.5'
           : 'bg-transparent border-b border-transparent py-5'
       }`}
     >
@@ -65,7 +69,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-7">
             {navItems.map((item) => (
               <button
                 key={item.label}
@@ -77,35 +81,54 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Action CTA */}
-          <div className="hidden sm:flex items-center gap-3">
+          {/* Action CTAs */}
+          <div className="hidden sm:flex items-center gap-2.5">
+            <button
+              onClick={openCmdK}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-black/10 text-xs font-mono text-muted-foreground hover:text-foreground hover:border-black/30 transition-all cursor-pointer"
+              aria-label="Open Command Palette"
+            >
+              <Search size={12} />
+              <span>⌘K</span>
+            </button>
+
             <button
               onClick={() => scrollTo('#console')}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-black/10 text-xs font-mono text-muted-foreground hover:text-foreground hover:border-black/30 transition-all"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-black/10 text-xs font-mono text-muted-foreground hover:text-foreground hover:border-black/30 transition-all cursor-pointer"
               aria-label="Jump to interactive terminal console"
             >
               <Terminal size={12} />
               <span>CLI</span>
             </button>
+
             <button
               onClick={() => scrollTo('#contact')}
-              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-foreground text-background text-xs font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-foreground text-background text-xs font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              <span>Initiate Contact</span>
+              <span>Contact</span>
               <ArrowUpRight size={12} />
             </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 text-foreground hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-expanded={isOpen}
-            aria-controls="mobile-navigation"
-            aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
-          >
-            {isOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+          <div className="flex items-center gap-2 lg:hidden">
+            <button
+              onClick={openCmdK}
+              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Open Search Command Palette"
+            >
+              <Search size={18} />
+            </button>
+            <button
+              className="p-2 text-foreground hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
+              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            >
+              {isOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation Dropdown */}
@@ -126,7 +149,7 @@ export default function Header() {
             <div className="pt-2 border-t border-border mt-2 flex flex-col gap-2">
               <button
                 onClick={() => scrollTo('#contact')}
-                className="w-full py-2.5 bg-foreground text-background text-xs font-medium rounded-xl text-center"
+                className="w-full py-2.5 bg-foreground text-background text-xs font-medium rounded-xl text-center cursor-pointer"
               >
                 Initiate Contact
               </button>
