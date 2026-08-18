@@ -1,33 +1,74 @@
 'use client'
 
 import { useState } from 'react'
-import { ArrowUpRight, Cpu, Layers, ShieldCheck, Database, Activity, Globe } from 'lucide-react'
-import { GitHubIcon } from '@/components/social-icons'
+import { ArrowUpRight, Cpu, Layers, ShieldCheck, Database, Activity, Globe, HeartPulse, BrainCircuit } from 'lucide-react'
+import { GitHubIcon, DevpostIcon } from '@/components/social-icons'
 
 const systems = [
   {
-    icon: Cpu,
-    category: 'Autonomous AI',
+    icon: BrainCircuit,
+    category: 'Autonomous Multi-Agent',
     domainKey: 'ai',
-    title: 'Multi-Agent Orchestration Platform',
-    headline: 'Collaborative Multi-Agent Execution Kernel',
+    title: 'The Vector / Vector AI Command Center',
+    headline: 'Autonomous Digital C-Suite & Startup Architecture Engine',
     description:
-      'Autonomous orchestration kernel where specialized agent personas collaborate on complex, multi-stage workflows with deterministic routing, shared vector memory persistence, and dynamic tool validation.',
-    metrics: 'Deterministic Routing • Vector Memory • LangChain Kernel',
-    tags: ['Python', 'FastAPI', 'LangChain', 'Redis', 'Vector DBs'],
+      'Multi-agent AI executive council (CEO, CTO, CMO) that autonomously turns concepts into startups in seconds. Generates complete business plans, distributed tech architectures, and financial models simultaneously with cross-agent consensus.',
+    metrics: 'Multi-Agent Consensus • Instant Spec Generation • Cross-Agent Memory',
+    tags: ['Multi-Agent Swarms', 'Python', 'LangChain', 'FastAPI', 'Next.js 16'],
     github: 'https://github.com/ashokwebs',
+    devpost: 'https://devpost.com/software/the_vector',
+  },
+  {
+    icon: Database,
+    category: 'Enterprise Intelligence',
+    domainKey: 'enterprise',
+    title: 'CompanyBrain_AI',
+    headline: 'Autonomous AI Executive & Enterprise Knowledge Fabric',
+    description:
+      'Autonomous enterprise intelligence kernel that connects the dots between contracts, financials, and roadmaps to eliminate organizational blind spots and automate strategic decision flows.',
+    metrics: 'Contract Parsing • Financial Data Fusion • Zero-Drift RAG',
+    tags: ['Vector Search', 'Python', 'FastAPI', 'PostgreSQL', 'LangChain'],
+    github: 'https://github.com/ashokwebs',
+    devpost: 'https://devpost.com/software/companybrain_ai',
+  },
+  {
+    icon: Cpu,
+    category: 'Neural Memory & Agents',
+    domainKey: 'ai',
+    title: 'Qwen Chaos MemoryAgent',
+    headline: 'Self-Persistent Neural Agent with Cross-Session Recall',
+    description:
+      'Interactive, AI-built MemoryAgent that IS its own memory. Engineered for the Qwen Global Hackathon to prove cross-session recall and state persistence through a high-frequency live interactive experience.',
+    metrics: 'Qwen LLM • Cross-Session Recall • Neural State Persistence',
+    tags: ['Qwen Models', 'Vector Persistence', 'Python', 'FastAPI', 'Next.js'],
+    github: 'https://github.com/ashokwebs',
+    devpost: 'https://devpost.com/software/qwen-chaos',
+  },
+  {
+    icon: Activity,
+    category: 'Crisis & Geospatial AI',
+    domainKey: 'enterprise',
+    title: 'ResQNet Disaster Response Grid',
+    headline: 'Real-Time AI Incident Severity & Resource Orchestration',
+    description:
+      'AI-powered disaster response platform that coordinates rescue operations, detects incident severity in real-time, and connects affected citizens with life-saving resources through low-latency telemetry.',
+    metrics: 'Real-Time Triage • Geospatial Mapping • High-Availability Stream',
+    tags: ['Next.js', 'Node.js', 'WebSockets', 'PostgreSQL', 'Geospatial AI'],
+    github: 'https://github.com/ashokwebs',
+    devpost: 'https://devpost.com/software/resqnet',
   },
   {
     icon: Layers,
-    category: 'Enterprise Automation',
+    category: 'Market Intelligence',
     domainKey: 'enterprise',
-    title: 'AI Workflow Automation Engine',
-    headline: 'Visual Pipeline Compiler & Distributed Workers',
+    title: 'LaunchLens Multi-Model Due Diligence',
+    headline: 'Automated Market Validation & VC Risk Analysis',
     description:
-      'Visual pipeline compiler that translates high-level natural language instructions into distributed, fault-tolerant worker execution graphs with live WebSocket telemetry.',
-    metrics: 'Visual Compiler • Distributed Worker Graph • Real-Time Stream',
-    tags: ['Next.js 16', 'Node.js', 'PostgreSQL', 'Docker', 'WebSockets'],
+      'Multi-model AI platform providing instant market validation, competitive risk surface analysis, and due diligence for founders and venture capital firms before committing capital.',
+    metrics: 'Multi-Model Synthesis • VC Due Diligence • Market Sizing',
+    tags: ['Multi-LLM Synthesis', 'Python', 'FastAPI', 'Next.js 16'],
     github: 'https://github.com/ashokwebs',
+    devpost: 'https://devpost.com/software/launchlens',
   },
   {
     icon: ShieldCheck,
@@ -36,34 +77,11 @@ const systems = [
     title: 'OSPRED Autonomous Security Engine',
     headline: 'Proactive Threat Surface & Vulnerability Scanner',
     description:
-      'AI-assisted cybersecurity platform engineered for automated attack-surface mapping, vulnerability scanning, threat intelligence synthesis, and server hardening.',
+      'AI-assisted cybersecurity platform engineered for automated attack-surface mapping, vulnerability scanning, threat intelligence synthesis, and zero-trust Linux server hardening.',
     metrics: 'Attack Surface Mapping • Automated Hardening • CVE Synthesis',
     tags: ['Python', 'FastAPI', 'Docker', 'Security Research', 'Linux'],
     github: 'https://github.com/ashokwebs',
-  },
-  {
-    icon: Database,
-    category: 'Neural Search',
-    domainKey: 'ai',
-    title: 'Neural Knowledge Retrieval Engine',
-    headline: 'Sub-Millisecond Dense Vector RAG Pipeline',
-    description:
-      'High-throughput semantic search and knowledge synthesis engine utilizing dense embeddings and Retrieval-Augmented Generation (RAG) over heterogeneous unstructured corpora.',
-    metrics: 'Vector Embeddings • Semantic Indexing • RAG Pipeline',
-    tags: ['Python', 'ChromaDB', 'OpenAI API', 'Streamlit', 'RAG'],
-    github: 'https://github.com/ashokwebs',
-  },
-  {
-    icon: Activity,
-    category: 'High-Scale Analytics',
-    domainKey: 'enterprise',
-    title: 'Enterprise SaaS Telemetry Platform',
-    headline: 'Real-Time Event Stream Ingestion & Analytics',
-    description:
-      'High-frequency event ingestion and aggregation cluster handling WebSocket telemetry with sub-millisecond dispatch and high-density executive dashboard visualizations.',
-    metrics: 'Sub-ms Dispatch • WebSocket Ingestion • Event Funnels',
-    tags: ['Next.js', 'Express', 'MongoDB', 'WebSockets', 'Tailwind'],
-    github: 'https://github.com/ashokwebs',
+    devpost: 'https://devpost.com/ashokashishms',
   },
   {
     icon: Globe,
@@ -72,10 +90,24 @@ const systems = [
     title: 'ShadowForge On-Chain Intelligence',
     headline: 'Heuristic Pattern Recognition & Smart Contract Auditing',
     description:
-      'Distributed ledger intelligence engine executing real-time heuristic pattern recognition, smart contract security audits, and cryptographic anomaly detection.',
+      'Distributed ledger intelligence engine executing real-time heuristic pattern recognition, smart contract security audits, and cryptographic anomaly detection across EVM chains.',
     metrics: 'Heuristic Detection • Contract Auditing • EVM Parsing',
-    tags: ['Python', 'FastAPI', 'Next.js', 'PostgreSQL', 'Web3.js'],
+    tags: ['Python', 'FastAPI', 'Next.js', 'PostgreSQL', 'Web3.js', 'Solidity'],
     github: 'https://github.com/ashokwebs',
+    devpost: 'https://devpost.com/ashokashishms',
+  },
+  {
+    icon: HeartPulse,
+    category: 'Clinical Diagnostic AI',
+    domainKey: 'enterprise',
+    title: 'TriageAI & CareCompass AI',
+    headline: 'Clinical-Grade Emergency Navigation & Specialist Routing',
+    description:
+      'Intelligent healthcare navigation and clinical triage platform that analyzes acute symptoms, detects emergency thresholds, and routes patients to the right medical specialist with clinical reasoning.',
+    metrics: 'Clinical Triage • Emergency Detection • Specialist Routing',
+    tags: ['Clinical Graph', 'Python', 'FastAPI', 'Next.js', 'Medical RAG'],
+    github: 'https://github.com/ashokwebs',
+    devpost: 'https://devpost.com/software/carecompass-ai',
   },
 ]
 
@@ -95,36 +127,47 @@ export default function Projects() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-                <span>03 // Systems &amp; Architectures</span>
+                <span>03 // 22+ Shipped Architectures</span>
               </div>
               <h2
                 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
-                Flagship Architectures
+                Flagship Systems
               </h2>
               <p className="text-base sm:text-lg text-neutral-400 font-light">
-                Mission-critical software platforms, autonomous agent runtimes, and distributed infrastructure engineered from first principles.
+                Mission-critical software platforms, autonomous multi-agent swarms, and distributed infrastructure engineered across 31 global hackathons and venture mandates.
               </p>
             </div>
 
-            <a
-              href="https://github.com/ashokwebs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-neutral-300 hover:text-white transition-colors self-start md:self-auto"
-            >
-              <span>View All on GitHub</span>
-              <ArrowUpRight size={14} />
-            </a>
+            <div className="flex items-center gap-3 self-start md:self-auto">
+              <a
+                href="https://devpost.com/ashokashishms/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-white/[0.12] bg-white/[0.04] text-xs font-mono text-neutral-300 hover:text-white hover:border-white/[0.25] transition-all"
+              >
+                <DevpostIcon size={14} />
+                <span>Devpost (22 Projects)</span>
+              </a>
+              <a
+                href="https://github.com/ashokwebs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-white/[0.12] bg-white/[0.04] text-xs font-mono text-neutral-300 hover:text-white hover:border-white/[0.25] transition-all"
+              >
+                <GitHubIcon size={14} />
+                <span>GitHub</span>
+              </a>
+            </div>
           </div>
 
           {/* Interactive Filter Tabs */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-white/[0.08]">
             {[
-              { key: 'all', label: 'All Architectures' },
-              { key: 'ai', label: 'Autonomous AI & Agents' },
-              { key: 'enterprise', label: 'Enterprise & Telemetry' },
+              { key: 'all', label: 'All Architectures (22+)' },
+              { key: 'ai', label: 'Autonomous AI & Swarms' },
+              { key: 'enterprise', label: 'Enterprise, Health & Telemetry' },
               { key: 'security', label: 'Cybersecurity (OSPRED)' },
               { key: 'web3', label: 'Distributed Ledgers' },
             ].map((tab) => (
@@ -204,19 +247,31 @@ export default function Projects() {
 
                   {/* Actions */}
                   <div className="flex items-center justify-between pt-6 mt-6 border-t border-white/[0.08]">
-                    <a
-                      href={system.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Inspect source architecture for ${system.title}`}
-                      className="inline-flex items-center gap-2 text-xs font-mono font-medium text-neutral-300 hover:text-white transition-colors"
-                    >
-                      <GitHubIcon size={16} />
-                      <span>Inspect Repository</span>
-                    </a>
+                    <div className="flex items-center gap-4">
+                      <a
+                        href={system.devpost || 'https://devpost.com/ashokashishms/'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View Devpost submission for ${system.title}`}
+                        className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-neutral-300 hover:text-white transition-colors"
+                      >
+                        <DevpostIcon size={14} />
+                        <span>Devpost</span>
+                      </a>
+                      <a
+                        href={system.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Inspect source repository for ${system.title}`}
+                        className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-neutral-300 hover:text-white transition-colors"
+                      >
+                        <GitHubIcon size={14} />
+                        <span>Source</span>
+                      </a>
+                    </div>
 
                     <a
-                      href={system.github}
+                      href={system.devpost || system.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 rounded-full border border-white/[0.1] flex items-center justify-center text-neutral-400 group-hover:border-white group-hover:text-white transition-all"

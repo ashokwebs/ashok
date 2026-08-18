@@ -1,7 +1,7 @@
 'use client'
 
-import { ChevronDown, ArrowUpRight, Terminal, FileText } from 'lucide-react'
-import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/social-icons'
+import { ChevronDown, ArrowUpRight, Terminal, FileText, Award } from 'lucide-react'
+import { GitHubIcon, LinkedInIcon, XIcon, DevpostIcon } from '@/components/social-icons'
 
 export default function Hero() {
   const scrollTo = (id: string) => {
@@ -31,7 +31,7 @@ export default function Hero() {
               <span className="flex h-2 w-2 shrink-0 rounded-full bg-emerald-400 animate-pulse"></span>
               <span>Founder @ Varellen Technologies &amp; Norveth</span>
               <span className="text-white/20 font-normal">•</span>
-              <span className="text-neutral-400 lowercase font-normal">autonomous ai</span>
+              <span className="text-neutral-400 font-mono text-[11px]">31 Hackathons • 22+ AI Systems</span>
             </div>
           </div>
 
@@ -44,16 +44,16 @@ export default function Hero() {
               Ashok Pasala
               <span className="sr-only">
                 {' '}
-                — Founder of Varellen Technologies &amp; Norveth
+                — Founder of Varellen Technologies &amp; Norveth | AI Systems Architect
               </span>
             </h1>
 
             <p className="text-lg sm:text-2xl md:text-3xl font-light text-neutral-200 tracking-tight max-w-3xl mx-auto leading-snug">
-              Architecting <span className="font-semibold text-white">Autonomous AI Infrastructure</span>, Multi-Agent Orchestration &amp; High-Scale Distributed Platforms.
+              Architecting <span className="font-semibold text-white">Autonomous AI Infrastructure</span>, Multi-Agent Swarms &amp; High-Scale Platforms.
             </p>
 
             <p className="text-sm sm:text-base text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
-              Founder &amp; CEO of <strong className="font-medium text-neutral-200">Varellen Technologies</strong> and Systems Architect at <strong className="font-medium text-neutral-200">Norveth</strong>. Engineering sovereign AI runtimes, mission-critical backends, and deterministic automation systems from first principles.
+              Founder &amp; CEO of <strong className="font-medium text-neutral-200">Varellen Technologies</strong> and Systems Architect at <strong className="font-medium text-neutral-200">Norveth</strong>. Builder of 22+ shipped systems across 31 hackathons (Vector AI, CompanyBrain, Qwen Chaos, ResQNet).
             </p>
           </div>
 
@@ -64,15 +64,13 @@ export default function Hero() {
               aria-label="Explore Ashok Pasala's flagship software systems"
               className="px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 hover:scale-[1.02] active:scale-[0.98] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono shadow-[0_4px_20px_rgba(255,255,255,0.15)] flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>Explore Systems</span>
+              <span>Explore 22+ Systems</span>
               <ArrowUpRight size={14} />
             </button>
 
             <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download Ashok Pasala's executive architecture resume"
+              href="/resume"
+              aria-label="View Ashok Pasala's executive architecture resume"
               className="px-6 py-3.5 rounded-full border border-white/[0.12] bg-white/[0.04] text-white hover:bg-white/[0.08] hover:border-white/[0.25] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono flex items-center justify-center gap-2"
             >
               <FileText size={14} />
@@ -96,10 +94,22 @@ export default function Hero() {
                 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
-                30+
+                31
               </div>
               <div className="text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
-                Production Systems
+                Hackathons &bull; Global
+              </div>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-1">
+              <div
+                className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight"
+                style={{ fontFamily: 'var(--font-syne)' }}
+              >
+                22+
+              </div>
+              <div className="text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
+                Shipped AI Systems
               </div>
             </div>
 
@@ -126,18 +136,6 @@ export default function Hero() {
                 Founder &amp; Architect
               </div>
             </div>
-
-            <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-1">
-              <div
-                className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight"
-                style={{ fontFamily: 'var(--font-syne)' }}
-              >
-                Global
-              </div>
-              <div className="text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
-                Advisory &amp; Scale
-              </div>
-            </div>
           </div>
 
           {/* Social Profiles & Scroll Down Indicator */}
@@ -151,6 +149,15 @@ export default function Hero() {
                 className="p-2 text-neutral-400 hover:text-white hover:scale-110 transition-all rounded-full"
               >
                 <GitHubIcon size={20} />
+              </a>
+              <a
+                href="https://devpost.com/ashokashishms/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ashok Pasala on Devpost (22 Projects, 31 Hackathons)"
+                className="p-2 text-neutral-400 hover:text-white hover:scale-110 transition-all rounded-full"
+              >
+                <DevpostIcon size={20} />
               </a>
               <a
                 href="https://www.linkedin.com/in/ashok-raj-p-1b8539317/"
