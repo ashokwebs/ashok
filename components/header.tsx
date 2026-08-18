@@ -59,7 +59,7 @@ export default function Header() {
                 Ashok Pasala
               </span>
               <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest leading-tight mt-0.5">
-                Norveth • Architect
+                Varellen • Norveth
               </span>
             </div>
           </Link>
