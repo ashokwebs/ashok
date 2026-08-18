@@ -12,13 +12,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden"
+      className="relative w-full min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#09090b]"
     >
       {/* Background ambient lighting */}
-      <div className="absolute inset-0 -z-10 bg-background pointer-events-none">
-        <div className="absolute top-[-8%] right-[-6%] w-[550px] h-[550px] rounded-full bg-slate-100/80 blur-[120px] animate-gentle-glow" />
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] rounded-full bg-white/[0.03] blur-[140px] animate-gentle-glow" />
         <div
-          className="absolute bottom-[-10%] left-[-8%] w-[650px] h-[650px] rounded-full bg-neutral-100/70 blur-[140px] animate-gentle-glow"
+          className="absolute bottom-[-10%] left-[-5%] w-[650px] h-[650px] rounded-full bg-neutral-800/[0.15] blur-[160px] animate-gentle-glow"
           style={{ animationDelay: '2.5s' }}
         />
       </div>
@@ -28,17 +28,17 @@ export default function Hero() {
           {/* Founder Status Badge */}
           <div className="flex justify-center">
             <div className="badge-founder animate-slide-in-up">
-              <span className="flex h-2 w-2 shrink-0 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span className="flex h-2 w-2 shrink-0 rounded-full bg-emerald-400 animate-pulse"></span>
               <span>Founder @ Varellen Technologies &amp; Norveth</span>
-              <span className="text-black/30 font-normal">•</span>
-              <span className="text-muted-foreground lowercase font-normal">autonomous ai</span>
+              <span className="text-white/20 font-normal">•</span>
+              <span className="text-neutral-400 lowercase font-normal">autonomous ai</span>
             </div>
           </div>
 
           {/* Monumental Name & Title */}
           <div className="space-y-6 max-w-4xl mx-auto">
             <h1
-              className="text-6xl sm:text-8xl md:text-9xl font-extrabold tracking-tighter leading-none text-foreground"
+              className="text-6xl sm:text-8xl md:text-9xl font-extrabold tracking-tighter leading-none text-metallic"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
               Ashok Pasala
@@ -48,12 +48,12 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="text-lg sm:text-2xl md:text-3xl font-light text-foreground/90 tracking-tight max-w-3xl mx-auto leading-snug">
-              Architecting <span className="font-semibold text-foreground">Autonomous AI Infrastructure</span>, Multi-Agent Orchestration &amp; High-Scale Distributed Platforms.
+            <p className="text-lg sm:text-2xl md:text-3xl font-light text-neutral-200 tracking-tight max-w-3xl mx-auto leading-snug">
+              Architecting <span className="font-semibold text-white">Autonomous AI Infrastructure</span>, Multi-Agent Orchestration &amp; High-Scale Distributed Platforms.
             </p>
 
-            <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
-              Founder &amp; CEO of <strong className="font-medium text-foreground">Varellen Technologies</strong> and Systems Architect at <strong className="font-medium text-foreground">Norveth</strong>. Engineering sovereign AI runtimes, mission-critical backends, and deterministic automation systems from first principles.
+            <p className="text-sm sm:text-base text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
+              Founder &amp; CEO of <strong className="font-medium text-neutral-200">Varellen Technologies</strong> and Systems Architect at <strong className="font-medium text-neutral-200">Norveth</strong>. Engineering sovereign AI runtimes, mission-critical backends, and deterministic automation systems from first principles.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export default function Hero() {
             <button
               onClick={() => scrollTo('projects')}
               aria-label="Explore Ashok Pasala's flagship software systems"
-              className="px-8 py-3.5 bg-foreground text-background font-medium rounded-full hover:opacity-90 hover:scale-[1.02] active:scale-[0.98] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono shadow-[0_4px_14px_rgba(0,0,0,0.12)] flex items-center justify-center gap-2 cursor-pointer"
+              className="px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 hover:scale-[1.02] active:scale-[0.98] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono shadow-[0_4px_20px_rgba(255,255,255,0.15)] flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Explore Systems</span>
               <ArrowUpRight size={14} />
@@ -73,7 +73,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Ashok Pasala's executive architecture resume"
-              className="px-6 py-3.5 glass text-foreground font-medium rounded-full hover:bg-black/[0.04] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono flex items-center justify-center gap-2"
+              className="px-6 py-3.5 rounded-full border border-white/[0.12] bg-white/[0.04] text-white hover:bg-white/[0.08] hover:border-white/[0.25] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono flex items-center justify-center gap-2"
             >
               <FileText size={14} />
               <span>Resume / Spec</span>
@@ -82,7 +82,7 @@ export default function Hero() {
             <button
               onClick={() => scrollTo('console')}
               aria-label="Launch interactive developer CLI console"
-              className="px-6 py-3.5 glass text-foreground font-medium rounded-full hover:bg-black/[0.04] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono flex items-center justify-center gap-2 cursor-pointer"
+              className="px-6 py-3.5 rounded-full border border-white/[0.12] bg-white/[0.04] text-white hover:bg-white/[0.08] hover:border-white/[0.25] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono flex items-center justify-center gap-2 cursor-pointer"
             >
               <Terminal size={14} />
               <span>Interactive CLI</span>
@@ -90,51 +90,51 @@ export default function Hero() {
           </div>
 
           {/* Key Authority Metrics Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-8 max-w-4xl mx-auto border-t border-border/70">
-            <div className="p-4 rounded-2xl bg-black/[0.015] border border-black/[0.04] text-center space-y-1">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-8 max-w-4xl mx-auto border-t border-white/[0.08]">
+            <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-1">
               <div
-                className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight"
+                className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 30+
               </div>
-              <div className="text-[11px] font-mono text-muted-foreground uppercase tracking-wider">
+              <div className="text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
                 Production Systems
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-black/[0.015] border border-black/[0.04] text-center space-y-1">
+            <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-1">
               <div
-                className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight"
+                className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Varellen
               </div>
-              <div className="text-[11px] font-mono text-muted-foreground uppercase tracking-wider">
+              <div className="text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
                 Founder &amp; CEO
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-black/[0.015] border border-black/[0.04] text-center space-y-1">
+            <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-1">
               <div
-                className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight"
+                className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Norveth
               </div>
-              <div className="text-[11px] font-mono text-muted-foreground uppercase tracking-wider">
+              <div className="text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
                 Founder &amp; Architect
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-black/[0.015] border border-black/[0.04] text-center space-y-1">
+            <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-1">
               <div
-                className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight"
+                className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Global
               </div>
-              <div className="text-[11px] font-mono text-muted-foreground uppercase tracking-wider">
+              <div className="text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
                 Advisory &amp; Scale
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ashok Pasala on GitHub"
-                className="p-2 text-muted-foreground hover:text-foreground hover:scale-110 transition-all rounded-full"
+                className="p-2 text-neutral-400 hover:text-white hover:scale-110 transition-all rounded-full"
               >
                 <GitHubIcon size={20} />
               </a>
@@ -157,7 +157,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ashok Pasala on LinkedIn"
-                className="p-2 text-muted-foreground hover:text-foreground hover:scale-110 transition-all rounded-full"
+                className="p-2 text-neutral-400 hover:text-white hover:scale-110 transition-all rounded-full"
               >
                 <LinkedInIcon size={20} />
               </a>
@@ -166,7 +166,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ashok Pasala on X (Twitter)"
-                className="p-2 text-muted-foreground hover:text-foreground hover:scale-110 transition-all rounded-full"
+                className="p-2 text-neutral-400 hover:text-white hover:scale-110 transition-all rounded-full"
               >
                 <XIcon size={20} />
               </a>
@@ -175,7 +175,7 @@ export default function Hero() {
             <button
               onClick={() => scrollTo('about')}
               aria-label="Scroll down to Founder Thesis"
-              className="text-muted-foreground/60 hover:text-foreground transition-colors animate-subtle-float cursor-pointer"
+              className="text-neutral-500 hover:text-white transition-colors animate-subtle-float cursor-pointer"
             >
               <ChevronDown size={20} />
             </button>

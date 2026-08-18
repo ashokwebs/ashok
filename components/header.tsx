@@ -10,7 +10,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30)
+      setIsScrolled(window.scrollY > 20)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -40,7 +40,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/85 backdrop-blur-xl border-b border-black/[0.06] shadow-xs py-3.5'
+          ? 'bg-[#09090b]/85 backdrop-blur-xl border-b border-white/[0.08] shadow-2xl py-3.5'
           : 'bg-transparent border-b border-transparent py-5'
       }`}
     >
@@ -52,17 +52,17 @@ export default function Header() {
             className="group flex items-center gap-3 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
             aria-label="Ashok Pasala — Founder & Systems Architect Home"
           >
-            <div className="w-8 h-8 rounded-lg bg-foreground text-background font-bold flex items-center justify-center text-xs tracking-wider transition-transform group-hover:scale-105">
+            <div className="w-8 h-8 rounded-lg bg-white text-black font-bold flex items-center justify-center text-xs tracking-wider transition-transform group-hover:scale-105 shadow-md">
               AP
             </div>
             <div className="flex flex-col">
               <span
-                className="text-sm font-bold text-foreground tracking-tight leading-none"
+                className="text-sm font-bold text-white tracking-tight leading-none"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Ashok Pasala
               </span>
-              <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest leading-tight mt-0.5">
+              <span className="text-[10px] font-mono text-neutral-400 uppercase tracking-widest leading-tight mt-0.5">
                 Varellen • Norveth
               </span>
             </div>
@@ -74,7 +74,7 @@ export default function Header() {
               <button
                 key={item.label}
                 onClick={() => scrollTo(item.href)}
-                className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 uppercase tracking-wider font-mono cursor-pointer"
+                className="text-xs font-medium text-neutral-400 hover:text-white transition-colors duration-200 uppercase tracking-wider font-mono cursor-pointer"
               >
                 {item.label}
               </button>
@@ -85,7 +85,7 @@ export default function Header() {
           <div className="hidden sm:flex items-center gap-2.5">
             <button
               onClick={openCmdK}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-black/10 text-xs font-mono text-muted-foreground hover:text-foreground hover:border-black/30 transition-all cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.1] bg-white/[0.03] text-xs font-mono text-neutral-400 hover:text-white hover:border-white/[0.25] transition-all cursor-pointer"
               aria-label="Open Command Palette"
             >
               <Search size={12} />
@@ -94,7 +94,7 @@ export default function Header() {
 
             <button
               onClick={() => scrollTo('#console')}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-black/10 text-xs font-mono text-muted-foreground hover:text-foreground hover:border-black/30 transition-all cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/[0.1] bg-white/[0.03] text-xs font-mono text-neutral-400 hover:text-white hover:border-white/[0.25] transition-all cursor-pointer"
               aria-label="Jump to interactive terminal console"
             >
               <Terminal size={12} />
@@ -103,7 +103,7 @@ export default function Header() {
 
             <button
               onClick={() => scrollTo('#contact')}
-              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-foreground text-background text-xs font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-white text-black text-xs font-semibold hover:bg-neutral-200 transition-colors cursor-pointer shadow-md"
             >
               <span>Contact</span>
               <ArrowUpRight size={12} />
@@ -114,13 +114,13 @@ export default function Header() {
           <div className="flex items-center gap-2 lg:hidden">
             <button
               onClick={openCmdK}
-              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+              className="p-2 text-neutral-400 hover:text-white transition-colors"
               aria-label="Open Search Command Palette"
             >
               <Search size={18} />
             </button>
             <button
-              className="p-2 text-foreground hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
+              className="p-2 text-white hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
               onClick={() => setIsOpen(!isOpen)}
               aria-expanded={isOpen}
               aria-controls="mobile-navigation"
@@ -135,21 +135,21 @@ export default function Header() {
         {isOpen && (
           <div
             id="mobile-navigation"
-            className="lg:hidden py-4 space-y-1 border border-border/80 mt-3 bg-white/95 backdrop-blur-2xl px-4 shadow-xl rounded-2xl animate-slide-in-up"
+            className="lg:hidden py-4 space-y-1 border border-white/[0.1] mt-3 bg-[#111114]/95 backdrop-blur-2xl px-4 shadow-2xl rounded-2xl animate-slide-in-up"
           >
             {navItems.map((item) => (
               <button
                 key={item.label}
                 onClick={() => scrollTo(item.href)}
-                className="w-full text-left px-3 py-2.5 text-xs uppercase tracking-wider font-mono text-muted-foreground hover:text-foreground hover:bg-slate-50 rounded-lg transition-colors"
+                className="w-full text-left px-3 py-2.5 text-xs uppercase tracking-wider font-mono text-neutral-400 hover:text-white hover:bg-white/[0.05] rounded-lg transition-colors"
               >
                 {item.label}
               </button>
             ))}
-            <div className="pt-2 border-t border-border mt-2 flex flex-col gap-2">
+            <div className="pt-2 border-t border-white/[0.08] mt-2 flex flex-col gap-2">
               <button
                 onClick={() => scrollTo('#contact')}
-                className="w-full py-2.5 bg-foreground text-background text-xs font-medium rounded-xl text-center cursor-pointer"
+                className="w-full py-2.5 bg-white text-black text-xs font-semibold rounded-xl text-center cursor-pointer"
               >
                 Initiate Contact
               </button>

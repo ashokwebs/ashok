@@ -64,21 +64,21 @@ const hackathons = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative w-full py-24 sm:py-32 overflow-hidden bg-background">
+    <section id="experience" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#09090b]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
           {/* Section Header */}
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
-              <span>04 // Trajectory &amp; Leadership</span>
+            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
+              <span>07 // Trajectory &amp; Leadership</span>
             </div>
             <h2
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
               Venture Trajectory
             </h2>
-            <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
               From founding Varellen Technologies and Norveth to high-conviction engineering research and institutional advisory.
             </p>
           </div>
@@ -88,45 +88,45 @@ export default function Experience() {
             {milestones.map((item) => (
               <div
                 key={item.role + item.organization}
-                className="glass-card-interactive p-7 sm:p-9 space-y-6"
+                className="glass-card-interactive p-7 sm:p-9 space-y-6 border border-white/[0.08]"
               >
                 {/* Header row */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div className="space-y-1">
                     <div className="flex items-center gap-3">
                       <h3
-                        className="text-xl sm:text-2xl font-bold text-foreground tracking-tight"
+                        className="text-xl sm:text-2xl font-bold text-white tracking-tight"
                         style={{ fontFamily: 'var(--font-syne)' }}
                       >
                         {item.role}
                       </h3>
-                      <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-slate-100 text-foreground/80 border border-slate-200">
+                      <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
                         {item.badge}
                       </span>
                     </div>
-                    <div className="text-sm font-mono text-muted-foreground flex items-center gap-2">
-                      <span className="text-foreground font-medium">{item.organization}</span>
+                    <div className="text-sm font-mono text-neutral-400 flex items-center gap-2">
+                      <span className="text-emerald-400 font-medium">{item.organization}</span>
                       <span>•</span>
                       <span>{item.domain}</span>
                     </div>
                   </div>
 
-                  <div className="text-xs font-mono px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-muted-foreground self-start sm:self-auto">
+                  <div className="text-xs font-mono px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-neutral-400 self-start sm:self-auto">
                     {item.period}
                   </div>
                 </div>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base text-muted-foreground font-light leading-relaxed">
+                <p className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed">
                   {item.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 pt-2 border-t border-border/80">
+                <div className="flex flex-wrap gap-2 pt-2 border-t border-white/[0.08]">
                   {item.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2.5 py-1 text-xs font-mono rounded-md bg-white border border-border/80 text-foreground/70"
+                      className="px-2.5 py-1 text-xs font-mono rounded-md bg-white/[0.04] border border-white/[0.08] text-neutral-300"
                     >
                       {tag}
                     </span>
@@ -137,20 +137,20 @@ export default function Experience() {
           </div>
 
           {/* Hackathons & Strategic Competitions */}
-          <div className="p-8 sm:p-10 rounded-[1.5rem] glass-card space-y-8">
+          <div className="p-8 sm:p-10 rounded-[1.5rem] glass-card space-y-8 border border-white/[0.08]">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <h3
-                  className="text-2xl font-bold text-foreground tracking-tight"
+                  className="text-2xl font-bold text-white tracking-tight"
                   style={{ fontFamily: 'var(--font-syne)' }}
                 >
                   Hackathon &amp; Innovation Engagements
                 </h3>
-                <p className="text-sm text-muted-foreground font-light mt-1">
+                <p className="text-sm text-neutral-400 font-light mt-1">
                   Rapid engineering prototypes, high-intensity hackathons, and agentic AI competitions.
                 </p>
               </div>
-              <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-muted-foreground">
+              <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-neutral-400">
                 <Award size={16} />
                 <span>Active Contributor</span>
               </div>
@@ -160,15 +160,15 @@ export default function Experience() {
               {hackathons.map((hack) => (
                 <div
                   key={hack.name}
-                  className="p-5 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-2 hover:border-black/30 transition-colors"
+                  className="p-5 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-2 hover:border-white/[0.2] transition-colors"
                 >
-                  <div className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
+                  <div className="text-xs font-mono uppercase tracking-wider text-neutral-500">
                     Participant
                   </div>
-                  <div className="text-sm font-bold text-foreground leading-snug">
+                  <div className="text-sm font-bold text-white leading-snug">
                     {hack.name}
                   </div>
-                  <p className="text-xs text-muted-foreground font-light">
+                  <p className="text-xs text-neutral-400 font-light">
                     {hack.focus}
                   </p>
                 </div>
