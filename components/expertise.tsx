@@ -74,14 +74,14 @@ export default function Expertise() {
             </p>
           </div>
 
-          {/* Domains Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Domain Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {domains.map((domain, index) => {
               const Icon = domain.icon
               return (
                 <div
                   key={domain.title}
-                  className="glass-card-interactive p-7 sm:p-8 flex flex-col justify-between border border-white/[0.08]"
+                  className="glass-card-interactive p-5 sm:p-7 md:p-8 flex flex-col justify-between group border border-white/[0.08]"
                   style={{ animationDelay: `${index * 80}ms` }}
                 >
                   <div className="space-y-5">
