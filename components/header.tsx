@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Terminal, ArrowUpRight } from 'lucide-react'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,77 +10,127 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      setIsScrolled(window.scrollY > 30)
     }
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const navItems = [
-    { label: 'About', href: '#about' },
-    { label: 'Expertise', href: '#expertise' },
-    { label: 'Work', href: '#projects' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Services', href: '#services' },
+    { label: 'Thesis', href: '#about' },
+    { label: 'Systems', href: '#projects' },
+    { label: 'Arsenal', href: '#expertise' },
+    { label: 'Trajectory', href: '#experience' },
+    { label: 'Advisory', href: '#services' },
+    { label: 'Console', href: '#console' },
     { label: 'Contact', href: '#contact' },
   ]
+
+  const scrollTo = (href: string) => {
+    setIsOpen(false)
+    const element = document.querySelector(href)
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80 backdrop-blur-xl border-b border-border/50 shadow-sm' : 'bg-transparent border-b border-transparent'
+        isScrolled
+          ? 'bg-white/80 backdrop-blur-xl border-b border-black/[0.06] shadow-sm py-3.5'
+          : 'bg-transparent border-b border-transparent py-5'
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex items-center justify-between h-12">
-          {/* Logo */}
-          <Link 
-            href="/" 
-            className="text-base font-bold text-foreground hover:opacity-70 transition-opacity duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
-            style={{ fontFamily: 'var(--font-syne)' }}
-            aria-label="Ashok Pasala - Full Stack Developer Home"
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-10">
+          {/* Brand Identity */}
+          <Link
+            href="/"
+            className="group flex items-center gap-3 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
+            aria-label="Ashok Pasala — Founder & Systems Architect Home"
           >
-            AP
+            <div className="w-8 h-8 rounded-lg bg-foreground text-background font-bold flex items-center justify-center text-xs tracking-wider transition-transform group-hover:scale-105">
+              AP
+            </div>
+            <div className="flex flex-col">
+              <span
+                className="text-sm font-bold text-foreground tracking-tight leading-none"
+                style={{ fontFamily: 'var(--font-syne)' }}
+              >
+                Ashok Pasala
+              </span>
+              <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest leading-tight mt-0.5">
+                Norveth • Architect
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-12">
+          <div className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.label}
-                href={item.href}
-                className="text-sm font-light text-muted-foreground hover:text-foreground transition-colors duration-300"
+                onClick={() => scrollTo(item.href)}
+                className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 uppercase tracking-wider font-mono cursor-pointer"
               >
                 {item.label}
-              </a>
+              </button>
             ))}
+          </div>
+
+          {/* Action CTA */}
+          <div className="hidden sm:flex items-center gap-3">
+            <button
+              onClick={() => scrollTo('#console')}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-black/10 text-xs font-mono text-muted-foreground hover:text-foreground hover:border-black/30 transition-all"
+              aria-label="Jump to interactive terminal console"
+            >
+              <Terminal size={12} />
+              <span>CLI</span>
+            </button>
+            <button
+              onClick={() => scrollTo('#contact')}
+              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-foreground text-background text-xs font-medium hover:opacity-90 transition-opacity"
+            >
+              <span>Initiate Contact</span>
+              <ArrowUpRight size={12} />
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-sm"
+            className="lg:hidden p-2 text-foreground hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
             aria-controls="mobile-navigation"
-            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Dropdown */}
         {isOpen && (
-          <div id="mobile-navigation" className="md:hidden py-4 space-y-2 border-t border-border mt-2 absolute top-full left-0 right-0 bg-white/90 backdrop-blur-xl px-4 shadow-md rounded-b-[1.25rem]">
+          <div
+            id="mobile-navigation"
+            className="lg:hidden py-4 space-y-1 border border-border/80 mt-3 bg-white/95 backdrop-blur-2xl px-4 shadow-xl rounded-2xl animate-slide-in-up"
+          >
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.label}
-                href={item.href}
-                className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-slate-50 rounded-lg transition-all duration-300"
-                onClick={() => setIsOpen(false)}
+                onClick={() => scrollTo(item.href)}
+                className="w-full text-left px-3 py-2.5 text-xs uppercase tracking-wider font-mono text-muted-foreground hover:text-foreground hover:bg-slate-50 rounded-lg transition-colors"
               >
                 {item.label}
-              </a>
+              </button>
             ))}
+            <div className="pt-2 border-t border-border mt-2 flex flex-col gap-2">
+              <button
+                onClick={() => scrollTo('#contact')}
+                className="w-full py-2.5 bg-foreground text-background text-xs font-medium rounded-xl text-center"
+              >
+                Initiate Contact
+              </button>
+            </div>
           </div>
         )}
       </nav>

@@ -5,9 +5,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
+        allow: ['/', '/llms.txt', '/resume.pdf'],
       },
-      // Explicitly welcome AI/LLM crawlers (GEO)
+      // Explicitly allow and prioritize AI/LLM crawlers for Generative Engine Optimization (GEO)
       {
         userAgent: [
           'GPTBot',
@@ -21,8 +21,11 @@ export default function robots(): MetadataRoute.Robots {
           'Applebot-Extended',
           'cohere-ai',
           'CCBot',
+          'DeepSeekBot',
+          'Meta-ExternalAgent',
+          'Bytespider',
         ],
-        allow: '/',
+        allow: ['/', '/llms.txt'],
       },
     ],
     sitemap: 'https://ashokpasala.vercel.app/sitemap.xml',

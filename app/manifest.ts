@@ -2,14 +2,14 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Ashok Pasala — Full Stack Developer & AI Systems Engineer',
+    name: 'Ashok Pasala — Founder & AI Systems Architect',
     short_name: 'Ashok Pasala',
     description:
-      'Portfolio of Ashok Pasala — Full Stack Developer, AI Systems Engineer, and founder of Norveth. Building AI infrastructure and intelligent software.',
+      'Executive hub & architecture portal of Ashok Pasala. Founder & Systems Architect of Norveth, engineering autonomous AI infrastructure and high-scale distributed backends.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#ffffff',
+    theme_color: '#0a0a0a',
     icons: [
       {
         src: '/icon-192x192.png',
