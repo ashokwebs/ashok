@@ -29,9 +29,9 @@ export default function Hero() {
           <div className="flex justify-center">
             <div className="badge-founder animate-slide-in-up flex-wrap justify-center text-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 max-w-full">
               <span className="flex h-2 w-2 shrink-0 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span className="font-semibold text-white/95 text-[11px] sm:text-xs">Founder @ Varellen &amp; Norveth</span>
+              <span className="font-semibold text-white/95 text-[11px] sm:text-xs">Founder @ Varellen, Norveth &amp; OSPRED</span>
               <span className="text-white/20 font-normal hidden xs:inline">•</span>
-              <span className="text-neutral-400 font-mono text-[10px] sm:text-[11px]">31 Hackathons • 22+ Systems</span>
+              <span className="text-neutral-400 font-mono text-[10px] sm:text-[11px]">50+ Hackathons • 40+ Architectures</span>
             </div>
           </div>
 
@@ -44,16 +44,16 @@ export default function Hero() {
               Ashok Pasala
               <span className="sr-only">
                 {' '}
-                — Founder of Varellen Technologies &amp; Norveth | AI Systems Architect
+                — Founder of Varellen Technologies &amp; Norveth | AI &amp; Quantitative Systems Architect
               </span>
             </h1>
 
             <p className="text-base sm:text-2xl md:text-3xl font-light text-neutral-200 tracking-tight max-w-3xl mx-auto leading-snug px-2">
-              Architecting <span className="font-semibold text-white">Autonomous AI Infrastructure</span>, Multi-Agent Swarms &amp; High-Scale Platforms.
+              Architecting <span className="font-semibold text-white">Autonomous AI Infrastructure</span>, Quant ML Trading Engines &amp; Sovereign Systems.
             </p>
 
             <p className="text-xs sm:text-base text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed px-2">
-              Founder &amp; CEO of <strong className="font-medium text-neutral-200">Varellen Technologies</strong> and Systems Architect at <strong className="font-medium text-neutral-200">Norveth</strong>. Builder of 22+ shipped systems across 31 hackathons (Vector AI, CompanyBrain, Qwen Chaos, ResQNet).
+              Founder &amp; CEO of <strong className="font-medium text-neutral-200">Varellen Technologies</strong>, Architect of <strong className="font-medium text-neutral-200">Norveth</strong> (norveth.app), <strong className="font-medium text-neutral-200">OSPRED</strong>, and <strong className="font-medium text-neutral-200">QROS</strong>. Builder of 40+ shipped architectures across 50+ hackathons (Google Cloud, Bank of India, Qwen, SanDisk).
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export default function Hero() {
               aria-label="Explore Ashok Pasala's flagship software systems"
               className="w-full sm:w-auto px-7 sm:px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 active:scale-[0.98] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono shadow-[0_4px_20px_rgba(255,255,255,0.15)] flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>Explore 22+ Systems</span>
+              <span>Explore Master Systems</span>
               <ArrowUpRight size={14} />
             </button>
 
@@ -74,7 +74,7 @@ export default function Hero() {
               className="w-full sm:w-auto px-6 py-3.5 rounded-full border border-white/[0.12] bg-white/[0.04] text-white hover:bg-white/[0.08] hover:border-white/[0.25] active:scale-[0.98] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono flex items-center justify-center gap-2"
             >
               <FileText size={14} />
-              <span>Resume / Spec</span>
+              <span>Executive Spec / Resume</span>
             </a>
 
             <button
@@ -94,7 +94,7 @@ export default function Hero() {
                 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
-                31
+                50+
               </div>
               <div className="text-[10px] sm:text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
                 Hackathons &bull; Global
@@ -106,10 +106,10 @@ export default function Hero() {
                 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
-                22+
+                40+
               </div>
               <div className="text-[10px] sm:text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
-                Shipped AI Systems
+                Shipped Architectures
               </div>
             </div>
 
@@ -154,7 +154,7 @@ export default function Hero() {
                 href="https://devpost.com/ashokashishms/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Ashok Pasala on Devpost (22 Projects, 31 Hackathons)"
+                aria-label="Ashok Pasala on Devpost"
                 className="p-2.5 text-neutral-400 hover:text-white hover:scale-110 active:scale-95 transition-all rounded-full touch-manipulation"
               >
                 <DevpostIcon size={20} />

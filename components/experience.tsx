@@ -6,11 +6,11 @@ const milestones = [
   {
     role: 'Founder & CEO',
     organization: 'Varellen Technologies',
-    domain: 'Enterprise & Systems',
+    domain: 'Enterprise Systems & Digital Platforms',
     period: '2024 — Present',
     badge: 'Flagship Enterprise',
     description:
-      'Guiding venture strategy, high-performance digital platform architecture, and enterprise software engineering at Varellen Technologies. Leading development of scalable systems, AI automation frameworks, and resilient cloud architectures.',
+      'Guiding venture strategy, high-performance digital platform architecture, and enterprise software engineering at Varellen Technologies. Leading development of scalable systems, closed-loop AI automation frameworks, and resilient cloud architectures.',
     tags: ['Enterprise Software', 'Scalable Systems', 'AI Automation', 'Cloud Architecture', 'TypeScript', 'Python'],
   },
   {
@@ -18,30 +18,40 @@ const milestones = [
     organization: 'Norveth',
     domain: 'norveth.app',
     period: '2024 — Present',
-    badge: 'AI Intelligence Platform',
+    badge: 'Engineering Intelligence Platform',
     description:
-      'Architected Norveth from line zero—an AI-powered website intelligence and automated code-level diagnostic platform utilizing real Chromium headless rendering, OWASP Top 10 security scanning, Model Context Protocol (MCP) integrations, and developer CLI tooling. Leading full-lifecycle engineering across distributed scan workers and deterministic AI analysis pipelines.',
-    tags: ['Chromium Headless', 'Model Context Protocol (MCP)', 'OWASP Top 10', 'Distributed Workers', 'FastAPI', 'Next.js'],
+      'Architected Norveth from line zero—an AI-powered website engineering intelligence and dynamic crawling platform utilizing Playwright headless execution, automated OWASP Top 10 security scanning, Model Context Protocol (MCP) integrations, and developer CLI tooling. Engineered distributed scan workers and an Engineering Knowledge Graph reasoning layer.',
+    tags: ['Playwright', 'Model Context Protocol (MCP)', 'OWASP Top 10', 'Engineering Knowledge Graph', 'FastAPI', 'Next.js'],
   },
   {
-    role: 'Multi-Agent Architect & Systems Engineer',
-    organization: 'Global Hackathon Competitor (31 Hackathons)',
+    role: 'Creator & Systems Architect',
+    organization: 'OSPRED & Yaltan',
+    domain: 'Search & MCP Discovery',
+    period: '2024 — Present',
+    badge: 'Discovery Platform',
+    description:
+      'Architected OSPRED—the discovery and search engine for AI agent capabilities, Model Context Protocol (MCP) servers, and reusable skills. Engineered the Yaltan scraping and extraction pipeline, the Canonical Capability Schema, and an automated trust & security verification system.',
+    tags: ['OSPRED', 'Yaltan Pipeline', 'MCP Discovery', 'Canonical Schema', 'Trust & Verification', 'FastAPI'],
+  },
+  {
+    role: 'Quantitative Systems Architect',
+    organization: 'QROS Quant Research',
+    domain: 'Polymarket & ML Trading',
+    period: '2024 — Present',
+    badge: 'Quantitative Trading',
+    description:
+      'Engineered QROS—a high-frequency quantitative research and algorithmic trading platform targeting Polymarket BTC 5-minute prediction markets. Ingests Binance 1-second streaming ticks, trains LightGBM volatility and strike prediction models, and executes backtested paper trading and MM-1 market-making strategies.',
+    tags: ['QROS', 'Polymarket 5-Min', 'Binance 1s Stream', 'LightGBM Models', 'Volatility Forecasting', 'MM-1 Strategy'],
+  },
+  {
+    role: 'Multi-Agent Architect & Hackathon Competitor',
+    organization: '50+ Global Hackathons & Competitions',
     domain: 'Devpost: ashokashishms',
     period: '2024 — Present',
-    badge: '31 Hackathons • 22 Projects',
+    badge: '50+ Hackathons • 40+ Architectures',
     description:
-      'Shipped 22 production-grade AI platforms and software systems across 31 high-stakes global hackathons. Engineered breakthrough architectures including Vector AI (Autonomous C-Suite), CompanyBrain_AI (Enterprise Knowledge Engine), Qwen Chaos (MemoryAgent), ResQNet (Disaster Response Grid), and LaunchLens (Market Due Diligence).',
-    tags: ['The Vector', 'CompanyBrain', 'Qwen Chaos', 'ResQNet', 'LaunchLens', 'SlackMind', 'Agent Momo'],
-  },
-  {
-    role: 'Principal Systems & Full-Stack Architect',
-    organization: 'Independent Technical Advisory',
-    domain: 'Global Remote',
-    period: '2024 — Present',
-    badge: 'Advisory & Systems',
-    description:
-      'Delivering end-to-end distributed system architectures, high-concurrency backend APIs, custom multi-agent orchestration frameworks, and mission-critical database designs for international founders, high-growth startups, and technical clients.',
-    tags: ['Autonomous AI Swarms', 'PostgreSQL & Redis', 'FastAPI & Node.js', 'System Hardening', 'Microservices'],
+      'Shipped 40+ production-grade AI platforms, multi-agent swarms, and low-level systems across 50+ global hackathons. Flagship builds include SlackMind (Google Cloud Rapid Agent), Mule Account Detection (IIT Hyderabad & Bank of India), IWCIS (SanDisk), Qwen Chaos (Qwen Global), and Vector AI (Autonomous Digital C-Suite).',
+    tags: ['SlackMind', 'Mule Detection', 'IWCIS SanDisk', 'The Vector', 'CompanyBrain', 'Qwen Chaos', 'ResQNet'],
   },
   {
     role: 'Computer Science & Distributed Systems',
@@ -50,25 +60,25 @@ const milestones = [
     period: '2024 — 2028',
     badge: 'Academic Core',
     description:
-      'Rigorous academic training and theoretical grounding in Advanced Algorithms, Operating Systems Internals, Distributed Systems, Computer Networks, Database Architecture, and Machine Learning.',
-    tags: ['Distributed Systems', 'Operating Systems', 'Algorithms & Complexity', 'Machine Learning'],
+      'Theoretical grounding and rigorous coursework in Advanced Algorithms, Operating Systems Internals, Distributed Systems, Computer Networks, Database Architecture, and Machine Learning.',
+    tags: ['Distributed Systems', 'Operating Systems Internals', 'Algorithms & Complexity', 'Machine Learning'],
   },
 ]
 
 const hackathons = [
-  { name: 'Qwen Global Hackathon', project: 'Qwen Chaos', focus: 'Self-Persistent MemoryAgent' },
-  { name: 'Google Agentic AI Hackathon', project: 'The Vector / Vector AI', focus: 'Autonomous C-Suite Orchestration' },
-  { name: 'Slack AI Hackathon', project: 'SlackMind', focus: 'Enterprise Agent Swarm Command' },
-  { name: 'Global Disaster Tech', project: 'ResQNet', focus: 'Real-Time Incident Triage & Grid' },
-  { name: 'Venture & Fintech Hackathon', project: 'LaunchLens & CompanyBrain', focus: 'Automated Due Diligence' },
-  { name: 'Bank of India National Hackathon', project: 'SecureLedger', focus: 'FinTech & High-Frequency Security' },
+  { name: 'Google Cloud Rapid Agent Hackathon', project: 'SlackMind', focus: 'Gemini, Vertex AI Data Store & MCP in Slack' },
+  { name: 'IIT Hyderabad + Bank of India Hackathon', project: 'Mule Account Detection', focus: 'Transaction Anomaly Detection & Graph ML' },
+  { name: 'SanDisk Storage Hackathon', project: 'IWCIS Storage Container', focus: 'exFAT File-System Internals & Storage I/O' },
+  { name: 'Qwen Global Hackathon', project: 'Qwen Chaos', focus: 'Self-Persistent Neural MemoryAgent' },
+  { name: 'Google Agentic AI Challenge', project: 'The Vector / Vector AI', focus: 'Autonomous C-Suite Multi-Agent Swarms' },
+  { name: 'Global Disaster Tech Hackathon', project: 'ResQNet', focus: 'Real-Time Incident Triage & Live Stream' },
 ]
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#09090b]">
+    <section id="experience" className="relative w-full py-20 sm:py-32 overflow-hidden bg-[#09090b]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-16">
+        <div className="space-y-12 sm:space-y-16">
           {/* Section Header */}
           <div className="space-y-4 max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
@@ -78,10 +88,10 @@ export default function Experience() {
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
-              Venture &amp; Hackathon Trajectory
+              Venture &amp; Systems Trajectory
             </h2>
-            <p className="text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
-              From founding Varellen Technologies and Norveth to engineering 22+ shipped systems across 31 global hackathons.
+            <p className="text-sm sm:text-lg text-neutral-400 font-light leading-relaxed">
+              From founding Varellen Technologies, Norveth, and OSPRED to engineering 40+ shipped architectures across 50+ global hackathons.
             </p>
           </div>
 
@@ -90,23 +100,23 @@ export default function Experience() {
             {milestones.map((item) => (
               <div
                 key={item.role + item.organization}
-                className="glass-card-interactive p-7 sm:p-9 space-y-6 border border-white/[0.08]"
+                className="glass-card-interactive p-6 sm:p-9 space-y-5 sm:space-y-6 border border-white/[0.08]"
               >
                 {/* Header row */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div className="space-y-1">
                     <div className="flex items-center gap-3">
                       <h3
-                        className="text-xl sm:text-2xl font-bold text-white tracking-tight"
+                        className="text-lg sm:text-2xl font-bold text-white tracking-tight"
                         style={{ fontFamily: 'var(--font-syne)' }}
                       >
                         {item.role}
                       </h3>
-                      <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
+                      <span className="text-[10px] sm:text-xs font-mono px-2.5 py-0.5 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
                         {item.badge}
                       </span>
                     </div>
-                    <div className="text-sm font-mono text-neutral-400 flex items-center gap-2">
+                    <div className="text-xs sm:text-sm font-mono text-neutral-400 flex items-center gap-2">
                       <span className="text-emerald-400 font-medium">{item.organization}</span>
                       <span>•</span>
                       <span>{item.domain}</span>
@@ -119,16 +129,16 @@ export default function Experience() {
                 </div>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed">
+                <p className="text-xs sm:text-base text-neutral-400 font-light leading-relaxed">
                   {item.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 pt-2 border-t border-white/[0.08]">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-2 border-t border-white/[0.08]">
                   {item.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2.5 py-1 text-xs font-mono rounded-md bg-white/[0.04] border border-white/[0.08] text-neutral-300"
+                      className="px-2.5 py-1 text-[11px] sm:text-xs font-mono rounded-md bg-white/[0.04] border border-white/[0.08] text-neutral-300"
                     >
                       {tag}
                     </span>
@@ -139,17 +149,17 @@ export default function Experience() {
           </div>
 
           {/* Hackathons & Strategic Competitions */}
-          <div className="p-8 sm:p-10 rounded-[1.5rem] glass-card space-y-8 border border-white/[0.08]">
+          <div className="p-6 sm:p-10 rounded-2xl sm:rounded-[1.5rem] glass-card space-y-6 sm:space-y-8 border border-white/[0.08]">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <h3
-                  className="text-2xl font-bold text-white tracking-tight"
+                  className="text-xl sm:text-2xl font-bold text-white tracking-tight"
                   style={{ fontFamily: 'var(--font-syne)' }}
                 >
-                  Hackathon Track Record (31 Competitions • 22 Projects)
+                  Hackathon Track Record (50+ Global Competitions • 40+ Architectures)
                 </h3>
-                <p className="text-sm text-neutral-400 font-light mt-1">
-                  Rapid engineering execution across international AI hackathons, foundation model challenges, and enterprise platforms.
+                <p className="text-xs sm:text-sm text-neutral-400 font-light mt-1">
+                  Rapid engineering execution across international foundation model challenges, national FinTech initiatives, and low-level storage systems.
                 </p>
               </div>
               <a
@@ -159,20 +169,20 @@ export default function Experience() {
                 className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 hover:text-emerald-300"
               >
                 <Trophy size={16} />
-                <span>View Full Devpost Profile ↗</span>
+                <span>View Devpost Profile ↗</span>
               </a>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
               {hackathons.map((hack) => (
                 <div
                   key={hack.name}
-                  className="p-5 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-2 hover:border-white/[0.2] transition-colors"
+                  className="p-4 sm:p-5 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-2 hover:border-white/[0.2] transition-colors"
                 >
-                  <div className="text-xs font-mono uppercase tracking-wider text-emerald-400">
+                  <div className="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-emerald-400">
                     {hack.project}
                   </div>
-                  <div className="text-sm font-bold text-white leading-snug">
+                  <div className="text-xs sm:text-sm font-bold text-white leading-snug">
                     {hack.name}
                   </div>
                   <p className="text-xs text-neutral-400 font-light">

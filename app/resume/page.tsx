@@ -5,7 +5,7 @@ import { ArrowLeft, Download } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Executive Resume & Systems Architecture Spec',
   description:
-    'Official executive resume of Ashok Pasala — Founder & CEO of Varellen Technologies, Founder & Systems Architect of Norveth, AI Systems Architect. 31 Hackathons, 22 Shipped Systems.',
+    'Official executive resume of Ashok Pasala — Founder & CEO of Varellen Technologies, Systems Architect of Norveth, OSPRED, QROS. 50+ Hackathons, 40+ Shipped Architectures.',
 }
 
 export default function ResumePage() {
@@ -42,7 +42,7 @@ export default function ResumePage() {
               Ashok Pasala
             </h1>
             <p className="text-sm font-semibold text-neutral-700">
-              Founder &amp; CEO (Varellen Technologies) • Founder &amp; Systems Architect (Norveth) • AI Systems Architect
+              Founder &amp; CEO (Varellen Technologies) • Founder &amp; Systems Architect (Norveth, OSPRED, QROS)
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export default function ResumePage() {
             Executive Summary
           </h2>
           <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed text-justify">
-            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> building sovereign AI infrastructure, autonomous multi-agent swarms, and high-concurrency distributed backend systems from first principles. Founder &amp; CEO of <strong>Varellen Technologies</strong> and <strong>Norveth</strong> (<a href="https://norveth.app" className="underline font-medium">norveth.app</a>). Track record of shipping <strong>22+ production-grade AI platforms across 31 global hackathons</strong> on Devpost. Computer Science &amp; Distributed Systems background at <strong>VIT-AP University</strong> (2024–2028).
+            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder &amp; CEO of <strong>Varellen Technologies</strong>, Architect of <strong>Norveth</strong> (<a href="https://norveth.app" className="underline font-medium">norveth.app</a>), <strong>OSPRED</strong>, and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
           </p>
         </section>
 
@@ -103,7 +103,7 @@ export default function ResumePage() {
               <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | ENTERPRISE &amp; SYSTEMS</span>
             </div>
             <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1 leading-relaxed">
-              <li>Guiding venture roadmap and system design for enterprise digital platforms, autonomous AI workflow automation pipelines, and high-throughput cloud infrastructure.</li>
+              <li>Guiding venture roadmap and system design for enterprise digital platforms, closed-loop AI automation pipelines, and high-throughput cloud infrastructure.</li>
               <li>Architected fault-tolerant microservice meshes with sub-millisecond API dispatch, zero-trust security postures, and automated Docker/K8s CI/CD pipelines.</li>
             </ul>
           </div>
@@ -114,34 +114,61 @@ export default function ResumePage() {
                 <span className="text-sm font-bold text-[#0f172a]">Norveth</span>
                 <span className="text-xs font-semibold text-neutral-600"> — Founder &amp; Systems Architect (<a href="https://norveth.app" className="underline">norveth.app</a>)</span>
               </div>
-              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | AI INTELLIGENCE PLATFORM</span>
+              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | ENGINEERING INTELLIGENCE</span>
             </div>
             <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1 leading-relaxed">
-              <li>Architected full-lifecycle website intelligence platform utilizing <strong>real Chromium headless rendering</strong>, <strong>Model Context Protocol (MCP)</strong> server integration, and automated OWASP Top 10 security/performance diagnostics.</li>
-              <li>Engineered distributed scan workers, deterministic AI code remediation pipelines, and developer CLI tools for code-level diagnostics.</li>
+              <li>Architected full-lifecycle website engineering intelligence platform utilizing <strong>Playwright dynamic headless crawling</strong> with exponential backoff &amp; LLM failover, <strong>Model Context Protocol (MCP)</strong> tooling, and automated OWASP Top 10 security/performance diagnostics.</li>
+              <li>Engineered Engineering Knowledge Graph reasoning layer mapping findings into interactive architecture diagrams and deterministic code fixes.</li>
             </ul>
           </div>
 
           <div className="space-y-1.5">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
               <div>
-                <span className="text-sm font-bold text-[#0f172a]">Independent Systems Engineering &amp; Strategic Advisory</span>
-                <span className="text-xs font-semibold text-neutral-600"> — Principal Technical Consultant</span>
+                <span className="text-sm font-bold text-[#0f172a]">OSPRED &amp; Yaltan</span>
+                <span className="text-xs font-semibold text-neutral-600"> — Creator &amp; Systems Architect</span>
               </div>
-              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | GLOBAL REMOTE</span>
+              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | AI CAPABILITY SEARCH</span>
             </div>
             <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1 leading-relaxed">
-              <li>Delivering high-concurrency backend APIs, custom multi-agent orchestration frameworks, and mission-critical database designs for international founders.</li>
-              <li>Conducted empirical research in agent convergence, vector embedding spaces, and proactive cyber attack surface mapping (OSPRED framework).</li>
+              <li>Engineered autonomous discovery and indexing engine for Model Context Protocol (MCP) servers, reusable AI skills, and plugins using the Yaltan scraping pipeline.</li>
+              <li>Designed Canonical Capability Schema and automated tool verification engine with SSRF/prompt-injection safety metadata scoring.</li>
+            </ul>
+          </div>
+
+          <div className="space-y-1.5">
+            <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+              <div>
+                <span className="text-sm font-bold text-[#0f172a]">QROS Quantitative Research</span>
+                <span className="text-xs font-semibold text-neutral-600"> — Quantitative Systems Architect</span>
+              </div>
+              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | QUANT ML TRADING</span>
+            </div>
+            <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1 leading-relaxed">
+              <li>Built high-frequency trading platform targeting <strong>Polymarket BTC 5-minute prediction markets</strong> using Binance 1-second streaming tick feeds.</li>
+              <li>Trained LightGBM Scale/Shape ML models predicting strike settlement probabilities ($p_{up} = P(S_T &gt; K)$) and volatility alongside an MM-1 market-making engine.</li>
             </ul>
           </div>
         </section>
 
-        {/* Flagship Architectures & Shipped Systems (22+ Projects) */}
+        {/* Flagship Architectures & Hackathon Systems (50+ Hackathons) */}
         <section className="mb-6 space-y-3.5">
           <h2 className="text-xs font-mono font-extrabold uppercase tracking-widest text-[#0f172a] border-b border-neutral-300 pb-1">
-            Flagship Architectures &amp; Shipped Systems (22+ Projects)
+            Flagship Architectures &amp; Hackathon Systems (50+ Hackathons)
           </h2>
+
+          <div className="space-y-1">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-[#0f172a]">SlackMind Agent Command Center</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-neutral-100 text-neutral-800 font-medium">Google Cloud Rapid Agent</span>
+              </div>
+              <span className="text-xs font-mono text-neutral-500">Gemini, Vertex AI Data Store, MCP, Slack Bolt, Python</span>
+            </div>
+            <p className="text-xs text-neutral-700 leading-relaxed">
+              Autonomous AI agent orchestration kernel coordinating intelligent agent swarms directly inside Slack with Gemini models, Vertex AI Search Data Store, and MCP tool routing.
+            </p>
+          </div>
 
           <div className="space-y-1">
             <div className="flex items-center justify-between">
@@ -159,39 +186,26 @@ export default function ResumePage() {
           <div className="space-y-1">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-[#0f172a]">CompanyBrain_AI &amp; Qwen Chaos MemoryAgent</span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-neutral-100 text-neutral-800 font-medium">Enterprise &amp; Neural AI</span>
+                <span className="text-xs font-bold text-[#0f172a]">Mule Account Detection System</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-neutral-100 text-neutral-800 font-medium">Bank of India &amp; IIT Hyderabad</span>
               </div>
-              <span className="text-xs font-mono text-neutral-500">Python, Vector Search, FastAPI, Qwen LLM, PostgreSQL</span>
+              <span className="text-xs font-mono text-neutral-500">Graph ML, Anomaly Detection, Python, FastAPI, FinTech</span>
             </div>
             <p className="text-xs text-neutral-700 leading-relaxed">
-              Autonomous enterprise AI executive fusing contracts, financials, and roadmaps alongside a self-persistent MemoryAgent with cross-session state recall engineered for the Qwen Global Hackathon.
+              High-frequency financial crime and suspicious transaction detection system identifying illicit mule account networks in real-time.
             </p>
           </div>
 
           <div className="space-y-1">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-[#0f172a]">ResQNet Disaster Response Grid &amp; LaunchLens</span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-neutral-100 text-neutral-800 font-medium">Crisis AI &amp; Due Diligence</span>
+                <span className="text-xs font-bold text-[#0f172a]">IWCIS Storage Architecture &amp; Qwen Chaos</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-neutral-100 text-neutral-800 font-medium">SanDisk &amp; Qwen Global</span>
               </div>
-              <span className="text-xs font-mono text-neutral-500">Next.js 16, Node.js, WebSockets, Geospatial AI, Python</span>
+              <span className="text-xs font-mono text-neutral-500">exFAT Internals, Container Architecture, Qwen LLM, Vector Memory</span>
             </div>
             <p className="text-xs text-neutral-700 leading-relaxed">
-              Real-time crisis orchestration grid for incident severity triage and life-saving resource dispatch paired with a multi-model market validation engine for VC due diligence.
-            </p>
-          </div>
-
-          <div className="space-y-1">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-[#0f172a]">OSPRED Autonomous Security Engine &amp; ShadowForge</span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-neutral-100 text-neutral-800 font-medium">Security &amp; Web3</span>
-              </div>
-              <span className="text-xs font-mono text-neutral-500">Python, FastAPI, Docker, Linux Hardening, Solidity, Web3.js</span>
-            </div>
-            <p className="text-xs text-neutral-700 leading-relaxed">
-              Proactive cybersecurity surface discovery, automated threat intelligence synthesis, and zero-trust Linux hardening combined with EVM on-chain intelligence auditing.
+              Containerized exFAT file-system storage optimization (SanDisk) paired with a self-persistent neural MemoryAgent with cross-session state recall (Qwen Global).
             </p>
           </div>
         </section>
@@ -202,24 +216,24 @@ export default function ResumePage() {
             Technical Arsenal &amp; Domain Mastery
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 text-xs">
-            <div className="font-mono font-bold text-[#0f172a] uppercase text-[11px]">Autonomous AI:</div>
-            <div className="sm:col-span-3 text-neutral-700">Multi-Agent Swarms, Model Context Protocol (MCP), LangChain, LlamaIndex, RAG Pipelines, Vector DBs (ChromaDB, Pinecone), Prompt Engineering.</div>
+            <div className="font-mono font-bold text-[#0f172a] uppercase text-[11px]">Autonomous AI &amp; Quant:</div>
+            <div className="sm:col-span-3 text-neutral-700">Multi-Agent Swarms, Model Context Protocol (MCP), LightGBM, Quantitative Volatility, LangChain, RAG Pipelines, Vector DBs (ChromaDB, Pinecone).</div>
 
             <div className="font-mono font-bold text-[#0f172a] uppercase text-[11px]">Languages:</div>
             <div className="sm:col-span-3 text-neutral-700">Python, TypeScript, JavaScript, Go, Rust, Java, C/C++, SQL, Bash/Shell, Solidity.</div>
 
             <div className="font-mono font-bold text-[#0f172a] uppercase text-[11px]">Backend &amp; Infra:</div>
-            <div className="sm:col-span-3 text-neutral-700">FastAPI, Node.js, Express, Next.js 16 (App Router), React 19, PostgreSQL, Redis Streams, MongoDB, Docker, Kubernetes, AWS, Nginx, CI/CD.</div>
+            <div className="sm:col-span-3 text-neutral-700">FastAPI, Node.js, Express, Next.js 16 (App Router), React 19, PostgreSQL, Redis Streams, Docker, Kubernetes, Playwright, Cloudflare Tunnels.</div>
 
             <div className="font-mono font-bold text-[#0f172a] uppercase text-[11px]">Security &amp; Web3:</div>
-            <div className="sm:col-span-3 text-neutral-700">OWASP Top 10 Hardening, Attack-Surface Mapping, Zero-Trust Architecture, EVM Smart Contracts, Cryptographic Protocols, Network Triage.</div>
+            <div className="sm:col-span-3 text-neutral-700">OWASP Top 10 Hardening, SSRF Protection, Zero-Trust Architecture, EVM Smart Contracts, Cryptographic Protocols, Graph Anomaly Detection.</div>
           </div>
         </section>
 
-        {/* Education & 31 Hackathons */}
+        {/* Education & 50+ Hackathons */}
         <section className="space-y-2">
           <h2 className="text-xs font-mono font-extrabold uppercase tracking-widest text-[#0f172a] border-b border-neutral-300 pb-1">
-            Education &amp; 31 Hackathons Track Record
+            Education &amp; 50+ Hackathons Track Record
           </h2>
           <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
             <div>
@@ -232,7 +246,7 @@ export default function ResumePage() {
             <strong>Core Focus:</strong> Distributed Systems, Operating Systems Internals, Advanced Algorithms, Computer Networks, Database Architecture, Machine Learning.
           </div>
           <div className="text-xs text-neutral-600">
-            <strong>31 Global Hackathons (22 Projects):</strong> Google Agentic AI Hackathon, Qwen Global Hackathon, Slack AI Hackathon, Global Disaster Tech, Bank of India National Hackathon.
+            <strong>50+ Global Hackathons &amp; Challenges:</strong> Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk Storage, Qwen Global, Slack AI, Google Devpost/XPRIZE.
           </div>
         </section>
       </div>

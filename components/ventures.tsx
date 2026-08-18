@@ -1,17 +1,17 @@
 'use client'
 
-import { ArrowUpRight, CheckCircle2 } from 'lucide-react'
+import { ArrowUpRight, CheckCircle2, Globe, Search, ShieldCheck, Sparkles, Terminal, Cpu } from 'lucide-react'
 
 export default function Ventures() {
   return (
-    <section id="ventures" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#0c0d10] border-y border-white/[0.08]">
+    <section id="ventures" className="relative w-full py-20 sm:py-32 overflow-hidden bg-[#0c0d10] border-y border-white/[0.08]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-16">
+        <div className="space-y-12 sm:space-y-16">
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-                <span>02 // Core Ventures</span>
+                <span>02 // Core Ventures &amp; Platforms</span>
               </div>
               <h2
                 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
@@ -19,21 +19,21 @@ export default function Ventures() {
               >
                 Venture Ecosystem
               </h2>
-              <p className="text-base sm:text-lg text-neutral-400 font-light">
-                Deep-tech initiatives and enterprise platforms founded and architected by Ashok Pasala.
+              <p className="text-sm sm:text-lg text-neutral-400 font-light">
+                Deep-tech initiatives, engineering intelligence platforms, and discovery infrastructure founded and architected by Ashok Pasala.
               </p>
             </div>
 
             <div className="text-xs font-mono text-neutral-500 uppercase tracking-widest self-start md:self-auto">
-              [Sovereign Software &bull; Global Scale]
+              [Sovereign Software &bull; 50+ Hackathons Grounded]
             </div>
           </div>
 
-          {/* Ventures Dual Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Ventures Tri-Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Venture 1: Varellen Technologies */}
-            <article className="glass-card-interactive p-6 sm:p-8 md:p-10 flex flex-col justify-between space-y-8 group border border-white/[0.08]">
-              <div className="space-y-6">
+            <article className="glass-card-interactive p-6 sm:p-8 flex flex-col justify-between space-y-6 group border border-white/[0.08]">
+              <div className="space-y-5">
                 {/* Badge row */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
@@ -45,53 +45,53 @@ export default function Ventures() {
                         Founder &amp; CEO
                       </span>
                       <h3
-                        className="text-2xl font-bold text-white tracking-tight"
+                        className="text-xl font-bold text-white tracking-tight"
                         style={{ fontFamily: 'var(--font-syne)' }}
                       >
                         Varellen Technologies
                       </h3>
                     </div>
                   </div>
-                  <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
+                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
                     Enterprise
                   </span>
                 </div>
 
                 <div className="text-xs font-mono text-emerald-400 font-medium">
-                  Scalable Digital Platforms &bull; High-Throughput Infrastructure
+                  Scalable Digital Platforms &bull; Autonomous AI Systems
                 </div>
 
-                <p className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed">
-                  Varellen Technologies is an advanced enterprise software and deep-tech venture engineering custom digital platforms, autonomous AI workflow automation systems, and high-concurrency cloud backends for modern businesses.
+                <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
+                  Varellen Technologies is an advanced enterprise systems engineering and software venture founded by Ashok Pasala. Focused on building high-performance digital platforms, closed-loop AI automation frameworks, and resilient microservice architectures.
                 </p>
 
-                {/* Architecture Highlights */}
-                <div className="space-y-2.5 pt-2">
-                  <div className="text-xs font-mono uppercase tracking-wider text-white font-semibold">
+                {/* Core Pillars */}
+                <div className="space-y-2 pt-2">
+                  <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
                     Core Capabilities:
                   </div>
-                  <ul className="space-y-2 text-xs font-mono text-neutral-300">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Distributed microservices &amp; sub-millisecond API meshes.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Autonomous AI workflow engines &amp; agentic pipelines.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Hardened, zero-downtime cloud infrastructure (AWS/Docker/K8s).</span>
-                    </li>
-                  </ul>
+                  <div className="space-y-1.5 text-xs text-neutral-300">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Enterprise microservice meshes &amp; fault-tolerant APIs</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Autonomous AI workflow orchestration pipelines</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Zero-trust cloud infrastructure and CI/CD automation</span>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Stack Tags */}
+                {/* Tech Badges */}
                 <div className="flex flex-wrap gap-1.5 pt-2">
-                  {['Enterprise SaaS', 'Distributed Backend', 'FastAPI', 'Next.js 16', 'PostgreSQL', 'Docker'].map((tag) => (
+                  {['Distributed Systems', 'FastAPI', 'Next.js 16', 'Docker', 'PostgreSQL'].map((tag) => (
                     <span
                       key={tag}
-                      className="px-2.5 py-1 text-xs font-mono rounded bg-white/[0.04] border border-white/[0.08] text-neutral-300"
+                      className="px-2 py-0.5 text-[10px] sm:text-xs font-mono rounded bg-white/[0.04] border border-white/[0.08] text-neutral-300"
                     >
                       {tag}
                     </span>
@@ -99,23 +99,24 @@ export default function Ventures() {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-white/[0.08] flex items-center justify-between">
+              {/* Actions */}
+              <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between">
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 text-xs font-mono font-medium text-white hover:text-neutral-300 transition-colors"
+                  className="inline-flex items-center gap-1 text-xs font-mono font-medium text-white hover:text-neutral-300 transition-colors"
                 >
-                  <span>Inquire Enterprise Mandate</span>
-                  <ArrowUpRight size={14} />
+                  <span>Enterprise Inquiry</span>
+                  <ArrowUpRight size={13} />
                 </a>
-                <span className="text-[11px] font-mono text-neutral-500">
-                  ashokpasala.vercel.app
+                <span className="text-[10px] font-mono text-neutral-500">
+                  Global Operations
                 </span>
               </div>
             </article>
 
-            {/* Venture 2: Norveth */}
-            <article className="glass-card-interactive p-6 sm:p-8 md:p-10 flex flex-col justify-between space-y-8 group border border-white/[0.08]">
-              <div className="space-y-6">
+            {/* Venture 2: Norveth (norveth.app) */}
+            <article className="glass-card-interactive p-6 sm:p-8 flex flex-col justify-between space-y-6 group border border-white/[0.08]">
+              <div className="space-y-5">
                 {/* Badge row */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
@@ -124,56 +125,56 @@ export default function Ventures() {
                     </div>
                     <div>
                       <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
-                        Founder &amp; Systems Architect
+                        Founder &amp; Architect
                       </span>
                       <h3
-                        className="text-2xl font-bold text-white tracking-tight"
+                        className="text-xl font-bold text-white tracking-tight"
                         style={{ fontFamily: 'var(--font-syne)' }}
                       >
                         Norveth
                       </h3>
                     </div>
                   </div>
-                  <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
-                    Live Platform
+                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
+                    norveth.app
                   </span>
                 </div>
 
                 <div className="text-xs font-mono text-emerald-400 font-medium">
-                  AI Website Intelligence &bull; Real Chromium Engine
+                  Engineering Intelligence &bull; Dynamic Playwright Crawler
                 </div>
 
-                <p className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed">
-                  Norveth is an engineering-first website intelligence platform that executes real Chromium headless rendering, automated OWASP Top 10 security scanning, accessibility (WCAG 2.1) diagnostics, and Model Context Protocol (MCP) tool integrations.
+                <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
+                  Norveth is an AI-powered website engineering intelligence and dynamic crawling platform engineered by Ashok Pasala. Powered by Playwright headless execution, automated OWASP Top 10 security mapping, and an Engineering Knowledge Graph reasoning layer.
                 </p>
 
-                {/* Architecture Highlights */}
-                <div className="space-y-2.5 pt-2">
-                  <div className="text-xs font-mono uppercase tracking-wider text-white font-semibold">
+                {/* Core Pillars */}
+                <div className="space-y-2 pt-2">
+                  <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
                     Core Capabilities:
                   </div>
-                  <ul className="space-y-2 text-xs font-mono text-neutral-300">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Empirical Chromium rendering &mdash; zero shallow simulations.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Model Context Protocol (MCP) server &amp; CLI for AI agents.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Actionable, deterministic AI-generated code patches.</span>
-                    </li>
-                  </ul>
+                  <div className="space-y-1.5 text-xs text-neutral-300">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Playwright async crawler with retry &amp; failover logic</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Security hardening (SSRF, CSP, HSTS, Prompt Defenses)</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Model Context Protocol (MCP) server &amp; CLI diagnostics</span>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Stack Tags */}
+                {/* Tech Badges */}
                 <div className="flex flex-wrap gap-1.5 pt-2">
-                  {['Chromium Headless', 'MCP Integration', 'OWASP Security', 'FastAPI', 'Deterministic AI', 'CLI'].map((tag) => (
+                  {['Playwright', 'MCP Protocol', 'OWASP Top 10', 'Knowledge Graph', 'Python'].map((tag) => (
                     <span
                       key={tag}
-                      className="px-2.5 py-1 text-xs font-mono rounded bg-white/[0.04] border border-white/[0.08] text-neutral-300"
+                      className="px-2 py-0.5 text-[10px] sm:text-xs font-mono rounded bg-white/[0.04] border border-white/[0.08] text-neutral-300"
                     >
                       {tag}
                     </span>
@@ -181,18 +182,102 @@ export default function Ventures() {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-white/[0.08] flex items-center justify-between">
+              {/* Actions */}
+              <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between">
                 <a
                   href="https://norveth.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-mono font-medium text-white hover:text-neutral-300 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
                 >
-                  <span>Launch norveth.app</span>
-                  <ArrowUpRight size={14} />
+                  <Globe size={13} />
+                  <span>Launch norveth.app ↗</span>
                 </a>
-                <span className="text-[11px] font-mono text-neutral-500">
-                  norveth.app
+                <span className="text-[10px] font-mono text-neutral-500">
+                  Live SaaS
+                </span>
+              </div>
+            </article>
+
+            {/* Venture 3: OSPRED & Yaltan */}
+            <article className="glass-card-interactive p-6 sm:p-8 flex flex-col justify-between space-y-6 group border border-white/[0.08]">
+              <div className="space-y-5">
+                {/* Badge row */}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-white text-black flex items-center justify-center font-mono font-bold text-sm tracking-wider shadow-md">
+                      OS
+                    </div>
+                    <div>
+                      <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
+                        Creator &amp; Architect
+                      </span>
+                      <h3
+                        className="text-xl font-bold text-white tracking-tight"
+                        style={{ fontFamily: 'var(--font-syne)' }}
+                      >
+                        OSPRED &amp; Yaltan
+                      </h3>
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
+                    Search Engine
+                  </span>
+                </div>
+
+                <div className="text-xs font-mono text-emerald-400 font-medium">
+                  MCP, Skills &amp; AI Capability Discovery Platform
+                </div>
+
+                <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
+                  OSPRED is an autonomous discovery and indexing engine for Model Context Protocol (MCP) servers, reusable AI skills, and plugins. Built on the Yaltan scraping connector pipeline, Canonical Capability Schema, and security trust scoring.
+                </p>
+
+                {/* Core Pillars */}
+                <div className="space-y-2 pt-2">
+                  <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
+                    Core Capabilities:
+                  </div>
+                  <div className="space-y-1.5 text-xs text-neutral-300">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Yaltan multi-source GitHub &amp; API discovery connectors</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Canonical Capability Schema for AI tool indexing</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                      <span>Automated tool verification and security namespace rating</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tech Badges */}
+                <div className="flex flex-wrap gap-1.5 pt-2">
+                  {['OSPRED', 'Yaltan Pipeline', 'MCP Discovery', 'Vector Search', 'FastAPI'].map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-0.5 text-[10px] sm:text-xs font-mono rounded bg-white/[0.04] border border-white/[0.08] text-neutral-300"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Actions */}
+              <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center gap-1 text-xs font-mono font-medium text-white hover:text-neutral-300 transition-colors"
+                >
+                  <span>Explore Search Architecture</span>
+                  <ArrowUpRight size={13} />
+                </a>
+                <span className="text-[10px] font-mono text-neutral-500">
+                  Major Platform
                 </span>
               </div>
             </article>
