@@ -1,6 +1,6 @@
 'use client'
 
-import { BookOpen, ArrowUpRight, FileCode, Cpu, Shield, BrainCircuit, TrendingUp, Search } from 'lucide-react'
+import { ArrowUpRight, Shield, BrainCircuit, TrendingUp, Search } from 'lucide-react'
 
 const publications = [
   {

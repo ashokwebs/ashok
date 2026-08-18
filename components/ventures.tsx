@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRight, CheckCircle2, Globe, Search, ShieldCheck, Sparkles, Terminal, Cpu } from 'lucide-react'
+import { ArrowUpRight, CheckCircle2, Globe } from 'lucide-react'
 
 export default function Ventures() {
   return (

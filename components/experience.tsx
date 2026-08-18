@@ -1,6 +1,6 @@
 'use client'
 
-import { Award, Trophy, Zap, Shield, Sparkles } from 'lucide-react'
+import { Trophy } from 'lucide-react'
 
 const milestones = [
   {
