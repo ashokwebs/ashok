@@ -25,7 +25,7 @@ export default function Ventures() {
             </div>
 
             <div className="text-xs font-mono text-neutral-500 uppercase tracking-widest self-start md:self-auto">
-              [Sovereign Software &bull; 50+ Hackathons Grounded]
+              [Sovereign Software • 50+ Hackathons Grounded]
             </div>
           </div>
 
@@ -58,7 +58,7 @@ export default function Ventures() {
                 </div>
 
                 <div className="text-xs font-mono text-emerald-400 font-medium">
-                  Scalable Digital Platforms &bull; Autonomous AI Systems
+                  Scalable Digital Platforms • Autonomous AI Systems
                 </div>
 
                 <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
@@ -141,7 +141,7 @@ export default function Ventures() {
                 </div>
 
                 <div className="text-xs font-mono text-emerald-400 font-medium">
-                  Engineering Intelligence &bull; Dynamic Playwright Crawler
+                  Engineering Intelligence • Dynamic Playwright Crawler
                 </div>
 
                 <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">

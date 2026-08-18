@@ -221,13 +221,13 @@ export default function SystemConsole() {
           <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">[PHILOSOPHY] First-Principles Systems Engineering:</p>
             <p className="text-neutral-400 text-xs">
-              1. First-Principles Reductionism &bull; Strip away framework bloat.
+              1. First-Principles Reductionism • Strip away framework bloat.
             </p>
             <p className="text-neutral-400 text-xs">
-              2. Radical Autonomous Automation &bull; Closed-loop agent swarms with shared memory.
+              2. Radical Autonomous Automation • Closed-loop agent swarms with shared memory.
             </p>
             <p className="text-neutral-400 text-xs">
-              3. Sovereign Resilience &bull; Zero-trust security and sub-millisecond execution.
+              3. Sovereign Resilience • Zero-trust security and sub-millisecond execution.
             </p>
           </div>
         )

@@ -72,7 +72,7 @@ export default function ResearchNotes() {
             </div>
 
             <div className="text-xs font-mono text-neutral-500 uppercase tracking-widest self-start md:self-auto">
-              [Open Systems Research &bull; Technical Specs]
+              [Open Systems Research • Technical Specs]
             </div>
           </div>
 
