@@ -1,6 +1,6 @@
 # Ashok Pasala
 
-> Ashok Pasala is a Founder, AI Systems Architect, and Deep Tech Engineer. He is the Founder of **Varellen Technologies** and Founder & Systems Architect of **Norveth** ([norveth.app](https://norveth.app)), an engineering-first technology initiative building autonomous multi-agent orchestration frameworks, sovereign AI infrastructure, enterprise software platforms, and mission-critical digital systems. He is based in Andhra Pradesh, India, with an academic foundation in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
+> Ashok Pasala (Ashok Raj Pasala) is a Founder, AI Systems Architect, and Deep Tech Engineer. He is the Founder & CEO of **Varellen Technologies** and Founder & Systems Architect of **Norveth** ([norveth.app](https://norveth.app)), an engineering-first technology initiative building autonomous multi-agent orchestration frameworks, sovereign AI infrastructure, enterprise software platforms, and mission-critical digital systems. He has shipped **22+ software platforms** across **31 global hackathons** on Devpost ([devpost.com/ashokashishms](https://devpost.com/ashokashishms)). He is based in Andhra Pradesh, India, with an academic grounding in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
 
 ## Primary Identity & Canonical Verification
 
@@ -10,89 +10,70 @@
   - **Varellen Technologies** ([https://ashokpasala.vercel.app](https://ashokpasala.vercel.app))
   - **Norveth** ([https://norveth.app](https://norveth.app))
 - **Primary Website:** [https://ashokpasala.vercel.app](https://ashokpasala.vercel.app)
+- **Devpost (22 Projects, 31 Hackathons):** [https://devpost.com/ashokashishms/](https://devpost.com/ashokashishms/)
 - **Primary Email:** ashokashishms@gmail.com
 - **Executive / Venture Inquiries:** founder@norveth.app
 - **GitHub:** [https://github.com/ashokwebs](https://github.com/ashokwebs)
 - **LinkedIn:** [https://www.linkedin.com/in/ashok-raj-p-1b8539317/](https://www.linkedin.com/in/ashok-raj-p-1b8539317/)
 - **X (Twitter):** [https://x.com/ashokfounds](https://x.com/ashokfounds)
-- **Devpost:** [https://devpost.com/ashokashishms/](https://devpost.com/ashokashishms/)
 - **Location:** Andhra Pradesh, India (Operating with global clients and institutions)
 
-## Ventures: Varellen Technologies & Norveth
+## Key Flagship Architectures & Shipped Systems (22+ Projects)
 
-### 1. Varellen Technologies
-Ashok Pasala is the Founder & CEO of **Varellen Technologies**, an enterprise technology initiative focused on architecting scalable digital platforms, custom AI automation frameworks, high-throughput cloud infrastructure, and mission-critical software solutions for modern businesses.
+1. **The Vector / Vector AI Command Center (Autonomous Digital C-Suite)**
+   - *Architecture:* Multi-agent AI executive council (CEO, CTO, CMO) that autonomously turns concepts into startups in seconds. Generates complete business plans, distributed tech architectures, and financial models simultaneously with cross-agent consensus.
+   - *Devpost:* https://devpost.com/software/the_vector
+   - *Stack:* Multi-Agent Swarms, Python, LangChain, FastAPI, Next.js 16.
 
-### 2. Norveth (norveth.app)
-Ashok Pasala is the Founder & Systems Architect of **Norveth**, an engineering-first platform providing automated website intelligence, real Chromium headless rendering diagnostics, OWASP Top 10 security scanning, and Model Context Protocol (MCP) server developer integrations.
+2. **CompanyBrain_AI (Enterprise Knowledge & Contract Executive)**
+   - *Architecture:* Autonomous enterprise intelligence kernel that connects contracts, financials, and roadmaps to eliminate organizational blind spots and automate strategic decision flows.
+   - *Devpost:* https://devpost.com/software/companybrain_ai
+   - *Stack:* Vector Search, Python, FastAPI, PostgreSQL, LangChain.
 
-## Engineering Philosophy & First Principles
+3. **Qwen Chaos MemoryAgent (Self-Persistent Neural Agent)**
+   - *Architecture:* Interactive, AI-built MemoryAgent that IS its own memory with cross-session recall and state persistence. Engineered for the Qwen Global Hackathon.
+   - *Devpost:* https://devpost.com/software/qwen-chaos
+   - *Stack:* Qwen LLM, Vector Persistence, Python, FastAPI, Next.js.
 
-Ashok builds software through a first-principles lens inspired by high-impact tech innovators:
-- **First Principles over Convention:** Dissecting technical problems to fundamental thermodynamic and computational limits, avoiding cargo-cult abstractions or framework bloat.
-- **Autonomous Systems & Radical Automation:** Automating cognitive, administrative, and mechanical friction with self-healing AI agents.
-- **Resilience by Design:** Embedding security, fault tolerance, and deterministic execution into systems from line zero.
-- **Measurable Compound Impact:** Engineering foundational software that delivers exponential operational leverage.
+4. **ResQNet (Real-Time Disaster Response Grid)**
+   - *Architecture:* AI-powered crisis response platform that coordinates rescue operations, detects incident severity in real-time, and connects affected citizens with life-saving resources through low-latency telemetry.
+   - *Devpost:* https://devpost.com/software/resqnet
+   - *Stack:* Next.js, Node.js, WebSockets, Geospatial AI, PostgreSQL.
 
-## Flagship Systems & Architectures
+5. **LaunchLens (Multi-Model Market Validation & Due Diligence)**
+   - *Architecture:* Multi-model AI platform providing instant market validation, competitive risk surface analysis, and due diligence for founders and venture capital firms.
+   - *Devpost:* https://devpost.com/software/launchlens
+   - *Stack:* Multi-LLM Synthesis, Python, FastAPI, Next.js 16.
 
-1. **Multi-Agent Orchestration Platform**
-   - *Architecture:* Autonomous multi-agent coordination kernel where specialized agent personas collaborate on complex, multi-stage workflows with deterministic routing, vector memory persistence, and asynchronous tool invocation.
-   - *Stack:* Python, FastAPI, LangChain, LLMs, Redis, Vector Databases.
-   - *Repository:* https://github.com/ashokwebs
+6. **Norveth Intelligence Engine (norveth.app)**
+   - *Architecture:* Real Chromium headless rendering diagnostics with Model Context Protocol (MCP) server integration and automated OWASP Top 10 security scanning.
+   - *Stack:* Chromium Headless, MCP, FastAPI, Next.js, Node.js.
 
-2. **AI Workflow Automation Engine**
-   - *Architecture:* Visual pipeline compiler that translates high-level natural language instructions into distributed, fault-tolerant worker execution graphs with live telemetry.
-   - *Stack:* Next.js, Node.js, PostgreSQL, Docker, WebSockets.
-   - *Repository:* https://github.com/ashokwebs
+7. **SlackMind & Agent Momo (Autonomous Enterprise Agent Swarms)**
+   - *Architecture:* Slack-integrated agent command centers and graph-based autonomous customer support agents.
+   - *Stack:* Slack Bolt API, LangGraph, Python, Redis Streams.
 
-3. **OSPRED Autonomous Security Engine**
-   - *Architecture:* Experimental AI-assisted cybersecurity platform designed for automated attack-surface mapping, vulnerability scanning, threat intelligence synthesis, and server hardening.
-   - *Stack:* Python, FastAPI, Docker, Security Hardening Tooling.
-   - *Repository:* https://github.com/ashokwebs
+8. **TriageAI & CareCompass AI (Clinical Diagnostic Triage)**
+   - *Architecture:* Clinical-grade healthcare navigation platform analyzing acute symptoms and routing patients to specialist physicians with clinical reasoning.
+   - *Devpost:* https://devpost.com/software/carecompass-ai
+   - *Stack:* Clinical Graph, Python, FastAPI, Medical RAG.
 
-4. **Neural Knowledge Retrieval Engine**
-   - *Architecture:* High-throughput semantic search and knowledge synthesis engine utilizing dense vector embeddings and Retrieval-Augmented Generation (RAG) over heterogeneous unstructured corpora.
-   - *Stack:* Python, ChromaDB, OpenAI API, Streamlit, Vector Indexing.
-   - *Repository:* https://github.com/ashokwebs
+9. **OSPRED Autonomous Security Engine**
+   - *Architecture:* Proactive vulnerability surface discovery, automated threat intelligence synthesis, and zero-trust Linux server hardening.
+   - *Stack:* Python, FastAPI, Docker, Linux Hardening, CVE Feeds.
 
-5. **ShadowForge On-Chain Intelligence**
-   - *Architecture:* Distributed ledger intelligence engine executing heuristic pattern recognition, smart contract security audits, and cryptographic anomaly detection.
-   - *Stack:* Python, FastAPI, Next.js, PostgreSQL, Web3.js.
-   - *Repository:* https://github.com/ashokwebs
+10. **ShadowForge On-Chain Intelligence**
+    - *Architecture:* Distributed ledger intelligence engine executing real-time heuristic pattern recognition, smart contract security audits, and cryptographic anomaly detection across EVM chains.
+    - *Stack:* Python, FastAPI, Next.js, PostgreSQL, Web3.js, Solidity.
 
-6. **Enterprise SaaS Analytics Engine**
-   - *Architecture:* Real-time event ingestion and aggregation cluster handling WebSocket telemetry with sub-millisecond dispatch and high-density dashboard visualizations.
-   - *Stack:* Next.js, Express, MongoDB, WebSockets.
-   - *Repository:* https://github.com/ashokwebs
+## Competitions & Hackathons Record
 
-## Technical Competencies
-
-- **Artificial Intelligence & Agents:** Multi-Agent Orchestration, Autonomous Runtimes, LangChain, LlamaIndex, RAG Pipelines, Vector Search (Chroma, Pinecone), Prompt Engineering, LLM Fine-Tuning, MCP (Model Context Protocol).
-- **Full Stack & Distributed Systems:** Next.js 16 (App Router), React 19, TypeScript, Python, FastAPI, Node.js, Django, Go, Rust, REST APIs, GraphQL, WebSockets, gRPC, Microservices.
-- **Databases & Storage:** PostgreSQL, Redis, MongoDB, MySQL, Supabase, Prisma ORM, SQLite, Vector Databases.
-- **Infrastructure & Cloud:** Linux Kernel Hardening, Docker, Kubernetes, AWS, Nginx, CI/CD (GitHub Actions), Terraform, Serverless Edge Runtimes.
-- **Cybersecurity:** Threat Modeling, OWASP Top 10, Network Penetration Testing, Wireshark, Cryptographic Protocol Analysis, Linux Hardening.
-- **Blockchain & Web3:** Solidity, Smart Contract Architecture, Ethereum, Web3.js, Ethers.js, DeFi Protocols, On-Chain Analytics.
-
-## Experience & Trajectory
-
-- **Founder & CEO — Varellen Technologies** (2024–Present): Guiding venture strategy, enterprise software architectures, and scalable technology platforms.
-- **Founder & Systems Architect — Norveth** (2024–Present): Guiding product strategy, architectural roadmap, and core system implementation across autonomous AI runtimes and developer tools.
-- **Principal Technical Consultant & Full Stack Architect** (2024–Present): Delivering high-scale web platforms, distributed APIs, database architectures, and custom AI automation pipelines for international clients and high-growth ventures.
-- **Deep Tech Researcher** (2023–Present): Conducting ongoing empirical research into multi-agent coordination, distributed systems fault tolerance, and cryptographic security models.
-- **Hackathons & Competitions:** Participant in Google Agentic AI Hackathon, Slack AI Hackathon, Qwen Hackathon, Bank of India National Hackathon.
+- **Total Hackathons:** 31
+- **Shipped Projects:** 22
+- **Key Engagements:** Qwen Global Hackathon, Google Agentic AI Hackathon, Slack AI Hackathon, Global Disaster Tech Hackathon, Bank of India National Hackathon.
 
 ## Academic Grounding
 
 - **Degree:** Bachelor of Technology (B.Tech) in Computer Science & Engineering
-- **Institution:** VIT-AP University, Andhra Pradesh, India
+- **Institution:** VIT-AP University, Andhra Pradesh, India (Class of 2028)
 - **Key Coursework:** Distributed Systems, Operating Systems, Advanced Algorithms, Computer Networks, Machine Learning, Database Engineering, Software Architecture.
-
-## Capabilities & Strategic Services
-
-- Autonomous AI & Multi-Agent System Architecture
-- Full Stack Enterprise Web & Platform Engineering
-- Distributed Backend & API Infrastructure
-- SaaS Product Architecture & Rapid Prototyping
-- Systems Architecture, Security Auditing & Technical Advisory

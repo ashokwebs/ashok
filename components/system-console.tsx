@@ -19,7 +19,7 @@ export default function SystemConsole() {
             [SYS_OK] NEXUS://OS v2.6.0 Kernel Initialized.
           </p>
           <p className="text-neutral-400">
-            Ashok Pasala &mdash; Founder @ Varellen Technologies &amp; Norveth (norveth.app)
+            Ashok Pasala &mdash; Founder @ Varellen Technologies &amp; Norveth | 31 Hackathons • 22+ Projects
           </p>
           <p className="text-neutral-500 text-xs pt-1">
             Type <span className="text-white font-bold">&apos;help&apos;</span> to list commands or click quick action buttons below.
@@ -48,16 +48,48 @@ export default function SystemConsole() {
           <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">Available Commands:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-xs pt-1">
+              <div><span className="text-white font-bold">devpost</span> : Devpost hackathon portfolio (22 projects)</div>
+              <div><span className="text-white font-bold">hackathons</span> : 31 hackathons track record</div>
+              <div><span className="text-white font-bold">systems</span> : Shipped AI &amp; multi-agent systems</div>
               <div><span className="text-white font-bold">varellen</span> : Varellen Technologies venture</div>
               <div><span className="text-white font-bold">norveth</span> : Norveth AI platform &amp; specs</div>
-              <div><span className="text-white font-bold">thesis</span> : Founder &amp; engineering principles</div>
-              <div><span className="text-white font-bold">systems</span> : List flagship software systems</div>
+              <div><span className="text-white font-bold">thesis</span> : Founder &amp; engineering axioms</div>
               <div><span className="text-white font-bold">stack</span> : Technical stack &amp; languages</div>
               <div><span className="text-white font-bold">contact</span> : Executive contact &amp; email</div>
               <div><span className="text-white font-bold">geo</span> : Generative Engine Optimization spec</div>
               <div><span className="text-white font-bold">whoami</span> : Current session identity</div>
               <div><span className="text-white font-bold">clear</span> : Clear terminal screen</div>
             </div>
+          </div>
+        )
+        break
+
+      case 'devpost':
+      case 'hackathons':
+        output = (
+          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[DEVPOST PORTFOLIO // 31 HACKATHONS • 22 PROJECTS]</p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">The Vector / Vector AI:</strong> Autonomous C-Suite multi-agent council (CEO, CTO, CMO).
+            </p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">CompanyBrain_AI:</strong> Enterprise AI executive fusing contracts, financials &amp; roadmaps.
+            </p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">Qwen Chaos:</strong> Self-persistent neural MemoryAgent with cross-session recall.
+            </p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">ResQNet:</strong> Real-time AI disaster response and resource dispatch grid.
+            </p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">LaunchLens:</strong> Multi-model market validation &amp; VC due diligence engine.
+            </p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">CareCompass &amp; TriageAI:</strong> Clinical-grade emergency triage &amp; navigation.
+            </p>
+            <p className="text-xs text-emerald-400/80 pt-1">
+              Devpost Profile: <a href="https://devpost.com/ashokashishms/" target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">https://devpost.com/ashokashishms/</a>
+            </p>
           </div>
         )
         break
@@ -126,19 +158,22 @@ export default function SystemConsole() {
           <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">[FLAGSHIP SYSTEMS &amp; ARCHITECTURES]</p>
             <p className="text-xs text-neutral-400">
-              • <strong className="text-white">Multi-Agent Orchestration Platform:</strong> Collaborative execution kernel with vector memory &amp; LangChain.
+              • <strong className="text-white">Vector AI Command Center:</strong> Multi-agent autonomous C-suite orchestration kernel.
             </p>
             <p className="text-xs text-neutral-400">
-              • <strong className="text-white">AI Workflow Automation Engine:</strong> Visual pipeline compiler &amp; distributed worker cluster.
+              • <strong className="text-white">CompanyBrain_AI:</strong> Enterprise knowledge &amp; contract reasoning engine.
+            </p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">Qwen Chaos MemoryAgent:</strong> Self-persistent agent with cross-session recall.
+            </p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">ResQNet Disaster Response:</strong> Real-time incident triage &amp; live resource stream.
+            </p>
+            <p className="text-xs text-neutral-400">
+              • <strong className="text-white">LaunchLens:</strong> Multi-model market validation &amp; due diligence platform.
             </p>
             <p className="text-xs text-neutral-400">
               • <strong className="text-white">OSPRED Autonomous Security:</strong> Attack surface scanner &amp; automated CVE synthesis.
-            </p>
-            <p className="text-xs text-neutral-400">
-              • <strong className="text-white">Neural Knowledge Engine:</strong> Microsecond vector RAG pipeline.
-            </p>
-            <p className="text-xs text-neutral-400">
-              • <strong className="text-white">ShadowForge On-Chain Intelligence:</strong> Heuristic pattern recognition &amp; smart contract auditor.
             </p>
           </div>
         )
@@ -161,6 +196,7 @@ export default function SystemConsole() {
             <p className="text-emerald-400 font-semibold">[CHANNELS]</p>
             <p className="text-xs text-neutral-400">• Primary: <span className="text-white">ashokashishms@gmail.com</span></p>
             <p className="text-xs text-neutral-400">• Norveth Business: <span className="text-white">founder@norveth.app</span></p>
+            <p className="text-xs text-neutral-400">• Devpost: <span className="text-white">devpost.com/ashokashishms</span></p>
             <p className="text-xs text-neutral-400">• GitHub: <span className="text-white">github.com/ashokwebs</span></p>
             <p className="text-xs text-neutral-400">• X (Twitter): <span className="text-white">x.com/ashokfounds</span></p>
           </div>
@@ -182,7 +218,7 @@ export default function SystemConsole() {
         output = (
           <div className="text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400">guest@nexus-kernel [remote-terminal]</p>
-            <p className="text-neutral-400 text-xs">Host: Ashok Pasala (Founder @ Varellen Technologies &amp; Norveth)</p>
+            <p className="text-neutral-400 text-xs">Host: Ashok Pasala (Founder @ Varellen Technologies &amp; Norveth | 31 Hackathons)</p>
             <p className="text-neutral-500 text-xs">Permission: READ_ONLY // Protocol: TLS 1.3</p>
           </div>
         )
@@ -239,7 +275,7 @@ export default function SystemConsole() {
                 Interactive System Console
               </h2>
               <p className="text-base sm:text-lg text-neutral-400 font-light">
-                Inspect architecture parameters, venture data, and founder telemetry directly via command line.
+                Inspect architecture parameters, Devpost hackathon projects (22+), and founder telemetry directly via command line.
               </p>
             </div>
 
@@ -274,7 +310,7 @@ export default function SystemConsole() {
               <span className="text-neutral-500 text-[11px] uppercase tracking-wider shrink-0">
                 Quick Run:
               </span>
-              {['varellen', 'norveth', 'thesis', 'systems', 'stack', 'contact', 'geo', 'clear'].map((cmd) => (
+              {['devpost', 'systems', 'varellen', 'norveth', 'thesis', 'stack', 'contact', 'geo', 'clear'].map((cmd) => (
                 <button
                   key={cmd}
                   onClick={() => handleQuickCommand(cmd)}
@@ -313,7 +349,7 @@ export default function SystemConsole() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Type command ('varellen', 'norveth', 'thesis', 'systems')..."
+                placeholder="Type command ('devpost', 'systems', 'varellen', 'norveth')..."
                 className="flex-1 bg-transparent text-sm text-white placeholder-neutral-500 outline-none font-mono"
                 aria-label="Interactive CLI command prompt"
                 autoComplete="off"
