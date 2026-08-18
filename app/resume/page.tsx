@@ -84,7 +84,7 @@ export default function ResumePage() {
             Executive Summary
           </h2>
           <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed text-justify">
-            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder &amp; CEO of <strong>Varellen Technologies</strong>, Architect of <strong>Norveth</strong> (<a href="https://norveth.app" className="underline font-medium">norveth.app</a>), <strong>OSPRED</strong>, and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
+            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder &amp; CEO of <strong>Varellen Technologies</strong>, Architect of <strong>Norveth</strong> (<a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>), <strong>OSPRED</strong>, and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
           </p>
         </section>
 
@@ -112,7 +112,7 @@ export default function ResumePage() {
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
               <div>
                 <span className="text-sm font-bold text-[#0f172a]">Norveth</span>
-                <span className="text-xs font-semibold text-neutral-600"> — Founder &amp; Systems Architect (<a href="https://norveth.app" className="underline">norveth.app</a>)</span>
+                <span className="text-xs font-semibold text-neutral-600"> — Founder &amp; Systems Architect (<a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>)</span>
               </div>
               <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | ENGINEERING INTELLIGENCE</span>
             </div>
