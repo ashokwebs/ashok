@@ -1,14 +1,24 @@
 'use client'
 
-import { Briefcase, Terminal, Award, BookOpen, ArrowUpRight } from 'lucide-react'
+import { Award } from 'lucide-react'
 
 const milestones = [
+  {
+    role: 'Founder & CEO',
+    organization: 'Varellen Technologies',
+    domain: 'Enterprise & Systems',
+    period: '2024 — Present',
+    badge: 'Flagship Enterprise',
+    description:
+      'Guiding venture strategy, high-performance digital platform architecture, and enterprise software engineering at Varellen Technologies. Leading development of scalable systems, AI automation frameworks, and resilient cloud architectures.',
+    tags: ['Enterprise Software', 'Scalable Systems', 'AI Automation', 'Cloud Architecture', 'TypeScript', 'Python'],
+  },
   {
     role: 'Founder & Systems Architect',
     organization: 'Norveth',
     domain: 'norveth.app',
     period: '2024 — Present',
-    badge: 'Flagship Venture',
+    badge: 'AI Intelligence Platform',
     description:
       'Architected Norveth from line zero—an AI-powered website intelligence and automated code-level diagnostic platform utilizing real Chromium headless rendering, OWASP Top 10 security scanning, Model Context Protocol (MCP) integrations, and developer CLI tooling. Leading full-lifecycle engineering across distributed scan workers and deterministic AI analysis pipelines.',
     tags: ['Chromium Headless', 'Model Context Protocol (MCP)', 'OWASP Top 10', 'Distributed Workers', 'FastAPI', 'Next.js'],
@@ -69,13 +79,13 @@ export default function Experience() {
               Venture Trajectory
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
-              From founding deep-tech platforms to high-conviction engineering research and institutional advisory.
+              From founding Varellen Technologies and Norveth to high-conviction engineering research and institutional advisory.
             </p>
           </div>
 
           {/* Timeline */}
           <div className="space-y-6">
-            {milestones.map((item, idx) => (
+            {milestones.map((item) => (
               <div
                 key={item.role + item.organization}
                 className="glass-card-interactive p-7 sm:p-9 space-y-6"

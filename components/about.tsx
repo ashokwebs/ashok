@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ShieldCheck, Cpu, GitBranch, Layers, Award, Terminal } from 'lucide-react'
+import { ShieldCheck, Cpu, GitBranch, Layers, Terminal } from 'lucide-react'
 
 export default function About() {
   const axioms = [
@@ -58,7 +58,7 @@ export default function About() {
               <div className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden glass-card group">
                 <Image
                   src="/ashok.jpeg"
-                  alt="Ashok Pasala — Founder of Norveth & AI Systems Architect"
+                  alt="Ashok Pasala — Founder of Varellen Technologies & Norveth"
                   fill
                   sizes="(max-width: 1024px) 100vw, 450px"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -75,7 +75,7 @@ export default function About() {
                     Ashok Pasala
                   </div>
                   <div className="text-xs text-white/80 font-light mt-1">
-                    Norveth • Sovereign AI Infrastructure
+                    Varellen Technologies • Norveth
                   </div>
                 </div>
               </div>
@@ -86,16 +86,16 @@ export default function About() {
               <div className="p-6 rounded-2xl bg-black/[0.02] border border-black/[0.06] space-y-3">
                 <div className="text-xs font-mono uppercase tracking-wider text-muted-foreground flex items-center gap-2">
                   <Terminal size={14} />
-                  <span>The Norveth Mandate</span>
+                  <span>The Founder Mandate</span>
                 </div>
                 <p className="text-base sm:text-lg text-foreground font-medium leading-relaxed">
-                  &ldquo;I founded Norveth to build the next generation of sovereign AI runtimes, multi-agent coordination kernels, and resilient developer tooling. We design systems that turn complex cognitive workflows into autonomous, reliable infrastructure.&rdquo;
+                  &ldquo;Through Varellen Technologies and Norveth, I engineer high-performance digital platforms, sovereign AI runtimes, and resilient developer tooling designed to transform complex cognitive workflows into autonomous, unstoppable infrastructure.&rdquo;
                 </p>
               </div>
 
               <div className="space-y-4 text-muted-foreground text-sm sm:text-base font-light leading-relaxed">
                 <p>
-                  As an engineer and founder, I bridge the gap between high-level autonomous agent orchestration and metal-level backend resilience. My work spans high-throughput distributed systems, vector memory architectures, proactive cybersecurity tooling, and full-stack web platforms.
+                  As Founder &amp; CEO of <strong className="text-foreground font-medium">Varellen Technologies</strong> and Systems Architect at <strong className="text-foreground font-medium">Norveth</strong>, I bridge the gap between high-level autonomous agent orchestration and metal-level backend resilience. My work spans high-throughput distributed systems, vector memory architectures, proactive cybersecurity tooling, and full-stack web platforms.
                 </p>
                 <p>
                   My technical foundations are grounded in Computer Science &amp; Engineering at <strong className="text-foreground font-medium">VIT-AP University</strong>, with deep independent research in distributed consensus, operating system internals, applied cryptography, and large language model architectures.
@@ -109,10 +109,10 @@ export default function About() {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
                 <div className="p-3.5 rounded-xl border border-border/80 bg-white/50">
                   <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider">
-                    Venture
+                    Ventures
                   </div>
                   <div className="text-sm font-semibold text-foreground mt-0.5">
-                    Founder @ Norveth
+                    Varellen &amp; Norveth
                   </div>
                 </div>
 

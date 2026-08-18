@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Mail, Briefcase, MapPin, Copy, Check, Send, Phone } from 'lucide-react'
+import { Mail, Briefcase, MapPin, Copy, Check, Send } from 'lucide-react'
 import {
   GitHubIcon,
   LinkedInIcon,
@@ -63,7 +63,7 @@ export default function Contact() {
               Initiate Contact
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
-              Available for technical advisory, autonomous AI mandates, venture collaborations, and institutional systems engineering.
+              Available for technical advisory, autonomous AI mandates, venture collaborations (Varellen Technologies &amp; Norveth), and institutional systems engineering.
             </p>
           </div>
 
@@ -108,7 +108,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Norveth Venture / Business */}
+            {/* Ventures / Institutional */}
             <div className="glass-card p-7 sm:p-8 space-y-5 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="w-11 h-11 rounded-xl bg-slate-100 flex items-center justify-center text-foreground">
@@ -116,7 +116,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
-                    Norveth Venture
+                    Venture &amp; Enterprise
                   </div>
                   <h3
                     className="text-lg font-bold text-foreground mt-0.5"
@@ -125,7 +125,7 @@ export default function Contact() {
                     founder@norveth.app
                   </h3>
                   <p className="text-xs text-muted-foreground font-light mt-1">
-                    Enterprise partnerships, website intelligence platform &amp; venture inquiries.
+                    Varellen Technologies &amp; Norveth enterprise partnerships and venture inquiries.
                   </p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function Contact() {
                 <button
                   onClick={() => copyToClipboard('founder@norveth.app', 'venture')}
                   className="p-2 rounded-lg border border-border/80 hover:bg-slate-50 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-                  aria-label="Copy Norveth founder email"
+                  aria-label="Copy founder email"
                 >
                   {copiedVenture ? <Check size={16} className="text-emerald-500" /> : <Copy size={16} />}
                 </button>

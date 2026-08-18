@@ -11,9 +11,9 @@ const geistMono = Geist_Mono({
 const inter = Inter({ variable: '--font-inter', subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 const syne = Syne({ variable: '--font-syne', subsets: ['latin'], weight: ['400', '500', '600', '700', '800'] })
 
-const siteTitle = 'Ashok Pasala — Founder & AI Systems Architect | Norveth'
+const siteTitle = 'Ashok Pasala — Founder (Varellen Technologies & Norveth) | AI Systems Architect'
 const siteDescription =
-  'Ashok Pasala is a Founder, AI Systems Architect, and Deep Tech Engineer. Founder & Systems Architect of Norveth, engineering autonomous multi-agent orchestration frameworks, sovereign AI infrastructure, and high-scale distributed backend systems.'
+  'Ashok Pasala is a Founder, AI Systems Architect, and Deep Tech Engineer. Founder of Varellen Technologies & Norveth, engineering autonomous multi-agent orchestration frameworks, sovereign AI infrastructure, enterprise software platforms, and high-scale distributed backends.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ashokpasala.vercel.app'),
@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     google: 'O0fymhvn25v7YUKhQs7MYjCdNjLKiaJ4-944i_48IG4',
   },
   keywords: [
-    'Ashok Pasala', 'Ashok Raj Pasala', 'Norveth', 'Founder of Norveth',
+    'Ashok Pasala', 'Ashok Raj Pasala', 'Varellen Technologies', 'Founder of Varellen Technologies',
+    'Norveth', 'Founder of Norveth', 'Varellen',
     'AI Systems Architect', 'AI Systems Engineer', 'Autonomous AI Systems',
     'Multi-Agent Orchestration', 'AI Agent Frameworks', 'Systems Architect',
     'Full Stack Architect', 'Distributed Systems Engineer', 'Deep Tech Founder',
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Ashok Pasala', url: 'https://ashokpasala.vercel.app' }],
   creator: 'Ashok Pasala',
-  publisher: 'Ashok Pasala — Norveth',
+  publisher: 'Ashok Pasala — Varellen Technologies & Norveth',
   category: 'Technology & Artificial Intelligence',
   formatDetection: {
     email: false,
@@ -86,7 +87,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteTitle,
     description:
-      'Founder of Norveth. Architecting autonomous multi-agent infrastructure, sovereign AI platforms, and resilient distributed backends.',
+      'Founder of Varellen Technologies & Norveth. Architecting autonomous multi-agent infrastructure, enterprise software, and resilient distributed backends.',
     creator: '@ashokfounds',
     site: '@ashokfounds',
   },
@@ -126,7 +127,8 @@ export default function RootLayout({
         url: 'https://ashokpasala.vercel.app',
         email: ['mailto:ashokashishms@gmail.com', 'mailto:founder@norveth.app'],
         jobTitle: [
-          'Founder & Systems Architect',
+          'Founder & CEO (Varellen Technologies)',
+          'Founder & Systems Architect (Norveth)',
           'AI Systems Architect',
           'Autonomous Systems Engineer',
           'Full Stack Systems Engineer',
@@ -159,6 +161,7 @@ export default function RootLayout({
           'Large Language Models (LLMs)',
           'High-Scale Backend Engineering',
           'Distributed Systems Architecture',
+          'Enterprise Software Development',
           'System Design & Microservices',
           'Cybersecurity & Threat Modeling',
           'Blockchain & Web3 Cryptography',
@@ -170,9 +173,14 @@ export default function RootLayout({
           'Linux Kernel & Server Hardening',
           'First-Principles Engineering',
         ],
-        worksFor: {
-          '@id': 'https://ashokpasala.vercel.app/#organization',
-        },
+        worksFor: [
+          {
+            '@id': 'https://ashokpasala.vercel.app/#norveth',
+          },
+          {
+            '@id': 'https://ashokpasala.vercel.app/#varellen',
+          },
+        ],
         sameAs: [
           'https://github.com/ashokwebs',
           'https://www.linkedin.com/in/ashok-raj-p-1b8539317/',
@@ -184,12 +192,12 @@ export default function RootLayout({
       },
       {
         '@type': 'Organization',
-        '@id': 'https://ashokpasala.vercel.app/#organization',
+        '@id': 'https://ashokpasala.vercel.app/#norveth',
         name: 'Norveth',
-        url: 'https://ashokpasala.vercel.app',
+        url: 'https://norveth.app',
         email: 'founder@norveth.app',
         description:
-          'Norveth is an engineering-first deep technology venture focused on building sovereign AI runtimes, multi-agent orchestration frameworks, developer infrastructure, and mission-critical enterprise software.',
+          'Norveth is an engineering-first deep technology venture focused on building sovereign AI runtimes, multi-agent orchestration frameworks, developer infrastructure, and mission-critical website intelligence software.',
         founder: {
           '@id': 'https://ashokpasala.vercel.app/#person',
         },
@@ -204,12 +212,31 @@ export default function RootLayout({
         ],
       },
       {
+        '@type': 'Organization',
+        '@id': 'https://ashokpasala.vercel.app/#varellen',
+        name: 'Varellen Technologies',
+        url: 'https://ashokpasala.vercel.app',
+        email: 'ashokashishms@gmail.com',
+        description:
+          'Varellen Technologies is an advanced technology initiative and enterprise software engineering venture founded by Ashok Pasala, focused on high-performance digital platforms, scalable architectures, and intelligent software solutions.',
+        founder: {
+          '@id': 'https://ashokpasala.vercel.app/#person',
+        },
+        foundingDate: '2024',
+        knowsAbout: [
+          'Enterprise Software Platforms',
+          'Distributed Architectures',
+          'AI Automation Systems',
+          'Scalable Cloud Infrastructure',
+        ],
+      },
+      {
         '@type': 'WebSite',
         '@id': 'https://ashokpasala.vercel.app/#website',
         url: 'https://ashokpasala.vercel.app',
         name: 'Ashok Pasala — Founder & AI Systems Architect',
         description:
-          'Official digital hub and system architecture portal of Ashok Pasala, Founder of Norveth.',
+          'Official digital hub and system architecture portal of Ashok Pasala, Founder of Varellen Technologies & Norveth.',
         inLanguage: 'en',
         publisher: {
           '@id': 'https://ashokpasala.vercel.app/#person',

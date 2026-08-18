@@ -6,7 +6,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100-success?style=for-the-badge)
 
-The official executive portal and systems architecture hub of **Ashok Pasala** — Founder & Systems Architect of **Norveth** ([norveth.app](https://norveth.app)), AI Systems Architect, and Deep Tech Engineer.
+The official executive portal and systems architecture hub of **Ashok Pasala** — Founder of **Varellen Technologies** and Founder & Systems Architect of **Norveth** ([norveth.app](https://norveth.app)), AI Systems Architect, and Deep Tech Engineer.
 
 Repository and production codebase for [ashokpasala.vercel.app](https://ashokpasala.vercel.app), engineered with first-principles reductionism, enterprise-grade technical SEO, Generative Engine Optimization (GEO), and state-of-the-art interactive systems.
 
@@ -14,11 +14,12 @@ Repository and production codebase for [ashokpasala.vercel.app](https://ashokpas
 
 ## 🚀 Technical Highlights & Core Architecture
 
+- **Ventures**: Founder & CEO of **Varellen Technologies** • Founder & Systems Architect of **Norveth** ([norveth.app](https://norveth.app))
 - **Framework**: Next.js 16 (App Router) with React 19 Server Components
 - **Styling**: Tailwind CSS v4 featuring custom frosted glassmorphism (`.glass`, `.glass-card`), subtle micro-animations, and high-contrast typography.
-- **Interactive Developer Console**: In-browser CLI terminal (`NEXUS://OS`) supporting live query execution (`norveth`, `thesis`, `systems`, `stack`, `contact`, `geo`).
+- **Interactive Developer Console**: In-browser CLI terminal (`NEXUS://OS`) supporting live query execution (`varellen`, `norveth`, `thesis`, `systems`, `stack`, `contact`, `geo`).
 - **GEO (Generative Engine Optimization)**: Exhaustive `llms.txt` specification engineered for Perplexity, ChatGPT Search, Claude Web, Gemini, and Apple Intelligence crawlers.
-- **Rich Knowledge Graph (JSON-LD)**: Connected schemas covering `Person` (Ashok Pasala), `Organization` (Norveth), `ItemList` of `SoftwareApplication` architectures, `ProfilePage`, `WebSite`, and `ProfessionalService`.
+- **Rich Knowledge Graph (JSON-LD)**: Connected schemas covering `Person` (Ashok Pasala), `Organizations` (Varellen Technologies, Norveth), `ItemList` of `SoftwareApplication` architectures, `ProfilePage`, `WebSite`, and `ProfessionalService`.
 - **Edge OG Images**: Programmatic social preview generation via `@vercel/og` (`next/og`) on Edge runtime.
 
 ---
@@ -32,11 +33,11 @@ git clone https://github.com/ashokwebs/ashok.git
 # Navigate to the project directory
 cd ashok
 
-# Install dependencies via pnpm
-pnpm install
+# Install dependencies
+npm install
 
 # Start the local development server
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the application.
@@ -46,4 +47,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to inspect t
 ## 📄 License & Intellectual Property
 
 This project source code is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-*Personal branding, Norveth ventures, systems architectures, and specific project content belong to Ashok Pasala.*
+*Personal branding, Varellen Technologies, Norveth ventures, systems architectures, and specific project content belong to Ashok Pasala.*

@@ -1,6 +1,6 @@
 'use client'
 
-import { ChevronDown, ArrowUpRight, Terminal, FileText, Sparkles } from 'lucide-react'
+import { ChevronDown, ArrowUpRight, Terminal, FileText } from 'lucide-react'
 import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/social-icons'
 
 export default function Hero() {
@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="flex justify-center">
             <div className="badge-founder animate-slide-in-up">
               <span className="flex h-2 w-2 shrink-0 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Founder &amp; Chief Architect @ Norveth</span>
+              <span>Founder @ Varellen Technologies &amp; Norveth</span>
               <span className="text-black/30 font-normal">•</span>
               <span className="text-muted-foreground lowercase font-normal">autonomous ai</span>
             </div>
@@ -44,7 +44,7 @@ export default function Hero() {
               Ashok Pasala
               <span className="sr-only">
                 {' '}
-                — Founder &amp; AI Systems Architect at Norveth
+                — Founder of Varellen Technologies &amp; Norveth
               </span>
             </h1>
 
@@ -53,7 +53,7 @@ export default function Hero() {
             </p>
 
             <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
-              Founder &amp; Systems Architect of <strong className="font-medium text-foreground">Norveth</strong>. Engineering sovereign AI runtimes, mission-critical backends, and deterministic automation systems from first principles.
+              Founder &amp; CEO of <strong className="font-medium text-foreground">Varellen Technologies</strong> and Systems Architect at <strong className="font-medium text-foreground">Norveth</strong>. Engineering sovereign AI runtimes, mission-critical backends, and deterministic automation systems from first principles.
             </p>
           </div>
 
@@ -108,10 +108,10 @@ export default function Hero() {
                 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
-                Norveth
+                Varellen
               </div>
               <div className="text-[11px] font-mono text-muted-foreground uppercase tracking-wider">
-                Founder &amp; Chief Architect
+                Founder &amp; CEO
               </div>
             </div>
 
@@ -120,10 +120,10 @@ export default function Hero() {
                 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
-                100%
+                Norveth
               </div>
               <div className="text-[11px] font-mono text-muted-foreground uppercase tracking-wider">
-                First-Principles Driven
+                Founder &amp; Architect
               </div>
             </div>
 
@@ -135,7 +135,7 @@ export default function Hero() {
                 Global
               </div>
               <div className="text-[11px] font-mono text-muted-foreground uppercase tracking-wider">
-                Advisory &amp; Deployment
+                Advisory &amp; Scale
               </div>
             </div>
           </div>

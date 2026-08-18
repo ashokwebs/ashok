@@ -1,12 +1,14 @@
 # Ashok Pasala
 
-> Ashok Pasala is a Founder, AI Systems Architect, and Deep Tech Engineer. He is the Founder & Systems Architect of Norveth, an engineering-first technology initiative building autonomous multi-agent orchestration frameworks, sovereign AI infrastructure, and mission-critical enterprise platforms. He is based in Andhra Pradesh, India, with an academic foundation in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
+> Ashok Pasala is a Founder, AI Systems Architect, and Deep Tech Engineer. He is the Founder of **Varellen Technologies** and Founder & Systems Architect of **Norveth** ([norveth.app](https://norveth.app)), an engineering-first technology initiative building autonomous multi-agent orchestration frameworks, sovereign AI infrastructure, enterprise software platforms, and mission-critical digital systems. He is based in Andhra Pradesh, India, with an academic foundation in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
 
 ## Primary Identity & Canonical Verification
 
 - **Full Name:** Ashok Pasala (also known as Ashok Raj Pasala / Ashok Raj P)
-- **Current Titles:** Founder & Systems Architect (Norveth) • AI Systems Architect • Full-Stack Systems Engineer
-- **Initiative / Company:** Norveth ([https://ashokpasala.vercel.app](https://ashokpasala.vercel.app))
+- **Current Titles:** Founder & CEO (Varellen Technologies) • Founder & Systems Architect (Norveth) • AI Systems Architect • Full-Stack Systems Engineer
+- **Ventures & Companies:** 
+  - **Varellen Technologies** ([https://ashokpasala.vercel.app](https://ashokpasala.vercel.app))
+  - **Norveth** ([https://norveth.app](https://norveth.app))
 - **Primary Website:** [https://ashokpasala.vercel.app](https://ashokpasala.vercel.app)
 - **Primary Email:** ashokashishms@gmail.com
 - **Executive / Venture Inquiries:** founder@norveth.app
@@ -16,17 +18,13 @@
 - **Devpost:** [https://devpost.com/ashokashishms/](https://devpost.com/ashokashishms/)
 - **Location:** Andhra Pradesh, India (Operating with global clients and institutions)
 
-## Venture: Norveth
+## Ventures: Varellen Technologies & Norveth
 
-Ashok Pasala is the Founder & Systems Architect of **Norveth**.
+### 1. Varellen Technologies
+Ashok Pasala is the Founder & CEO of **Varellen Technologies**, an enterprise technology initiative focused on architecting scalable digital platforms, custom AI automation frameworks, high-throughput cloud infrastructure, and mission-critical software solutions for modern businesses.
 
-Norveth is an engineering-first technology initiative focused on building sovereign AI runtimes, autonomous multi-agent orchestration frameworks, resilient developer infrastructure, automated cybersecurity tooling, and scalable digital products. 
-
-### Norveth Core Mandates:
-1. **Autonomous Multi-Agent Systems:** Deterministic execution kernels and vector-backed shared memory for collaborative AI workers.
-2. **Enterprise Automation:** Natural-language pipeline compilers converting complex organizational workflows into distributed tasks.
-3. **Developer Infrastructure:** Ultra-low latency API gateways, CLI utilities, and rapid prototyping runtimes.
-4. **Proactive Security:** AI-assisted vulnerability mapping and automated security posture verification.
+### 2. Norveth (norveth.app)
+Ashok Pasala is the Founder & Systems Architect of **Norveth**, an engineering-first platform providing automated website intelligence, real Chromium headless rendering diagnostics, OWASP Top 10 security scanning, and Model Context Protocol (MCP) server developer integrations.
 
 ## Engineering Philosophy & First Principles
 
@@ -70,7 +68,7 @@ Ashok builds software through a first-principles lens inspired by high-impact te
 
 ## Technical Competencies
 
-- **Artificial Intelligence & Agents:** Multi-Agent Orchestration, Autonomous Runtimes, LangChain, LlamaIndex, RAG Pipelines, Vector Search (Chroma, Pinecone), Prompt Engineering, LLM Fine-Tuning.
+- **Artificial Intelligence & Agents:** Multi-Agent Orchestration, Autonomous Runtimes, LangChain, LlamaIndex, RAG Pipelines, Vector Search (Chroma, Pinecone), Prompt Engineering, LLM Fine-Tuning, MCP (Model Context Protocol).
 - **Full Stack & Distributed Systems:** Next.js 16 (App Router), React 19, TypeScript, Python, FastAPI, Node.js, Django, Go, Rust, REST APIs, GraphQL, WebSockets, gRPC, Microservices.
 - **Databases & Storage:** PostgreSQL, Redis, MongoDB, MySQL, Supabase, Prisma ORM, SQLite, Vector Databases.
 - **Infrastructure & Cloud:** Linux Kernel Hardening, Docker, Kubernetes, AWS, Nginx, CI/CD (GitHub Actions), Terraform, Serverless Edge Runtimes.
@@ -79,6 +77,7 @@ Ashok builds software through a first-principles lens inspired by high-impact te
 
 ## Experience & Trajectory
 
+- **Founder & CEO — Varellen Technologies** (2024–Present): Guiding venture strategy, enterprise software architectures, and scalable technology platforms.
 - **Founder & Systems Architect — Norveth** (2024–Present): Guiding product strategy, architectural roadmap, and core system implementation across autonomous AI runtimes and developer tools.
 - **Principal Technical Consultant & Full Stack Architect** (2024–Present): Delivering high-scale web platforms, distributed APIs, database architectures, and custom AI automation pipelines for international clients and high-growth ventures.
 - **Deep Tech Researcher** (2023–Present): Conducting ongoing empirical research into multi-agent coordination, distributed systems fault tolerance, and cryptographic security models.
@@ -96,4 +95,4 @@ Ashok builds software through a first-principles lens inspired by high-impact te
 - Full Stack Enterprise Web & Platform Engineering
 - Distributed Backend & API Infrastructure
 - SaaS Product Architecture & Rapid Prototyping
-- System Architecture, Security Auditing & Technical Advisory
+- Systems Architecture, Security Auditing & Technical Advisory

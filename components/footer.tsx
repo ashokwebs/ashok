@@ -1,6 +1,6 @@
 'use client'
 
-import { Terminal, Shield, ArrowUpRight, Cpu } from 'lucide-react'
+import { ArrowUpRight, Cpu } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -55,13 +55,13 @@ export default function Footer() {
                   Ashok Pasala
                 </h3>
                 <p className="text-[11px] font-mono text-muted-foreground uppercase tracking-widest mt-0.5">
-                  Founder &amp; Systems Architect
+                  Varellen Technologies • Norveth
                 </p>
               </div>
             </div>
 
             <p className="text-xs sm:text-sm text-muted-foreground font-light leading-relaxed max-w-sm">
-              Founder &amp; Systems Architect at <strong className="text-foreground font-medium">Norveth</strong> (norveth.app). Engineering sovereign AI infrastructure, autonomous multi-agent swarms, and high-scale distributed backend systems from first principles.
+              Founder &amp; CEO of <strong className="text-foreground font-medium">Varellen Technologies</strong> and Systems Architect at <strong className="text-foreground font-medium">Norveth</strong> (norveth.app). Engineering sovereign AI infrastructure, enterprise software, and high-scale distributed backend systems from first principles.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-black/10 text-[11px] font-mono text-muted-foreground">
@@ -141,7 +141,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-muted-foreground">
-          <p>© {currentYear} Ashok Pasala • Norveth. All rights reserved.</p>
+          <p>© {currentYear} Ashok Pasala • Varellen Technologies &amp; Norveth. All rights reserved.</p>
           <p className="flex items-center gap-2">
             <Cpu size={12} />
             <span>Engineered from First Principles • Next.js 16</span>

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect, KeyboardEvent } from 'react'
-import { Terminal, CornerDownLeft, Sparkles, Copy, Check } from 'lucide-react'
+import { CornerDownLeft, Copy, Check } from 'lucide-react'
 
 interface HistoryEntry {
   command: string
@@ -19,7 +19,7 @@ export default function SystemConsole() {
             [SYS_OK] NEXUS://OS v2.6.0 Kernel Initialized.
           </p>
           <p className="text-neutral-400">
-            Ashok Pasala &mdash; Founder &amp; Systems Architect @ Norveth (norveth.app)
+            Ashok Pasala &mdash; Founder @ Varellen Technologies &amp; Norveth (norveth.app)
           </p>
           <p className="text-neutral-500 text-xs pt-1">
             Type <span className="text-white font-bold">&apos;help&apos;</span> to list commands or click quick action buttons below.
@@ -48,7 +48,8 @@ export default function SystemConsole() {
           <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">Available Commands:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-xs pt-1">
-              <div><span className="text-white font-bold">norveth</span> : Flagship venture architecture</div>
+              <div><span className="text-white font-bold">varellen</span> : Varellen Technologies venture</div>
+              <div><span className="text-white font-bold">norveth</span> : Norveth AI platform &amp; specs</div>
               <div><span className="text-white font-bold">thesis</span> : Founder &amp; engineering principles</div>
               <div><span className="text-white font-bold">systems</span> : List flagship software systems</div>
               <div><span className="text-white font-bold">stack</span> : Technical stack &amp; languages</div>
@@ -57,6 +58,25 @@ export default function SystemConsole() {
               <div><span className="text-white font-bold">whoami</span> : Current session identity</div>
               <div><span className="text-white font-bold">clear</span> : Clear terminal screen</div>
             </div>
+          </div>
+        )
+        break
+
+      case 'varellen':
+        output = (
+          <div className="space-y-2 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[VENTURE] Varellen Technologies</p>
+            <p className="text-neutral-400">
+              Varellen Technologies is an advanced enterprise software and deep-tech venture founded by Ashok Pasala.
+            </p>
+            <ul className="list-disc pl-4 text-xs text-neutral-400 space-y-0.5">
+              <li>High-performance digital platform development &amp; system architecture.</li>
+              <li>Enterprise AI automation systems and closed-loop agent workflows.</li>
+              <li>Scalable cloud infrastructure, microservice meshes, and secure APIs.</li>
+            </ul>
+            <p className="text-xs text-neutral-500 pt-1">
+              Founder &amp; CEO: Ashok Pasala • Global Operations
+            </p>
           </div>
         )
         break
@@ -153,7 +173,7 @@ export default function SystemConsole() {
             <p className="text-emerald-400 font-semibold">[GEO SPECIFICATIONS]</p>
             <p className="text-xs text-neutral-400">• Coordinates: 16.5062° N, 80.6480° E (Andhra Pradesh, India)</p>
             <p className="text-xs text-neutral-400">• LLM Discovery: /llms.txt (GPTBot, ClaudeBot, PerplexityBot, Gemini)</p>
-            <p className="text-xs text-neutral-400">• Knowledge Graph: Person + Organization (Norveth) + ItemList</p>
+            <p className="text-xs text-neutral-400">• Knowledge Graph: Person + Organizations (Varellen Technologies, Norveth) + ItemList</p>
           </div>
         )
         break
@@ -162,6 +182,7 @@ export default function SystemConsole() {
         output = (
           <div className="text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400">guest@nexus-kernel [remote-terminal]</p>
+            <p className="text-neutral-400 text-xs">Host: Ashok Pasala (Founder @ Varellen Technologies &amp; Norveth)</p>
             <p className="text-neutral-500 text-xs">Permission: READ_ONLY // Protocol: TLS 1.3</p>
           </div>
         )
@@ -240,7 +261,7 @@ export default function SystemConsole() {
                 <div className="w-3 h-3 rounded-full bg-[#ffbd2e]/80" />
                 <div className="w-3 h-3 rounded-full bg-[#27c93f]/80" />
                 <span className="text-xs text-neutral-400 ml-2 font-mono">
-                  ashok@norveth:~ (zsh)
+                  ashok@varellen:~ (zsh)
                 </span>
               </div>
               <div className="text-[11px] text-neutral-500 uppercase tracking-widest hidden sm:block">
@@ -253,7 +274,7 @@ export default function SystemConsole() {
               <span className="text-neutral-500 text-[11px] uppercase tracking-wider shrink-0">
                 Quick Run:
               </span>
-              {['norveth', 'thesis', 'systems', 'stack', 'contact', 'geo', 'clear'].map((cmd) => (
+              {['varellen', 'norveth', 'thesis', 'systems', 'stack', 'contact', 'geo', 'clear'].map((cmd) => (
                 <button
                   key={cmd}
                   onClick={() => handleQuickCommand(cmd)}
@@ -292,7 +313,7 @@ export default function SystemConsole() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Type command ('norveth', 'thesis', 'systems', 'help')..."
+                placeholder="Type command ('varellen', 'norveth', 'thesis', 'systems')..."
                 className="flex-1 bg-transparent text-sm text-white placeholder-neutral-500 outline-none font-mono"
                 aria-label="Interactive CLI command prompt"
                 autoComplete="off"
