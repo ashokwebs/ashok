@@ -146,7 +146,7 @@ export default function ResumePage() {
             </div>
             <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1 leading-relaxed">
               <li>Built high-frequency trading platform targeting <strong>Polymarket BTC 5-minute prediction markets</strong> using Binance 1-second streaming tick feeds.</li>
-              <li>Trained LightGBM Scale/Shape ML models predicting strike settlement probabilities ($p_{up} = P(S_T &gt; K)$) and volatility alongside an MM-1 market-making engine.</li>
+              <li>Trained LightGBM Scale/Shape ML models predicting strike settlement probabilities (p_up = P(S_T &gt; K)) and volatility alongside an MM-1 market-making engine.</li>
             </ul>
           </div>
         </section>
