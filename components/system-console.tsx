@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect, KeyboardEvent } from 'react'
+import React, { useState, useRef, useEffect, KeyboardEvent } from 'react'
 import { CornerDownLeft, Copy, Check } from 'lucide-react'
 
 interface HistoryEntry {
