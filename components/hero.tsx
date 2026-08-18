@@ -97,7 +97,7 @@ export default function Hero() {
                 50+
               </div>
               <div className="text-[10px] sm:text-[11px] font-mono text-neutral-400 uppercase tracking-wider">
-                Hackathons &bull; Global
+                Hackathons • Global
               </div>
             </div>
 

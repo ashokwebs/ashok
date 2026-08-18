@@ -130,7 +130,7 @@ export default function About() {
                     Location &amp; Reach
                   </div>
                   <div className="text-xs sm:text-sm font-semibold text-white mt-0.5">
-                    India &bull; Global Remote
+                    India • Global Remote
                   </div>
                 </div>
               </div>
