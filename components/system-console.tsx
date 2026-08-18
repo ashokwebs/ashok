@@ -16,10 +16,10 @@ export default function SystemConsole() {
       output: (
         <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
           <p className="text-emerald-400 font-bold">
-            [SYS_OK] NEXUS://OS v2.6.0 Kernel Initialized.
+            [SYS_OK] NEXUS://OS v3.0.0 Kernel Initialized.
           </p>
           <p className="text-neutral-400 text-[11px] sm:text-xs">
-            Ashok Pasala &mdash; Founder @ Varellen Technologies &amp; Norveth | 31 Hackathons • 22+ Projects
+            Ashok Pasala &mdash; Founder @ Varellen Technologies, Norveth &amp; OSPRED | 50+ Hackathons • 40+ Architectures
           </p>
           <p className="text-neutral-500 text-[10px] sm:text-xs pt-0.5">
             Type <span className="text-white font-bold">&apos;help&apos;</span> or tap quick run chips below.
@@ -56,47 +56,147 @@ export default function SystemConsole() {
           <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">Available Commands:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-xs pt-1">
-              <div><span className="text-white font-bold">devpost</span> : Devpost hackathon portfolio (22 projects)</div>
-              <div><span className="text-white font-bold">hackathons</span> : 31 hackathons track record</div>
-              <div><span className="text-white font-bold">systems</span> : Shipped AI &amp; multi-agent systems</div>
+              <div><span className="text-white font-bold">qros</span> : Quantitative ML &amp; Polymarket BTC trading</div>
+              <div><span className="text-white font-bold">ospred</span> : OSPRED &amp; Yaltan MCP discovery platform</div>
+              <div><span className="text-white font-bold">norveth</span> : Norveth crawler &amp; engineering intelligence</div>
+              <div><span className="text-white font-bold">slackmind</span> : Google Cloud Rapid Agent Hackathon</div>
+              <div><span className="text-white font-bold">hackathons</span> : 50+ Global Hackathons &amp; Wins</div>
+              <div><span className="text-white font-bold">fintech</span> : Bank of India Mule Account Detection</div>
+              <div><span className="text-white font-bold">infra</span> : 24/7 dedicated server &amp; local LLM lab</div>
               <div><span className="text-white font-bold">varellen</span> : Varellen Technologies venture</div>
-              <div><span className="text-white font-bold">norveth</span> : Norveth AI platform &amp; specs</div>
               <div><span className="text-white font-bold">thesis</span> : Founder &amp; engineering axioms</div>
-              <div><span className="text-white font-bold">stack</span> : Technical stack &amp; languages</div>
               <div><span className="text-white font-bold">contact</span> : Executive contact &amp; email</div>
-              <div><span className="text-white font-bold">geo</span> : Generative Engine Optimization spec</div>
-              <div><span className="text-white font-bold">whoami</span> : Current session identity</div>
               <div><span className="text-white font-bold">clear</span> : Clear terminal screen</div>
             </div>
           </div>
         )
         break
 
-      case 'devpost':
-      case 'hackathons':
+      case 'qros':
         output = (
           <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[DEVPOST PORTFOLIO // 31 HACKATHONS • 22 PROJECTS]</p>
+            <p className="text-emerald-400 font-semibold">[QUANTITATIVE ENGINE] QROS Platform</p>
+            <p className="text-neutral-400 text-xs">
+              • Target: Polymarket BTC 5-minute binary options &amp; prediction markets.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Ingestion: Binance 1-second streaming ticks with sub-millisecond price-to-beat anchors.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • ML Architecture: LightGBM Scale &amp; Shape models forecasting strike probability (p_up) and volatility vs EWMA/HAR baselines.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Execution: Backtester, paper trading simulator, and MM-1 market-making engine.
+            </p>
+          </div>
+        )
+        break
+
+      case 'ospred':
+      case 'yaltan':
+        output = (
+          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[SEARCH &amp; DISCOVERY] OSPRED &amp; Yaltan Pipeline</p>
+            <p className="text-neutral-400 text-xs">
+              • Purpose: Autonomous discovery, capability search, and verification for Model Context Protocol (MCP) servers and AI skills.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Yaltan Scraping: Multi-source GitHub and API connector pipeline with automated deduplication &amp; capability extraction.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Canonical Schema: Standardized schema defining agent identity, authorship, and security verification namespace.
+            </p>
+          </div>
+        )
+        break
+
+      case 'norveth':
+        output = (
+          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[VENTURE] Norveth (norveth.app)</p>
+            <p className="text-neutral-400 text-xs">
+              • Architecture: Playwright async crawling infrastructure with exponential backoff &amp; LLM failover.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Security Defenses: Full SSRF protection, private-IP blocking, CSP, HSTS, CSRF, and prompt-injection mitigations.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Knowledge Graph: AI reasoning layer mapping findings into interactive architecture diagrams and white-label reports.
+            </p>
+            <p className="text-xs text-emerald-400/80 pt-0.5">
+              Live SaaS: <a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">https://norveth.app</a>
+            </p>
+          </div>
+        )
+        break
+
+      case 'slackmind':
+        output = (
+          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[HACKATHON] Google Cloud Rapid Agent Hackathon</p>
+            <p className="text-neutral-400 text-xs">
+              • SlackMind: Autonomous AI command center orchestrating agent swarms directly inside Slack.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Tech Stack: Gemini foundation models, Vertex AI Search Data Store, and MCP server tooling with shared context routing.
+            </p>
+          </div>
+        )
+        break
+
+      case 'hackathons':
+      case 'devpost':
+        output = (
+          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[HACKATHONS // 50+ GLOBAL CHALLENGES • 40+ ARCHITECTURES]</p>
             <p className="text-xs text-neutral-400">
-              • <strong className="text-white">The Vector / Vector AI:</strong> Autonomous C-Suite multi-agent council (CEO, CTO, CMO).
+              • <strong className="text-white">Google Cloud Rapid Agent:</strong> SlackMind (Gemini + Vertex AI + MCP).
             </p>
             <p className="text-xs text-neutral-400">
-              • <strong className="text-white">CompanyBrain_AI:</strong> Enterprise AI executive fusing contracts, financials &amp; roadmaps.
+              • <strong className="text-white">Bank of India + IIT Hyderabad:</strong> Mule Account Detection (Graph ML).
             </p>
             <p className="text-xs text-neutral-400">
-              • <strong className="text-white">Qwen Chaos:</strong> Self-persistent neural MemoryAgent with cross-session recall.
+              • <strong className="text-white">SanDisk Hackathon:</strong> IWCIS exFAT Storage &amp; Container Architecture.
             </p>
             <p className="text-xs text-neutral-400">
-              • <strong className="text-white">ResQNet:</strong> Real-time AI disaster response and resource dispatch grid.
+              • <strong className="text-white">Qwen Global Hackathon:</strong> Qwen Chaos Self-Persistent MemoryAgent.
             </p>
             <p className="text-xs text-neutral-400">
-              • <strong className="text-white">LaunchLens:</strong> Multi-model market validation &amp; VC due diligence engine.
+              • <strong className="text-white">Google Agentic AI:</strong> The Vector (Autonomous Digital C-Suite).
             </p>
             <p className="text-xs text-neutral-400">
-              • <strong className="text-white">CareCompass &amp; TriageAI:</strong> Clinical-grade emergency triage &amp; navigation.
+              • <strong className="text-white">Global Disaster Tech:</strong> ResQNet (Real-Time Incident Triage Grid).
             </p>
             <p className="text-xs text-emerald-400/80 pt-1">
-              Devpost Profile: <a href="https://devpost.com/ashokashishms/" target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">https://devpost.com/ashokashishms/</a>
+              Devpost: <a href="https://devpost.com/ashokashishms/" target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">https://devpost.com/ashokashishms/</a>
+            </p>
+          </div>
+        )
+        break
+
+      case 'fintech':
+        output = (
+          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[FINTECH &amp; SECURITY] Mule Account Detection System</p>
+            <p className="text-neutral-400 text-xs">
+              • Partner: Bank of India + IIT Hyderabad Hackathon.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Algorithm: High-frequency transaction graph anomaly detection and behavioral pattern classification.
+            </p>
+          </div>
+        )
+        break
+
+      case 'infra':
+        output = (
+          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[INFRASTRUCTURE] 24/7 Server &amp; Local Model Lab</p>
+            <p className="text-neutral-400 text-xs">
+              • 24/7 Dedicated Server: Dell server running PostgreSQL, Redis, Cloudflare Tunnels, and background worker queues.
+            </p>
+            <p className="text-neutral-400 text-xs">
+              • Local AI Lab: Ollama, Qwen, Mistral, Hermes models benchmarked for bug-bounty &amp; CTF security research.
             </p>
           </div>
         )
@@ -106,36 +206,11 @@ export default function SystemConsole() {
         output = (
           <div className="space-y-2 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">[VENTURE] Varellen Technologies</p>
-            <p className="text-neutral-400">
-              Varellen Technologies is an advanced enterprise software and deep-tech venture founded by Ashok Pasala.
+            <p className="text-neutral-400 text-xs">
+              Enterprise digital platforms, closed-loop AI workflow automation, and high-throughput cloud infrastructure.
             </p>
-            <ul className="list-disc pl-4 text-xs text-neutral-400 space-y-0.5">
-              <li>High-performance digital platform development &amp; system architecture.</li>
-              <li>Enterprise AI automation systems and closed-loop agent workflows.</li>
-              <li>Scalable cloud infrastructure, microservice meshes, and secure APIs.</li>
-            </ul>
-            <p className="text-xs text-neutral-500 pt-1">
+            <p className="text-xs text-neutral-500 pt-0.5">
               Founder &amp; CEO: Ashok Pasala • Global Operations
-            </p>
-          </div>
-        )
-        break
-
-      case 'norveth':
-        output = (
-          <div className="space-y-2 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[VENTURE] Norveth (norveth.app)</p>
-            <p className="text-neutral-400">
-              Norveth is an AI-powered website intelligence and code-level diagnostic platform engineered by Ashok Pasala.
-            </p>
-            <ul className="list-disc pl-4 text-xs text-neutral-400 space-y-0.5">
-              <li>Real Chromium headless rendering engine (no shallow simulations).</li>
-              <li>Automated OWASP Top 10 security mapping &amp; WCAG 2.1 diagnostics.</li>
-              <li>Model Context Protocol (MCP) server &amp; developer CLI integration.</li>
-              <li>Deterministic, grounded AI code recommendations.</li>
-            </ul>
-            <p className="text-xs text-emerald-400/80 pt-1">
-              Visit: <a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">https://norveth.app</a>
             </p>
           </div>
         )
@@ -154,46 +229,6 @@ export default function SystemConsole() {
             <p className="text-neutral-400 text-xs">
               3. Sovereign Resilience &bull; Zero-trust security and sub-millisecond execution.
             </p>
-            <p className="text-neutral-400 text-xs">
-              4. Exponential Leverage &bull; Build foundational developer infrastructure.
-            </p>
-          </div>
-        )
-        break
-
-      case 'systems':
-        output = (
-          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[FLAGSHIP SYSTEMS &amp; ARCHITECTURES]</p>
-            <p className="text-xs text-neutral-400">
-              • <strong className="text-white">Vector AI Command Center:</strong> Multi-agent autonomous C-suite orchestration kernel.
-            </p>
-            <p className="text-xs text-neutral-400">
-              • <strong className="text-white">CompanyBrain_AI:</strong> Enterprise knowledge &amp; contract reasoning engine.
-            </p>
-            <p className="text-xs text-neutral-400">
-              • <strong className="text-white">Qwen Chaos MemoryAgent:</strong> Self-persistent agent with cross-session recall.
-            </p>
-            <p className="text-xs text-neutral-400">
-              • <strong className="text-white">ResQNet Disaster Response:</strong> Real-time incident triage &amp; live resource stream.
-            </p>
-            <p className="text-xs text-neutral-400">
-              • <strong className="text-white">LaunchLens:</strong> Multi-model market validation &amp; due diligence platform.
-            </p>
-            <p className="text-xs text-neutral-400">
-              • <strong className="text-white">OSPRED Autonomous Security:</strong> Attack surface scanner &amp; automated CVE synthesis.
-            </p>
-          </div>
-        )
-        break
-
-      case 'stack':
-        output = (
-          <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[SYSTEM STACK]</p>
-            <p className="text-xs text-neutral-400"><strong className="text-white">Languages:</strong> Python, TypeScript, Go, Rust, C/C++, Java, Solidity, SQL</p>
-            <p className="text-xs text-neutral-400"><strong className="text-white">Autonomous AI:</strong> Multi-Agent Swarms, LangChain, RAG, ChromaDB, MCP</p>
-            <p className="text-xs text-neutral-400"><strong className="text-white">Backend &amp; Infra:</strong> FastAPI, Node.js, Next.js 16, PostgreSQL, Redis, Docker, K8s, AWS</p>
           </div>
         )
         break
@@ -203,31 +238,10 @@ export default function SystemConsole() {
           <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">[CHANNELS]</p>
             <p className="text-xs text-neutral-400">• Primary: <span className="text-white">ashokashishms@gmail.com</span></p>
-            <p className="text-xs text-neutral-400">• Norveth Business: <span className="text-white">founder@norveth.app</span></p>
+            <p className="text-xs text-neutral-400">• Venture: <span className="text-white">founder@norveth.app</span></p>
             <p className="text-xs text-neutral-400">• Devpost: <span className="text-white">devpost.com/ashokashishms</span></p>
             <p className="text-xs text-neutral-400">• GitHub: <span className="text-white">github.com/ashokwebs</span></p>
             <p className="text-xs text-neutral-400">• X (Twitter): <span className="text-white">x.com/ashokfounds</span></p>
-          </div>
-        )
-        break
-
-      case 'geo':
-        output = (
-          <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[GEO SPECIFICATIONS]</p>
-            <p className="text-xs text-neutral-400">• Coordinates: 16.5062° N, 80.6480° E (Andhra Pradesh, India)</p>
-            <p className="text-xs text-neutral-400">• LLM Discovery: /llms.txt (GPTBot, ClaudeBot, PerplexityBot, Gemini)</p>
-            <p className="text-xs text-neutral-400">• Knowledge Graph: Person + Organizations (Varellen Technologies, Norveth) + ItemList</p>
-          </div>
-        )
-        break
-
-      case 'whoami':
-        output = (
-          <div className="text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400">guest@nexus-kernel [remote-terminal]</p>
-            <p className="text-neutral-400 text-xs">Host: Ashok Pasala (Founder @ Varellen Technologies &amp; Norveth | 31 Hackathons)</p>
-            <p className="text-neutral-500 text-xs">Permission: READ_ONLY // Protocol: TLS 1.3</p>
           </div>
         )
         break
@@ -283,7 +297,7 @@ export default function SystemConsole() {
                 Interactive System Console
               </h2>
               <p className="text-sm sm:text-lg text-neutral-400 font-light">
-                Inspect architecture parameters, Devpost hackathon projects (22+), and founder telemetry directly via command line.
+                Inspect architecture parameters, QROS quantitative models, OSPRED discovery pipelines, and 50+ hackathon records directly via CLI.
               </p>
             </div>
 
@@ -305,7 +319,7 @@ export default function SystemConsole() {
                 <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#ffbd2e]/80" />
                 <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#27c93f]/80" />
                 <span className="text-[11px] sm:text-xs text-neutral-400 ml-1.5 sm:ml-2 font-mono truncate max-w-[160px] sm:max-w-none">
-                  ashok@varellen:~ (zsh)
+                  ashok@nexus-kernel:~ (zsh)
                 </span>
               </div>
               <div className="text-[10px] sm:text-[11px] text-neutral-500 uppercase tracking-widest hidden sm:block">
@@ -318,7 +332,7 @@ export default function SystemConsole() {
               <span className="text-neutral-500 text-[10px] sm:text-[11px] uppercase tracking-wider shrink-0 mr-1">
                 Run:
               </span>
-              {['devpost', 'systems', 'varellen', 'norveth', 'thesis', 'stack', 'contact', 'clear'].map((cmd) => (
+              {['qros', 'ospred', 'norveth', 'slackmind', 'hackathons', 'fintech', 'infra', 'varellen', 'clear'].map((cmd) => (
                 <button
                   key={cmd}
                   onClick={() => handleQuickCommand(cmd)}
@@ -357,7 +371,7 @@ export default function SystemConsole() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Type command ('devpost', 'systems')..."
+                placeholder="Type command ('qros', 'ospred', 'hackathons')..."
                 className="flex-1 bg-transparent text-xs sm:text-sm text-white placeholder-neutral-500 outline-none font-mono"
                 aria-label="Interactive CLI command prompt"
                 autoComplete="off"
