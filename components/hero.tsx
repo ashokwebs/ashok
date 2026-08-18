@@ -12,15 +12,17 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-[90vh] sm:min-h-[92vh] flex items-center justify-center pt-24 sm:pt-28 pb-14 sm:pb-16 overflow-hidden bg-[#09090b]"
+      className="relative w-full min-h-[90vh] sm:min-h-[92vh] flex items-center justify-center pt-24 sm:pt-32 pb-14 sm:pb-24 overflow-hidden bg-[#09090b] grain-overlay"
     >
-      {/* Background ambient lighting */}
-      <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-[-10%] right-[-5%] w-[380px] sm:w-[600px] h-[380px] sm:h-[600px] rounded-full bg-white/[0.03] blur-[100px] sm:blur-[140px] animate-gentle-glow" />
+      {/* Background ambient lighting & mesh grid */}
+      <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]" />
+        <div className="absolute top-[-10%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-emerald-500/[0.03] blur-[120px] animate-pulse-slow" />
         <div
-          className="absolute bottom-[-10%] left-[-5%] w-[400px] sm:w-[650px] h-[400px] sm:h-[650px] rounded-full bg-neutral-800/[0.15] blur-[120px] sm:blur-[160px] animate-gentle-glow"
+          className="absolute bottom-[-10%] left-[-10%] w-[45vw] h-[45vw] rounded-full bg-blue-500/[0.03] blur-[130px] animate-gentle-glow"
           style={{ animationDelay: '2.5s' }}
         />
+        <div className="absolute top-[20%] left-[20%] w-[30vw] h-[30vw] rounded-full bg-purple-500/[0.02] blur-[100px] animate-subtle-float" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -38,7 +40,7 @@ export default function Hero() {
           {/* Monumental Name & Title */}
           <div className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
             <h1
-              className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter leading-none text-metallic break-words"
+              className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter leading-none break-words animate-shimmer bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-300 to-white"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
               Ashok Pasala
@@ -47,6 +49,8 @@ export default function Hero() {
                 — Founder of Varellen Technologies &amp; Norveth | AI &amp; Quantitative Systems Architect
               </span>
             </h1>
+
+            <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent mx-auto my-6 sm:my-8" />
 
             <p className="text-base sm:text-2xl md:text-3xl font-light text-neutral-200 tracking-tight max-w-3xl mx-auto leading-snug px-2">
               Architecting <span className="font-semibold text-white">Autonomous AI Infrastructure</span>, Quant ML Trading Engines &amp; Sovereign Systems.
@@ -62,7 +66,7 @@ export default function Hero() {
             <button
               onClick={() => scrollTo('projects')}
               aria-label="Explore Ashok Pasala's flagship software systems"
-              className="w-full sm:w-auto px-7 sm:px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 active:scale-[0.98] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono shadow-[0_4px_20px_rgba(255,255,255,0.15)] flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto px-7 sm:px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 active:scale-[0.98] transition-all text-xs sm:text-sm uppercase tracking-wider font-mono shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Explore Master Systems</span>
               <ArrowUpRight size={14} />
@@ -88,8 +92,8 @@ export default function Hero() {
           </div>
 
           {/* Key Authority Metrics Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 pt-6 sm:pt-8 max-w-4xl mx-auto border-t border-white/[0.08]">
-            <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-0.5 sm:space-y-1">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 pt-10 sm:pt-14 max-w-4xl mx-auto border-t border-white/[0.08]">
+            <div className="stagger-in p-3.5 sm:p-5 rounded-xl sm:rounded-2xl glass-card-interactive text-center space-y-0.5 sm:space-y-1" style={{ animationDelay: '0.1s' }}>
               <div
                 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
@@ -101,7 +105,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-0.5 sm:space-y-1">
+            <div className="stagger-in p-3.5 sm:p-5 rounded-xl sm:rounded-2xl glass-card-interactive text-center space-y-0.5 sm:space-y-1" style={{ animationDelay: '0.2s' }}>
               <div
                 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
@@ -113,9 +117,9 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-0.5 sm:space-y-1">
+            <div className="stagger-in p-3.5 sm:p-5 rounded-xl sm:rounded-2xl glass-card-interactive text-center space-y-0.5 sm:space-y-1" style={{ animationDelay: '0.3s' }}>
               <div
-                className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
+                className="text-xl sm:text-3xl font-extrabold text-white tracking-tight text-gradient-accent"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Varellen
@@ -125,7 +129,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all text-center space-y-0.5 sm:space-y-1">
+            <div className="stagger-in p-3.5 sm:p-5 rounded-xl sm:rounded-2xl glass-card-interactive text-center space-y-0.5 sm:space-y-1" style={{ animationDelay: '0.4s' }}>
               <div
                 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
@@ -146,7 +150,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ashok Pasala on GitHub"
-                className="p-2.5 text-neutral-400 hover:text-white hover:scale-110 active:scale-95 transition-all rounded-full touch-manipulation"
+                className="p-3 text-neutral-400 hover:text-white hover:bg-white/[0.08] hover:border-white/[0.12] border border-transparent backdrop-blur-md hover:-translate-y-1 active:scale-95 transition-all rounded-full touch-manipulation shadow-none hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]"
               >
                 <GitHubIcon size={20} />
               </a>
@@ -155,7 +159,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ashok Pasala on Devpost"
-                className="p-2.5 text-neutral-400 hover:text-white hover:scale-110 active:scale-95 transition-all rounded-full touch-manipulation"
+                className="p-3 text-neutral-400 hover:text-white hover:bg-white/[0.08] hover:border-white/[0.12] border border-transparent backdrop-blur-md hover:-translate-y-1 active:scale-95 transition-all rounded-full touch-manipulation shadow-none hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]"
               >
                 <DevpostIcon size={20} />
               </a>
@@ -164,7 +168,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ashok Pasala on LinkedIn"
-                className="p-2.5 text-neutral-400 hover:text-white hover:scale-110 active:scale-95 transition-all rounded-full touch-manipulation"
+                className="p-3 text-neutral-400 hover:text-white hover:bg-white/[0.08] hover:border-white/[0.12] border border-transparent backdrop-blur-md hover:-translate-y-1 active:scale-95 transition-all rounded-full touch-manipulation shadow-none hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]"
               >
                 <LinkedInIcon size={20} />
               </a>
@@ -173,7 +177,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ashok Pasala on X (Twitter)"
-                className="p-2.5 text-neutral-400 hover:text-white hover:scale-110 active:scale-95 transition-all rounded-full touch-manipulation"
+                className="p-3 text-neutral-400 hover:text-white hover:bg-white/[0.08] hover:border-white/[0.12] border border-transparent backdrop-blur-md hover:-translate-y-1 active:scale-95 transition-all rounded-full touch-manipulation shadow-none hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]"
               >
                 <XIcon size={20} />
               </a>

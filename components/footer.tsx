@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRight, Cpu } from 'lucide-react'
+import { ArrowUpRight, Cpu, ArrowUp } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -40,18 +40,21 @@ export default function Footer() {
 
   return (
     <footer className="relative border-t border-white/[0.08] bg-[#09090b] text-[#fafafa]">
+      {/* Decorative Top Gradient Line */}
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent opacity-70" />
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 space-y-16">
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
           {/* Brand & Mandate */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-white text-black font-bold flex items-center justify-center text-xs tracking-wider shadow-md">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-white to-neutral-200 text-black font-bold flex items-center justify-center text-xs tracking-wider shadow-md shrink-0">
                 AP
               </div>
               <div>
                 <h3
-                  className="text-lg font-bold text-white tracking-tight leading-none"
+                  className="text-lg font-bold text-white tracking-tight leading-none drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]"
                   style={{ fontFamily: 'var(--font-syne)' }}
                 >
                   Ashok Pasala
@@ -84,8 +87,9 @@ export default function Footer() {
                 <li key={link.label}>
                   <button
                     onClick={() => scrollTo(link.href)}
-                    className="text-neutral-400 hover:text-white transition-colors cursor-pointer text-left"
+                    className="group flex items-center gap-2 text-neutral-400 hover:text-white transition-all hover:translate-x-1 cursor-pointer text-left"
                   >
+                    <span className="opacity-0 -ml-3 transition-all group-hover:opacity-100 group-hover:ml-0 text-emerald-400">›</span>
                     {link.label}
                   </button>
                 </li>
@@ -107,10 +111,11 @@ export default function Footer() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-neutral-400 hover:text-white transition-colors inline-flex items-center gap-1"
+                    className="group flex items-center gap-1.5 text-neutral-400 hover:text-white transition-all hover:translate-x-1"
                   >
+                    <span className="opacity-0 -ml-3 transition-all group-hover:opacity-100 group-hover:ml-0 text-emerald-400">›</span>
                     <span>{item.label}</span>
-                    <ArrowUpRight size={12} />
+                    <ArrowUpRight size={12} className="opacity-50 group-hover:opacity-100 transition-opacity" />
                   </a>
                 </li>
               ))}
@@ -131,8 +136,9 @@ export default function Footer() {
                     href={soc.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-neutral-400 hover:text-white transition-colors"
+                    className="group flex items-center gap-2 text-neutral-400 hover:text-white transition-all hover:translate-x-1"
                   >
+                    <span className="opacity-0 -ml-3 transition-all group-hover:opacity-100 group-hover:ml-0 text-emerald-400">›</span>
                     {soc.label}
                   </a>
                 </li>
@@ -142,12 +148,24 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-neutral-400">
+        <div className="relative pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-neutral-400">
+          <div className="absolute top-0 left-0 w-8 h-[1px] bg-gradient-to-r from-white/40 to-transparent" />
+          <div className="absolute top-0 right-0 w-8 h-[1px] bg-gradient-to-l from-white/40 to-transparent" />
+          
           <p>© {currentYear} Ashok Pasala • Varellen Technologies &amp; Norveth. All rights reserved.</p>
-          <p className="flex items-center gap-2">
-            <Cpu size={12} />
-            <span>Engineered from First Principles • Next.js 16</span>
-          </p>
+          <div className="flex items-center gap-6">
+            <p className="flex items-center gap-2">
+              <Cpu size={12} className="text-emerald-500" />
+              <span>Engineered from First Principles • Next.js 16</span>
+            </p>
+            <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="w-8 h-8 flex items-center justify-center rounded-full glass-card-interactive text-neutral-400 hover:text-white hover:-translate-y-1 transition-all"
+              aria-label="Back to top"
+            >
+              <ArrowUp size={14} />
+            </button>
+          </div>
         </div>
       </div>
     </footer>
