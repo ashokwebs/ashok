@@ -4,7 +4,6 @@ import { useState } from 'react'
 import {
   ArrowUpRight,
   Cpu,
-  Layers,
   ShieldCheck,
   Database,
   Activity,
