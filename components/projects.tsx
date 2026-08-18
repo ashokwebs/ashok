@@ -208,16 +208,16 @@ export default function Projects() {
 
           {/* Interactive Filter Tabs */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2.5 border-b border-white/[0.08] -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar">
-            {[
+            {([
               { key: 'all', label: 'All Architectures (40+)' },
               { key: 'ai', label: 'Engineering AI & MCP (Norveth / OSPRED)' },
               { key: 'quant', label: 'Quantitative & ML (QROS)' },
               { key: 'hackathon', label: 'Hackathons (Google Cloud, Qwen)' },
               { key: 'security', label: 'Security & FinTech (Bank of India, IWCIS)' },
-            ].map((tab) => (
+            ] as const).map((tab) => (
               <button
                 key={tab.key}
-                onClick={() => setActiveFilter(tab.key as any)}
+                onClick={() => setActiveFilter(tab.key)}
                 className={`px-3.5 sm:px-4 py-2 rounded-full text-xs font-mono transition-all cursor-pointer shrink-0 active:scale-95 touch-manipulation ${
                   activeFilter === tab.key
                     ? 'bg-white text-black font-semibold shadow-md'
