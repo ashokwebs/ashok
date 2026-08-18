@@ -5,8 +5,8 @@
 
 @theme inline {
   --font-heading: var(--font-syne);
-  --font-sans: var(--font-inter), 'Inter Fallback';
-  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
+  --font-sans: var(--font-inter), 'Inter Fallback', sans-serif;
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback', monospace;
   
   --color-border: var(--border);
   --color-input: var(--input);
@@ -43,40 +43,40 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
-  --animate-subtle-float: subtle-float 8s ease-in-out infinite;
-  --animate-gentle-glow: gentle-glow 5s ease-in-out infinite;
+  --animate-subtle-float: subtle-float 7s ease-in-out infinite;
+  --animate-gentle-glow: gentle-glow 6s ease-in-out infinite;
   --animate-slide-in-up: slide-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   --animate-fade-in: fade-in 0.8s ease-out;
   --animate-pulse-slow: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 :root {
-  color-scheme: light;
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --card: #ffffff;
-  --card-foreground: #0a0a0a;
-  --popover: #ffffff;
-  --popover-foreground: #0a0a0a;
-  --primary: #0a0a0a;
-  --primary-foreground: #ffffff;
-  --secondary: #737373;
-  --secondary-foreground: #171717;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --accent: #f4f4f5;
-  --accent-foreground: #09090b;
-  --destructive: #dc2626;
+  color-scheme: dark;
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #111114;
+  --card-foreground: #fafafa;
+  --popover: #111114;
+  --popover-foreground: #fafafa;
+  --primary: #fafafa;
+  --primary-foreground: #09090b;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted: #18181b;
+  --muted-foreground: #a1a1aa;
+  --accent: #1e1e24;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #e4e4e7;
-  --input: #f4f4f5;
-  --ring: #0a0a0a;
+  --border: #27272a;
+  --input: #18181b;
+  --ring: #fafafa;
   --radius: 1rem;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/40;
     box-sizing: border-box;
   }
   body {
@@ -85,14 +85,17 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #09090b;
+    color: #fafafa;
   }
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+    background-color: #09090b;
   }
   ::selection {
-    background-color: #0a0a0a;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #09090b;
   }
 }
 
@@ -101,23 +104,23 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
   }
 }
 
 @keyframes gentle-glow {
   0%, 100% {
-    opacity: 0.6;
+    opacity: 0.35;
   }
   50% {
-    opacity: 0.95;
+    opacity: 0.65;
   }
 }
 
 @keyframes slide-in-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -145,26 +148,22 @@
 
 @layer utilities {
   .glass {
-    @apply bg-white/80 backdrop-blur-xl border border-black/[0.06] shadow-sm;
+    @apply bg-[#111114]/80 backdrop-blur-xl border border-white/[0.08] shadow-lg;
   }
   
   .glass-card {
-    @apply bg-white border border-border/80 shadow-[0_2px_12px_rgba(0,0,0,0.03),0_12px_32px_rgba(0,0,0,0.04)] rounded-[1.25rem] hover:shadow-[0_4px_24px_rgba(0,0,0,0.06),0_16px_48px_rgba(0,0,0,0.08)] hover:border-black/20 transition-all duration-300;
+    @apply bg-[#121216] border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.4)] rounded-[1.25rem] hover:border-white/[0.18] transition-all duration-300;
   }
 
   .glass-card-interactive {
-    @apply bg-white border border-border/80 shadow-[0_2px_12px_rgba(0,0,0,0.03),0_12px_32px_rgba(0,0,0,0.04)] rounded-[1.25rem] hover:shadow-[0_8px_32px_rgba(0,0,0,0.08),0_20px_60px_rgba(0,0,0,0.1)] hover:border-black hover:-translate-y-1 transition-all duration-300;
+    @apply bg-[#121216] border border-white/[0.08] shadow-[0_4px_24px_rgba(0,0,0,0.4)] rounded-[1.25rem] hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)] hover:border-white/[0.22] hover:-translate-y-1 transition-all duration-300;
   }
 
   .text-metallic {
-    @apply bg-clip-text text-transparent bg-gradient-to-br from-neutral-900 via-neutral-600 to-neutral-900;
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-neutral-200 to-neutral-500;
   }
   
-  .bg-metallic {
-    @apply bg-gradient-to-b from-slate-50 via-white to-slate-50;
-  }
-
   .badge-founder {
-    @apply inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-black/10 bg-black/[0.03] text-xs font-mono text-foreground uppercase tracking-wider backdrop-blur-md;
+    @apply inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/[0.12] bg-white/[0.04] text-xs font-mono text-white/90 uppercase tracking-wider backdrop-blur-md;
   }
 }

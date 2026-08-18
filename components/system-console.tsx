@@ -223,39 +223,39 @@ export default function SystemConsole() {
   }
 
   return (
-    <section id="console" className="relative w-full py-24 sm:py-32 overflow-hidden bg-background">
+    <section id="console" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#09090b]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
-              <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
-                <span>07 // Developer Terminal</span>
+              <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
+                <span>09 // Developer Terminal</span>
               </div>
               <h2
-                className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground tracking-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Interactive System Console
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground font-light">
+              <p className="text-base sm:text-lg text-neutral-400 font-light">
                 Inspect architecture parameters, venture data, and founder telemetry directly via command line.
               </p>
             </div>
 
             <button
               onClick={copyEmail}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/80 text-xs font-mono text-muted-foreground hover:text-foreground hover:border-foreground transition-all self-start md:self-auto cursor-pointer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.12] bg-white/[0.04] text-xs font-mono text-neutral-300 hover:text-white hover:border-white/[0.25] transition-all self-start md:self-auto cursor-pointer"
             >
-              {copied ? <Check size={14} className="text-emerald-500" /> : <Copy size={14} />}
+              {copied ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
               <span>{copied ? 'Copied ashokashishms@gmail.com' : 'Copy Executive Email'}</span>
             </button>
           </div>
 
           {/* Terminal Box */}
-          <div className="rounded-[1.5rem] bg-[#0c0d0e] border border-neutral-800 shadow-2xl overflow-hidden font-mono text-neutral-200">
+          <div className="rounded-[1.5rem] bg-[#0d0e11] border border-white/[0.1] shadow-2xl overflow-hidden font-mono text-neutral-200">
             {/* Terminal Window Chrome */}
-            <div className="px-5 py-3.5 bg-[#141517] border-b border-neutral-800 flex items-center justify-between">
+            <div className="px-5 py-3.5 bg-[#141518] border-b border-white/[0.08] flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-[#ff5f56]/80" />
                 <div className="w-3 h-3 rounded-full bg-[#ffbd2e]/80" />
@@ -270,7 +270,7 @@ export default function SystemConsole() {
             </div>
 
             {/* Quick Action Chips */}
-            <div className="px-5 py-2.5 bg-[#0e0f11] border-b border-neutral-800/80 flex items-center gap-2 overflow-x-auto text-xs">
+            <div className="px-5 py-2.5 bg-[#0f1013] border-b border-white/[0.06] flex items-center gap-2 overflow-x-auto text-xs">
               <span className="text-neutral-500 text-[11px] uppercase tracking-wider shrink-0">
                 Quick Run:
               </span>
@@ -278,7 +278,7 @@ export default function SystemConsole() {
                 <button
                   key={cmd}
                   onClick={() => handleQuickCommand(cmd)}
-                  className="px-2.5 py-1 rounded bg-neutral-800/80 hover:bg-neutral-700 text-neutral-300 text-xs shrink-0 transition-colors cursor-pointer"
+                  className="px-2.5 py-1 rounded bg-white/[0.05] hover:bg-white/[0.1] text-neutral-300 text-xs shrink-0 transition-colors cursor-pointer border border-white/[0.06]"
                 >
                   {cmd}
                 </button>
@@ -304,7 +304,7 @@ export default function SystemConsole() {
             </div>
 
             {/* Input Line */}
-            <div className="px-5 py-4 bg-[#111214] border-t border-neutral-800 flex items-center gap-3">
+            <div className="px-5 py-4 bg-[#121316] border-t border-white/[0.08] flex items-center gap-3">
               <span className="text-emerald-400 text-sm font-bold">➜</span>
               <span className="text-cyan-400 text-sm font-bold">~</span>
               <input

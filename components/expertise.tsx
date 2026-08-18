@@ -55,21 +55,21 @@ const domains = [
 
 export default function Expertise() {
   return (
-    <section id="expertise" className="relative w-full py-24 sm:py-32 overflow-hidden bg-background">
+    <section id="expertise" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#09090b]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
           {/* Section Header */}
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
-              <span>03 // Technical Breadth</span>
+            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
+              <span>04 // Technical Breadth</span>
             </div>
             <h2
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
               First-Principles Arsenal
             </h2>
-            <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
               Full-spectrum technical mastery spanning autonomous machine intelligence, low-latency distributed systems, and hardened cloud infrastructure.
             </p>
           </div>
@@ -81,46 +81,46 @@ export default function Expertise() {
               return (
                 <div
                   key={domain.title}
-                  className="glass-card-interactive p-7 sm:p-8 flex flex-col justify-between"
+                  className="glass-card-interactive p-7 sm:p-8 flex flex-col justify-between border border-white/[0.08]"
                   style={{ animationDelay: `${index * 80}ms` }}
                 >
                   <div className="space-y-5">
                     <div className="flex items-center justify-between">
-                      <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-foreground group-hover:bg-foreground group-hover:text-background transition-colors">
+                      <div className="w-10 h-10 rounded-xl bg-white/[0.06] flex items-center justify-center text-white border border-white/[0.1] group-hover:bg-white group-hover:text-black transition-colors">
                         <Icon size={20} strokeWidth={1.75} />
                       </div>
-                      <span className="text-xs font-mono text-muted-foreground">
+                      <span className="text-xs font-mono text-neutral-500">
                         0{index + 1}
                       </span>
                     </div>
 
                     <div className="space-y-1.5">
                       <h3
-                        className="text-xl font-bold text-foreground tracking-tight"
+                        className="text-xl font-bold text-white tracking-tight"
                         style={{ fontFamily: 'var(--font-syne)' }}
                       >
                         {domain.title}
                       </h3>
-                      <div className="text-xs font-mono text-muted-foreground">
+                      <div className="text-xs font-mono text-emerald-400">
                         {domain.subtitle}
                       </div>
                     </div>
 
-                    <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                    <p className="text-sm text-neutral-400 font-light leading-relaxed">
                       {domain.description}
                     </p>
                   </div>
 
                   {/* Capabilities List */}
-                  <div className="pt-6 mt-6 border-t border-border/80 space-y-2">
-                    <div className="text-[11px] font-mono uppercase tracking-wider text-muted-foreground">
+                  <div className="pt-6 mt-6 border-t border-white/[0.08] space-y-2">
+                    <div className="text-[11px] font-mono uppercase tracking-wider text-neutral-400">
                       Core Vectors
                     </div>
                     <div className="flex flex-wrap gap-1.5">
                       {domain.capabilities.map((cap) => (
                         <span
                           key={cap}
-                          className="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-100 text-foreground/80"
+                          className="px-2 py-0.5 text-[11px] font-mono rounded bg-white/[0.04] border border-white/[0.08] text-neutral-300"
                         >
                           {cap}
                         </span>

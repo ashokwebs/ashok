@@ -99,22 +99,22 @@ const categories = [
 
 export default function TechStack() {
   return (
-    <section id="tech-stack" className="relative w-full py-24 sm:py-32 overflow-hidden bg-slate-50/50">
+    <section id="tech-stack" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#0c0d10] border-y border-white/[0.08]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
           {/* Section Header */}
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
+            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
               <span>05 // Arsenal &amp; Tooling</span>
             </div>
             <h2
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
               Engineering Arsenal
             </h2>
-            <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
-              The high-leverage frameworks, runtimes, distributed protocols, and infrastructure tools powering Norveth and production deployments.
+            <p className="text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
+              The high-leverage frameworks, runtimes, distributed protocols, and infrastructure tools powering Varellen Technologies, Norveth, and production deployments.
             </p>
           </div>
 
@@ -123,36 +123,36 @@ export default function TechStack() {
             {categories.map((cat, idx) => (
               <div
                 key={cat.title}
-                className="glass-card-interactive p-7 sm:p-8 flex flex-col justify-between"
+                className="glass-card-interactive p-7 sm:p-8 flex flex-col justify-between border border-white/[0.08]"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
+                    <span className="text-xs font-mono uppercase tracking-wider text-neutral-400">
                       Stack Category
                     </span>
-                    <span className="text-xs font-mono text-muted-foreground">
+                    <span className="text-xs font-mono text-neutral-500">
                       0{idx + 1}
                     </span>
                   </div>
 
                   <div>
                     <h3
-                      className="text-xl font-bold text-foreground tracking-tight"
+                      className="text-xl font-bold text-white tracking-tight"
                       style={{ fontFamily: 'var(--font-syne)' }}
                     >
                       {cat.title}
                     </h3>
-                    <p className="text-xs text-muted-foreground font-light mt-1">
+                    <p className="text-xs text-neutral-400 font-light mt-1">
                       {cat.description}
                     </p>
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2 pt-6 mt-6 border-t border-border/80">
+                <div className="flex flex-wrap gap-2 pt-6 mt-6 border-t border-white/[0.08]">
                   {cat.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-2.5 py-1 text-xs font-mono rounded-md bg-white border border-border/80 text-foreground/80 hover:border-black transition-colors"
+                      className="px-2.5 py-1 text-xs font-mono rounded-md bg-white/[0.04] border border-white/[0.08] text-neutral-300 hover:border-white/[0.25] hover:text-white transition-colors"
                     >
                       {skill}
                     </span>

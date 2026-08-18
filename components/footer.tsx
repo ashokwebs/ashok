@@ -7,8 +7,10 @@ export default function Footer() {
 
   const links = [
     { label: 'Founder Thesis', href: '#about' },
+    { label: 'Core Ventures', href: '#ventures' },
     { label: 'Flagship Systems', href: '#projects' },
     { label: 'Technical Arsenal', href: '#expertise' },
+    { label: 'Systems R&D', href: '#research' },
     { label: 'Venture Trajectory', href: '#experience' },
     { label: 'Engineering Mandates', href: '#services' },
     { label: 'System Console', href: '#console' },
@@ -37,35 +39,35 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative border-t border-border/80 bg-background text-foreground">
+    <footer className="relative border-t border-white/[0.08] bg-[#09090b] text-[#fafafa]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 space-y-16">
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
           {/* Brand & Mandate */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-foreground text-background font-bold flex items-center justify-center text-xs tracking-wider">
+              <div className="w-8 h-8 rounded-lg bg-white text-black font-bold flex items-center justify-center text-xs tracking-wider shadow-md">
                 AP
               </div>
               <div>
                 <h3
-                  className="text-lg font-bold text-foreground tracking-tight leading-none"
+                  className="text-lg font-bold text-white tracking-tight leading-none"
                   style={{ fontFamily: 'var(--font-syne)' }}
                 >
                   Ashok Pasala
                 </h3>
-                <p className="text-[11px] font-mono text-muted-foreground uppercase tracking-widest mt-0.5">
+                <p className="text-[11px] font-mono text-neutral-400 uppercase tracking-widest mt-0.5">
                   Varellen Technologies • Norveth
                 </p>
               </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-muted-foreground font-light leading-relaxed max-w-sm">
-              Founder &amp; CEO of <strong className="text-foreground font-medium">Varellen Technologies</strong> and Systems Architect at <strong className="text-foreground font-medium">Norveth</strong> (norveth.app). Engineering sovereign AI infrastructure, enterprise software, and high-scale distributed backend systems from first principles.
+            <p className="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed max-w-sm">
+              Founder &amp; CEO of <strong className="text-white font-medium">Varellen Technologies</strong> and Systems Architect at <strong className="text-white font-medium">Norveth</strong> (norveth.app). Engineering sovereign AI infrastructure, enterprise software, and high-scale distributed backend systems from first principles.
             </p>
 
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-black/10 text-[11px] font-mono text-muted-foreground">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/[0.1] bg-white/[0.03] text-[11px] font-mono text-neutral-300">
+              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
               <span>Available for Strategic Mandates &amp; Advisory</span>
             </div>
           </div>
@@ -73,7 +75,7 @@ export default function Footer() {
           {/* Navigation */}
           <div className="md:col-span-2 space-y-4">
             <h4
-              className="text-xs font-mono uppercase tracking-widest text-foreground font-bold"
+              className="text-xs font-mono uppercase tracking-widest text-white font-bold"
             >
               Navigation
             </h4>
@@ -82,7 +84,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <button
                     onClick={() => scrollTo(link.href)}
-                    className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer text-left"
+                    className="text-neutral-400 hover:text-white transition-colors cursor-pointer text-left"
                   >
                     {link.label}
                   </button>
@@ -94,7 +96,7 @@ export default function Footer() {
           {/* Resources & Specifications */}
           <div className="md:col-span-3 space-y-4">
             <h4
-              className="text-xs font-mono uppercase tracking-widest text-foreground font-bold"
+              className="text-xs font-mono uppercase tracking-widest text-white font-bold"
             >
               Ventures &amp; Specs
             </h4>
@@ -105,7 +107,7 @@ export default function Footer() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1"
+                    className="text-neutral-400 hover:text-white transition-colors inline-flex items-center gap-1"
                   >
                     <span>{item.label}</span>
                     <ArrowUpRight size={12} />
@@ -118,7 +120,7 @@ export default function Footer() {
           {/* Verified Profiles */}
           <div className="md:col-span-2 space-y-4">
             <h4
-              className="text-xs font-mono uppercase tracking-widest text-foreground font-bold"
+              className="text-xs font-mono uppercase tracking-widest text-white font-bold"
             >
               Network
             </h4>
@@ -129,7 +131,7 @@ export default function Footer() {
                     href={soc.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-neutral-400 hover:text-white transition-colors"
                   >
                     {soc.label}
                   </a>
@@ -140,7 +142,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-muted-foreground">
+        <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-neutral-400">
           <p>© {currentYear} Ashok Pasala • Varellen Technologies &amp; Norveth. All rights reserved.</p>
           <p className="flex items-center gap-2">
             <Cpu size={12} />
