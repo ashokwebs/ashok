@@ -262,7 +262,7 @@ html_content = """<!DOCTYPE html>
       </div>
       <ul class="bullets">
         <li>Built high-frequency trading platform targeting <strong>Polymarket BTC 5-minute prediction markets</strong> using Binance 1-second streaming tick feeds.</li>
-        <li>Trained LightGBM Scale/Shape ML models predicting strike settlement probabilities ($p_{up} = P(S_T > K)$) and volatility alongside an MM-1 market-making engine.</li>
+        <li>Trained LightGBM Scale/Shape ML models predicting strike settlement probabilities (p_up = P(S_T > K)) and volatility alongside an MM-1 market-making engine.</li>
       </ul>
     </div>
   </section>

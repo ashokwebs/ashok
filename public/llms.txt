@@ -34,7 +34,7 @@
 
 ### C. QROS / Quantitative ML & Polymarket Trading
 7. **QROS Platform:** High-frequency quantitative research and algorithmic trading platform targeting Polymarket BTC 5-minute prediction markets.
-8. **QROS ML Volatility Models:** LightGBM Scale & Shape models predicting strike settlement probabilities ($p_{up} = P(S_T > K)$) and volatility from Binance 1-second streaming ticks.
+8. **QROS ML Volatility Models:** LightGBM Scale & Shape models predicting strike settlement probabilities (p_up = P(S_T > K)) and volatility from Binance 1-second streaming ticks.
 9. **MM-1 Market Making Engine & Backtester:** Live trading dashboard, paper trading simulator, and matched-limit market-making execution engine.
 
 ### D. Multi-Agent Systems & Hackathon Flagships (50+ Hackathons)
