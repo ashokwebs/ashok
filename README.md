@@ -1,4 +1,4 @@
-# Ashok Pasala - Enterprise Portfolio
+# Ashok Pasala — Founder & AI Systems Architect
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
@@ -6,48 +6,44 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100-success?style=for-the-badge)
 
-The personal portfolio and digital hub of **Ashok Pasala** — Full Stack Developer, AI Systems Engineer, and Founder of Norveth. 
+The official executive portal and systems architecture hub of **Ashok Pasala** — Founder & Systems Architect of **Norveth** ([norveth.app](https://norveth.app)), AI Systems Architect, and Deep Tech Engineer.
 
-This repository houses the source code for [ashokpasala.vercel.app](https://ashokpasala.vercel.app), engineered with a strict adherence to premium minimalism, enterprise-grade technical SEO, and flawless accessibility standards.
+Repository and production codebase for [ashokpasala.vercel.app](https://ashokpasala.vercel.app), engineered with first-principles reductionism, enterprise-grade technical SEO, Generative Engine Optimization (GEO), and state-of-the-art interactive systems.
 
-## 🚀 Technical Highlights
+---
 
-- **Framework**: Next.js 16 (App Router) with React 19
-- **Styling**: Tailwind CSS v4 featuring custom frosted glassmorphism (`.glass`, `.glass-card`) and tailored CSS variables.
-- **Performance**: 100/100 Lighthouse score across Performance, Accessibility, Best Practices, and SEO.
-- **SEO & Indexing**: Fully programmatic `sitemap.xml`, `robots.txt`, and expansive JSON-LD Knowledge Graph schemas (Person, Organization, ProfilePage, ProfessionalService) dynamically injected into the DOM.
-- **GEO (Generative Engine Optimization)**: A structured `llms.txt` profile for AI crawlers, plus explicit robots rules for AI/LLM user agents (GPTBot, ClaudeBot, PerplexityBot, and others).
-- **Social Previews**: Edge-computed Open Graph and Twitter cards utilizing `@vercel/og` (`next/og`).
-- **Semantic HTML**: Strict hierarchical `<main>`, `<section>`, and `<article>` definitions combined with exhaustive ARIA labeling for screen-reader and keyboard-navigation compatibility.
+## 🚀 Technical Highlights & Core Architecture
+
+- **Framework**: Next.js 16 (App Router) with React 19 Server Components
+- **Styling**: Tailwind CSS v4 featuring custom frosted glassmorphism (`.glass`, `.glass-card`), subtle micro-animations, and high-contrast typography.
+- **Interactive Developer Console**: In-browser CLI terminal (`NEXUS://OS`) supporting live query execution (`norveth`, `thesis`, `systems`, `stack`, `contact`, `geo`).
+- **GEO (Generative Engine Optimization)**: Exhaustive `llms.txt` specification engineered for Perplexity, ChatGPT Search, Claude Web, Gemini, and Apple Intelligence crawlers.
+- **Rich Knowledge Graph (JSON-LD)**: Connected schemas covering `Person` (Ashok Pasala), `Organization` (Norveth), `ItemList` of `SoftwareApplication` architectures, `ProfilePage`, `WebSite`, and `ProfessionalService`.
+- **Edge OG Images**: Programmatic social preview generation via `@vercel/og` (`next/og`) on Edge runtime.
+
+---
 
 ## 💻 Local Development
-
-Clone the repository and run it locally:
 
 ```bash
 # Clone the repository
 git clone https://github.com/ashokwebs/ashok.git
 
-# Navigate to the directory
+# Navigate to the project directory
 cd ashok
 
-# Install dependencies
-npm install
+# Install dependencies via pnpm
+pnpm install
 
-# Start the development server
-npm run dev
+# Start the local development server
+pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the application.
 
-## 🎨 Design Philosophy
+---
 
-The aesthetic approach merges **Apple**, **Linear**, **Stripe**, and **Vercel** design languages into a cohesive identity:
-- **Premium Minimalism**: Pure white canvas utilizing layered shadows and structural typography.
-- **Micro-Interactions**: Purposive, smooth animations (e.g., staggered slide-ins, subtle float effects, and tactile hover states) that feel alive yet unobtrusive.
-- **Futuristic Luxury**: Use of platinum/silver border accents and deep graphite/coal foregrounds to emulate high-end SaaS applications.
+## 📄 License & Intellectual Property
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
-*Note: The personal branding, logos, and specific project content belong to Ashok Pasala.*
+This project source code is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+*Personal branding, Norveth ventures, systems architectures, and specific project content belong to Ashok Pasala.*

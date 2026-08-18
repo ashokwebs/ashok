@@ -1,37 +1,49 @@
 'use client'
 
-import { Globe, Server, Bot, LayoutDashboard, Compass, Wrench } from 'lucide-react'
+import { Globe, Server, Bot, Shield, Compass, Wrench, ArrowUpRight } from 'lucide-react'
 
-const services = [
+const mandates = [
   {
-    icon: Globe,
-    title: 'Full Stack Development',
-    description: 'End-to-end web applications with React, Next.js, and TypeScript — from polished frontends to production deployments.',
+    icon: Bot,
+    title: 'Autonomous AI & Multi-Agent Architecture',
+    tag: 'Core Specialty',
+    description:
+      'Designing and deploying sovereign multi-agent runtimes, closed-loop automation workflows, custom RAG search pipelines, and LLM-powered tool-calling architectures for high-impact enterprise workflows.',
   },
   {
     icon: Server,
-    title: 'Backend & API Development',
-    description: 'Scalable REST and GraphQL APIs, authentication systems, database design, and microservice architectures.',
+    title: 'High-Scale Backend & Distributed APIs',
+    tag: 'Infrastructure',
+    description:
+      'Architecting resilient RESTful, GraphQL, gRPC, and WebSocket backend systems with sub-millisecond dispatch, optimized relational and vector database structures, and bulletproof authentication.',
   },
   {
-    icon: Bot,
-    title: 'AI Automation & Agents',
-    description: 'Custom AI agents, multi-agent workflows, RAG pipelines, and LLM-powered automation for real business processes.',
+    icon: Globe,
+    title: 'Full-Stack Sovereign SaaS Platforms',
+    tag: 'End-to-End',
+    description:
+      'Building ultra-responsive, accessible, and high-conversion web applications utilizing Next.js 16 (App Router), React 19, and Tailwind CSS. Built for hyper-speed, seamless UX, and long-term maintainability.',
   },
   {
-    icon: LayoutDashboard,
-    title: 'SaaS & Dashboard Development',
-    description: 'Analytics dashboards, admin panels, and complete SaaS products built for performance and maintainability.',
+    icon: Shield,
+    title: 'Cybersecurity & Attack Surface Hardening',
+    tag: 'Zero-Trust',
+    description:
+      'Comprehensive security assessments, automated vulnerability scanning via custom tooling (like OSPRED), Linux server hardening, OWASP mitigation, and threat intelligence synthesis.',
   },
   {
     icon: Compass,
-    title: 'System Architecture & Consulting',
-    description: 'Technical consulting on system design, scalability, security, and infrastructure decisions.',
+    title: 'Venture & Systems Architecture Advisory',
+    tag: 'Strategic Advisory',
+    description:
+      'Guiding startups and established technical teams on systems design, technical roadmap formulation, tech-stack evaluation, and cloud cost/latency optimizations.',
   },
   {
     icon: Wrench,
-    title: 'Developer Tooling & Prototyping',
-    description: 'Internal tools, CLI utilities, integrations, and rapid prototypes to validate ideas quickly.',
+    title: 'Developer Infrastructure & Rapid Prototyping',
+    tag: 'Velocity',
+    description:
+      'Engineering custom CLI developer tools, API gateways, Model Context Protocol (MCP) servers, and zero-to-one deep-tech MVPs designed to validate breakthrough ideas in days, not months.',
   },
 ]
 
@@ -41,61 +53,91 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="relative w-full py-24 sm:py-32 overflow-hidden">
+    <section id="services" className="relative w-full py-24 sm:py-32 overflow-hidden bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
-          {/* Heading */}
-          <div className="space-y-6 max-w-2xl">
+          {/* Section Header */}
+          <div className="space-y-4 max-w-3xl">
+            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
+              <span>06 // Strategic Engagements</span>
+            </div>
             <h2
-              className="text-5xl sm:text-6xl font-bold text-foreground tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
-              Services
+              Engineering Mandates
             </h2>
-            <p className="text-lg text-muted-foreground font-light">
-              Available for freelance projects, technical consulting, and long-term collaborations.
+            <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
+              Partnering with ambitious founders, enterprises, and engineering leaders to execute high-stakes technical projects.
             </p>
           </div>
 
-          {/* Grid */}
+          {/* Mandates Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => {
-              const Icon = service.icon
+            {mandates.map((mandate, idx) => {
+              const Icon = mandate.icon
               return (
                 <div
-                  key={service.title}
-                  className="group p-6 sm:p-8 glass-card animate-slide-in-up hover:-translate-y-1 transition-transform duration-300"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  key={mandate.title}
+                  className="glass-card-interactive p-7 sm:p-8 flex flex-col justify-between"
+                  style={{ animationDelay: `${idx * 80}ms` }}
                 >
                   <div className="space-y-5">
-                    <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                      <Icon size={24} className="text-foreground" strokeWidth={1.5} />
+                    <div className="flex items-center justify-between">
+                      <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-foreground group-hover:bg-foreground group-hover:text-background transition-colors">
+                        <Icon size={20} strokeWidth={1.75} />
+                      </div>
+                      <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-slate-100 text-foreground/80 border border-slate-200">
+                        {mandate.tag}
+                      </span>
                     </div>
-                    <div className="space-y-3">
+
+                    <div className="space-y-2">
                       <h3
-                        className="text-lg font-bold text-foreground"
+                        className="text-xl font-bold text-foreground tracking-tight"
                         style={{ fontFamily: 'var(--font-syne)' }}
                       >
-                        {service.title}
+                        {mandate.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                        {service.description}
+                      <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                        {mandate.description}
                       </p>
                     </div>
+                  </div>
+
+                  <div className="pt-6 mt-6 border-t border-border/80 flex items-center justify-between">
+                    <button
+                      onClick={scrollToContact}
+                      className="text-xs font-mono font-medium text-foreground hover:opacity-70 transition-opacity flex items-center gap-1 cursor-pointer"
+                    >
+                      <span>Inquire Mandate</span>
+                      <ArrowUpRight size={14} />
+                    </button>
                   </div>
                 </div>
               )
             })}
           </div>
 
-          {/* CTA */}
-          <div className="flex justify-center">
+          {/* CTA Banner */}
+          <div className="p-8 sm:p-12 rounded-[1.75rem] border border-border/90 bg-white/70 backdrop-blur-xl shadow-lg flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-xl">
+              <h3
+                className="text-2xl font-bold text-foreground tracking-tight"
+                style={{ fontFamily: 'var(--font-syne)' }}
+              >
+                Have a Complex Systems Challenge?
+              </h3>
+              <p className="text-sm text-muted-foreground font-light">
+                Direct advisory on autonomous AI agent swarms, distributed architectures, and sovereign developer tooling. Available worldwide.
+              </p>
+            </div>
+
             <button
               onClick={scrollToContact}
-              aria-label="Contact Ashok Pasala about a project"
-              className="px-8 py-3.5 bg-foreground text-background font-medium rounded-[1.25rem] hover:opacity-90 transition-all duration-300 text-sm sm:text-base shadow-[0_4px_14px_0_rgb(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:outline-none"
+              className="px-8 py-3.5 bg-foreground text-background font-medium text-xs font-mono uppercase tracking-wider rounded-full hover:opacity-90 transition-all shrink-0 cursor-pointer shadow-md"
             >
-              Start a Project
+              Initiate Discussion
             </button>
           </div>
         </div>

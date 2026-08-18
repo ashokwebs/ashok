@@ -31,7 +31,7 @@ export default function NotFound() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background rounded-full font-medium hover:scale-105 transition-transform duration-300 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none"
           >
             <ArrowLeft size={18} />
-            Return to Dashboard
+            Return Home
           </Link>
         </div>
       </div>
