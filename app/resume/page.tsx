@@ -6,10 +6,51 @@ export const metadata: Metadata = {
   title: 'Executive Resume & Systems Architecture Spec',
   description:
     'Official executive resume of Ashok Pasala — Founder & CEO of Varellen Technologies, Systems Architect of Norveth, OSPRED, QROS. 50+ Hackathons, 40+ Shipped Architectures.',
+  // Without this the root layout's `alternates.canonical: '/'` is inherited and
+  // this page declares itself a duplicate of the homepage, which keeps it out
+  // of the index entirely.
+  alternates: {
+    canonical: '/resume',
+  },
+  openGraph: {
+    title: 'Executive Resume & Systems Architecture Spec | Ashok Pasala',
+    description:
+      'Official executive resume of Ashok Pasala — Founder & CEO of Varellen Technologies, Systems Architect of Norveth, OSPRED, QROS.',
+    url: 'https://ashokpasala.vercel.app/resume',
+    type: 'profile',
+  },
+}
+
+const resumeJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://ashokpasala.vercel.app/resume#webpage',
+  url: 'https://ashokpasala.vercel.app/resume',
+  name: 'Executive Resume & Systems Architecture Spec — Ashok Pasala',
+  // Bind this page to the Person entity declared in the root layout so search
+  // and generative engines treat the two as one identity rather than two.
+  about: { '@id': 'https://ashokpasala.vercel.app/#person' },
+  mainEntity: { '@id': 'https://ashokpasala.vercel.app/#person' },
+  isPartOf: { '@id': 'https://ashokpasala.vercel.app/#website' },
+  inLanguage: 'en',
+  dateModified: new Date().toISOString().split('T')[0],
+  significantLink: 'https://ashokpasala.vercel.app/resume.pdf',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Executive Hub', item: 'https://ashokpasala.vercel.app' },
+      { '@type': 'ListItem', position: 2, name: 'Executive Resume', item: 'https://ashokpasala.vercel.app/resume' },
+    ],
+  },
 }
 
 export default function ResumePage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(resumeJsonLd) }}
+      />
     <main className="min-h-screen bg-[#09090b] text-[#fafafa] py-12 px-4 sm:px-6 lg:px-8 font-sans selection:bg-white selection:text-black">
       {/* Top Action Navigation */}
       <div className="max-w-4xl mx-auto mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 print:hidden">
@@ -251,5 +292,6 @@ export default function ResumePage() {
         </section>
       </div>
     </main>
+    </>
   )
 }
