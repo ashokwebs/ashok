@@ -48,7 +48,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#0c0d10] border-t border-white/[0.08]">
+    <section id="contact" className="relative w-full py-20 sm:py-32 overflow-hidden bg-[#0c0d10] border-t border-white/[0.08]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
           {/* Section Heading */}

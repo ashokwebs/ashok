@@ -32,7 +32,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="relative w-full py-32 sm:py-40 overflow-hidden bg-[#09090b]">
+    <section id="about" className="relative w-full py-20 sm:py-32 overflow-hidden bg-[#09090b]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-24 sm:space-y-32">
           {/* Section Heading */}

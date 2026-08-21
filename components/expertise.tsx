@@ -55,7 +55,7 @@ const domains = [
 
 export default function Expertise() {
   return (
-    <section id="expertise" className="relative w-full py-24 sm:py-32 overflow-hidden bg-[#09090b]">
+    <section id="expertise" className="relative w-full py-20 sm:py-32 overflow-hidden bg-[#09090b]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
           {/* Section Header */}
