@@ -49,6 +49,12 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/',
+    // Advertise the AI-crawler spec in <head> so generative engines can find it
+    // without guessing the path; previously /llms.txt was only reachable via a
+    // visible link in the page body.
+    types: {
+      'text/markdown': '/llms.txt',
+    },
   },
   robots: {
     index: true,
@@ -68,8 +74,6 @@ export const metadata: Metadata = {
     'geo.position': '16.5062;80.6480',
     'ICBM': '16.5062, 80.6480',
     'author': 'Ashok Pasala',
-    'revisit-after': '3 days',
-    'rating': 'general',
   },
   openGraph: {
     title: siteTitle,
@@ -233,6 +237,7 @@ export default function RootLayout({
       {
         '@type': 'WebSite',
         '@id': 'https://ashokpasala.vercel.app/#website',
+        dateModified: new Date().toISOString().split('T')[0],
         url: 'https://ashokpasala.vercel.app',
         name: 'Ashok Pasala — Founder & AI Systems Architect',
         description:
@@ -245,6 +250,7 @@ export default function RootLayout({
       {
         '@type': 'ProfilePage',
         '@id': 'https://ashokpasala.vercel.app/#webpage',
+        dateModified: new Date().toISOString().split('T')[0],
         url: 'https://ashokpasala.vercel.app',
         name: 'Ashok Pasala — Founder & AI Systems Architect',
         isPartOf: {
@@ -355,6 +361,70 @@ export default function RootLayout({
             itemOffered: { '@type': 'Service', name },
           })),
         },
+      },
+      {
+        // Generative engines quote FAQPage entities near-verbatim when answering
+        // "who is / what is" queries, so these mirror the real questions an LLM
+        // gets asked about Ashok and the ventures. Every answer here is drawn
+        // from public/llms.txt so the two sources cannot drift apart.
+        '@type': 'FAQPage',
+        '@id': 'https://ashokpasala.vercel.app/#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Who is Ashok Pasala?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text:
+                'Ashok Pasala (also known as Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer based in Andhra Pradesh, India. He is Founder & CEO of Varellen Technologies, Founder & Systems Architect of Norveth, creator of OSPRED & Yaltan, and lead architect of QROS. He has engineered 40+ production-grade software architectures across 50+ global hackathons, including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, and Qwen Global.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'What is Varellen Technologies?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text:
+                'Varellen Technologies is an enterprise systems engineering and software venture founded by Ashok Pasala. It focuses on high-performance digital platforms, closed-loop AI automation frameworks, scalable cloud architectures, and resilient microservice systems.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'What is Norveth?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text:
+                'Norveth (norveth.app) is an AI-powered website engineering intelligence and dynamic crawling platform engineered by Ashok Pasala. It combines Playwright headless execution, automated OWASP Top 10 security mapping, WCAG 2.1 diagnostics, and an Engineering Knowledge Graph reasoning layer.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'What is OSPRED?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text:
+                'OSPRED is an autonomous capability discovery and indexing engine for Model Context Protocol (MCP) servers, reusable AI skills, and plugins. It is built on the Yaltan scraping connector pipeline, a Canonical Capability Schema, and automated security trust scoring.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'What is QROS?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text:
+                'QROS is a high-frequency quantitative research and algorithmic trading platform targeting Polymarket BTC 5-minute prediction markets, using LightGBM volatility models over Binance one-second streaming ticks, plus a market-making execution engine and backtester.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'How can I contact Ashok Pasala?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text:
+                'Ashok Pasala can be reached at ashokashishms@gmail.com for general enquiries or founder@norveth.app for executive and venture enquiries. He is also on GitHub (github.com/ashokwebs), LinkedIn, and X (@ashokfounds).',
+            },
+          },
+        ],
       },
       {
         '@type': 'BreadcrumbList',

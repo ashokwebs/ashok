@@ -25,7 +25,10 @@ export default function robots(): MetadataRoute.Robots {
           'Meta-ExternalAgent',
           'Bytespider',
         ],
-        allow: ['/', '/llms.txt'],
+        // Parity with the wildcard group: a named user-agent group fully
+        // replaces `*` for that bot, so anything omitted here is invisible to
+        // it — including the resume PDF.
+        allow: ['/', '/llms.txt', '/resume.pdf'],
       },
     ],
     sitemap: 'https://ashokpasala.vercel.app/sitemap.xml',
