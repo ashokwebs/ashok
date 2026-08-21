@@ -35,13 +35,13 @@ export default function Ventures() {
             <article className="glass-card-interactive p-6 sm:p-8 flex flex-col justify-between space-y-6 group border border-white/[0.08]">
               <div className="space-y-5">
                 {/* Badge row */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 min-w-0">
                     <div className="w-10 h-10 rounded-xl bg-white text-black flex items-center justify-center font-mono font-bold text-sm tracking-wider shadow-md">
                       VT
                     </div>
-                    <div>
-                      <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
+                    <div className="min-w-0">
+                      <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest whitespace-nowrap">
                         Founder &amp; CEO
                       </span>
                       <h3
@@ -52,7 +52,7 @@ export default function Ventures() {
                       </h3>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
+                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1] whitespace-nowrap shrink-0">
                     Enterprise
                   </span>
                 </div>
@@ -103,12 +103,12 @@ export default function Ventures() {
               <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between">
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-1 text-xs font-mono font-medium text-white hover:text-neutral-300 transition-colors"
+                  className="inline-flex items-center gap-1 text-xs font-mono font-medium text-white hover:text-neutral-300 transition-colors whitespace-nowrap"
                 >
                   <span>Enterprise Inquiry</span>
                   <ArrowUpRight size={13} />
                 </a>
-                <span className="text-[10px] font-mono text-neutral-500">
+                <span className="text-[10px] font-mono text-neutral-500 whitespace-nowrap shrink-0">
                   Global Operations
                 </span>
               </div>
@@ -118,13 +118,13 @@ export default function Ventures() {
             <article className="glass-card-interactive p-6 sm:p-8 flex flex-col justify-between space-y-6 group border border-white/[0.08]">
               <div className="space-y-5">
                 {/* Badge row */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 min-w-0">
                     <div className="w-10 h-10 rounded-xl bg-white text-black flex items-center justify-center font-mono font-bold text-sm tracking-wider shadow-md">
                       NV
                     </div>
-                    <div>
-                      <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
+                    <div className="min-w-0">
+                      <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest whitespace-nowrap">
                         Founder &amp; Architect
                       </span>
                       <h3
@@ -135,7 +135,7 @@ export default function Ventures() {
                       </h3>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
+                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1] whitespace-nowrap shrink-0">
                     norveth.app
                   </span>
                 </div>
@@ -188,12 +188,12 @@ export default function Ventures() {
                   href="https://norveth.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-emerald-400 hover:text-emerald-300 transition-colors whitespace-nowrap"
                 >
                   <Globe size={13} />
                   <span>Launch norveth.app ↗</span>
                 </a>
-                <span className="text-[10px] font-mono text-neutral-500">
+                <span className="text-[10px] font-mono text-neutral-500 whitespace-nowrap shrink-0">
                   Live SaaS
                 </span>
               </div>
@@ -203,13 +203,13 @@ export default function Ventures() {
             <article className="glass-card-interactive p-6 sm:p-8 flex flex-col justify-between space-y-6 group border border-white/[0.08]">
               <div className="space-y-5">
                 {/* Badge row */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 min-w-0">
                     <div className="w-10 h-10 rounded-xl bg-white text-black flex items-center justify-center font-mono font-bold text-sm tracking-wider shadow-md">
                       OS
                     </div>
-                    <div>
-                      <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
+                    <div className="min-w-0">
+                      <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest whitespace-nowrap">
                         Creator &amp; Architect
                       </span>
                       <h3
@@ -220,7 +220,7 @@ export default function Ventures() {
                       </h3>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1]">
+                  <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/[0.06] text-neutral-300 border border-white/[0.1] whitespace-nowrap shrink-0">
                     Search Engine
                   </span>
                 </div>
@@ -271,12 +271,12 @@ export default function Ventures() {
               <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between">
                 <a
                   href="#projects"
-                  className="inline-flex items-center gap-1 text-xs font-mono font-medium text-white hover:text-neutral-300 transition-colors"
+                  className="inline-flex items-center gap-1 text-xs font-mono font-medium text-white hover:text-neutral-300 transition-colors whitespace-nowrap"
                 >
-                  <span>Explore Search Architecture</span>
+                  <span>Explore Architecture</span>
                   <ArrowUpRight size={13} />
                 </a>
-                <span className="text-[10px] font-mono text-neutral-500">
+                <span className="text-[10px] font-mono text-neutral-500 whitespace-nowrap shrink-0">
                   Major Platform
                 </span>
               </div>

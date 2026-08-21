@@ -95,7 +95,7 @@ export default function Hero() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 pt-10 sm:pt-14 max-w-4xl mx-auto border-t border-white/[0.08]">
             <div className="stagger-in p-3.5 sm:p-5 rounded-xl sm:rounded-2xl glass-card-interactive text-center space-y-0.5 sm:space-y-1" style={{ animationDelay: '0.1s' }}>
               <div
-                className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
+                className="text-xl sm:text-2xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 50+
@@ -107,7 +107,7 @@ export default function Hero() {
 
             <div className="stagger-in p-3.5 sm:p-5 rounded-xl sm:rounded-2xl glass-card-interactive text-center space-y-0.5 sm:space-y-1" style={{ animationDelay: '0.2s' }}>
               <div
-                className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
+                className="text-xl sm:text-2xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 40+
@@ -119,7 +119,7 @@ export default function Hero() {
 
             <div className="stagger-in p-3.5 sm:p-5 rounded-xl sm:rounded-2xl glass-card-interactive text-center space-y-0.5 sm:space-y-1" style={{ animationDelay: '0.3s' }}>
               <div
-                className="text-xl sm:text-3xl font-extrabold text-white tracking-tight text-gradient-accent"
+                className="text-xl sm:text-2xl font-extrabold text-white tracking-tight text-gradient-accent"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Varellen
@@ -131,7 +131,7 @@ export default function Hero() {
 
             <div className="stagger-in p-3.5 sm:p-5 rounded-xl sm:rounded-2xl glass-card-interactive text-center space-y-0.5 sm:space-y-1" style={{ animationDelay: '0.4s' }}>
               <div
-                className="text-xl sm:text-3xl font-extrabold text-white tracking-tight"
+                className="text-xl sm:text-2xl font-extrabold text-white tracking-tight"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
                 Norveth
