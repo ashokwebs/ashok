@@ -19,3 +19,7 @@ tsconfig.tsbuildinfo
 .claude/
 .vercel
 .env*
+
+# Private notes (contain personal contact details; never publish)
+everything.md
+legal.md

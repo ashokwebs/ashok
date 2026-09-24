@@ -1,179 +1,35 @@
-'use client'
+import { NORVETH } from '@/lib/config'
 
-import { BRANDS } from '@/lib/config'
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
-import { Menu, X, ArrowUpRight, Search } from 'lucide-react'
+const NAV = [
+  { href: '#work', label: 'Work' },
+  { href: '#about', label: 'About' },
+  { href: '#contact', label: 'Contact' },
+  { href: '/resume', label: 'Resume' },
+]
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  const navItems = [
-    { label: 'Services', href: '#services' },
-    { label: 'Work', href: '#projects' },
-    { label: 'About', href: '#about' },
-    { label: 'Skills', href: '#expertise' },
-    { label: 'Research', href: '#research' },
-    { label: 'Contact', href: '#contact' },
-  ]
-  const hireHref = BRANDS.norveth
-
-  const scrollTo = (href: string) => {
-    setIsOpen(false)
-    const element = document.querySelector(href)
-    element?.scrollIntoView({ behavior: 'smooth' })
-  }
-
-  const openCmdK = () => {
-    window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))
-  }
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-[#09090b]/90 backdrop-blur-xl border-b border-white/[0.08] shadow-2xl py-3 sm:py-3.5'
-          : 'bg-transparent border-b border-transparent py-4 sm:py-5'
-      }`}
-    >
-      {/* Scrolled Gradient Line */}
-      <div className={`absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`} />
-
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-10">
-          {/* Brand Identity */}
-          <Link
-            href="/"
-            className="group flex items-center gap-2.5 sm:gap-3 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
-            aria-label="Ashok Pasala home"
+    <header className="sticky top-0 z-40 bg-background/85 backdrop-blur-md">
+      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-4 px-4 sm:px-6">
+        <a href="#top" className="font-serif text-xl leading-none tracking-tight">
+          Ashok Pasala
+        </a>
+        <nav aria-label="Primary" className="flex items-center gap-5 text-sm text-muted">
+          {NAV.map((item) => (
+            <a key={item.href} href={item.href} className="hidden hover:text-foreground sm:inline">
+              {item.label}
+            </a>
+          ))}
+          <a
+            href={NORVETH}
+            target="_blank"
+            rel="noopener"
+            className="rounded-full border border-foreground/25 px-3.5 py-1.5 text-foreground transition-colors hover:border-accent hover:text-accent"
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-white to-neutral-200 text-black font-bold flex items-center justify-center text-xs tracking-wider transition-transform group-hover:scale-105 shadow-md shrink-0">
-              AP
-            </div>
-            <div className="flex flex-col">
-              <span
-                className="text-sm font-bold text-white tracking-tight leading-none drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]"
-                style={{ fontFamily: 'var(--font-syne)' }}
-              >
-                Ashok Pasala
-              </span>
-              <span className="text-[10px] font-mono text-neutral-400 uppercase tracking-widest leading-tight mt-0.5">
-                AI Systems • Security
-              </span>
-            </div>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-7">
-            {navItems.map((item) => (
-              <button
-                key={item.label}
-                onClick={() => scrollTo(item.href)}
-                className="relative group text-xs font-medium text-neutral-400 hover:text-white transition-colors duration-200 uppercase tracking-wider font-mono cursor-pointer"
-              >
-                {item.label}
-                <span className="absolute -bottom-1 left-1/2 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
-              </button>
-            ))}
-            <a
-              href={hireHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-white text-black text-xs font-semibold uppercase tracking-wider font-mono hover:bg-neutral-200 transition-colors shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.4)]"
-            >
-              <span>Hire</span>
-              <ArrowUpRight size={12} />
-            </a>
-          </div>
-
-          {/* Action CTAs */}
-          <div className="hidden sm:flex items-center gap-2.5">
-            <button
-              onClick={openCmdK}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-card-interactive text-xs font-mono text-neutral-400 hover:text-white transition-all cursor-pointer"
-              aria-label="Open Command Palette"
-            >
-              <Search size={12} />
-              <span>⌘K</span>
-            </button>
-
-            <a
-              href={hireHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="lg:hidden inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-white text-black text-xs font-semibold hover:bg-neutral-200 transition-colors shadow-md"
-            >
-              <span>Hire</span>
-              <ArrowUpRight size={12} />
-            </a>
-          </div>
-
-          {/* Mobile Menu Action Row */}
-          <div className="flex items-center gap-2 lg:hidden">
-            <button
-              onClick={openCmdK}
-              className="p-2.5 text-neutral-400 hover:text-white transition-colors touch-manipulation rounded-lg active:bg-white/[0.05]"
-              aria-label="Open Search Command Palette"
-            >
-              <Search size={18} />
-            </button>
-            <button
-              className="p-2.5 text-white hover:opacity-70 transition-opacity focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg touch-manipulation active:bg-white/[0.05]"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-expanded={isOpen}
-              aria-controls="mobile-navigation"
-              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
-            >
-              {isOpen ? <X size={22} /> : <Menu size={22} />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Navigation Dropdown */}
-        {isOpen && (
-          <>
-            <div 
-              className="fixed inset-0 top-[72px] bg-black/40 backdrop-blur-sm z-30 lg:hidden"
-              onClick={() => setIsOpen(false)}
-              aria-hidden="true"
-            />
-            <div
-              id="mobile-navigation"
-              className="absolute left-4 right-4 z-40 lg:hidden py-4 space-y-1.5 border border-white/[0.12] mt-3 bg-[#111115]/98 backdrop-blur-2xl px-4 shadow-2xl rounded-2xl animate-slide-in-up"
-            >
-              {navItems.map((item) => (
-                <button
-                  key={item.label}
-                  onClick={() => scrollTo(item.href)}
-                  className="w-full text-left px-3.5 py-3 text-xs uppercase tracking-wider font-mono text-neutral-300 hover:text-white active:bg-white/[0.08] rounded-xl transition-colors min-h-[44px] flex items-center"
-                >
-                  {item.label}
-                </button>
-              ))}
-              <div className="pt-2 border-t border-white/[0.08] mt-2 flex flex-col gap-2">
-                <a
-                  href={hireHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsOpen(false)}
-                  className="w-full py-3 bg-white text-black text-xs font-semibold uppercase tracking-wider font-mono rounded-xl text-center cursor-pointer active:bg-neutral-200"
-                >
-                  Hire
-                </a>
-              </div>
-            </div>
-          </>
-        )}
-      </nav>
+            Hire me
+          </a>
+        </nav>
+      </div>
     </header>
   )
 }

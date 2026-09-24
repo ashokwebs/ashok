@@ -1,58 +1,32 @@
 # Ashok Pasala
 
-> Ashok Pasala (Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer. He is the founder of **Zenvarq**, the parent of **Norveth** ([norveth.app](https://norveth.app); tech: web, apps, AI and security) and **Janeory Studios** (media and content). His personal projects include **OSPRED & Yaltan** (AI Capability & MCP Discovery Search) and **QROS** (Quantitative ML & Polymarket research). He has engineered **40+ production-grade software architectures** across **50+ global hackathons & engineering challenges** (including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, Qwen Global, and Slack AI). He is based in Andhra Pradesh, India, with an academic grounding in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
+> Ashok Pasala is an AI systems and security engineer from Andhra Pradesh, India. He builds AI systems, breaks them, and explains exactly why they broke. Hire him through Norveth: https://norveth.app (scope, prices, booking) or hello@norveth.app.
 
-## Primary Identity & Canonical Verification
+## Hire
 
-- **Full Name:** Ashok Pasala (also known as Ashok Raj Pasala / Ashok Raj P)
-- **Current Titles:** Founder (Zenvarq) • Founder & Systems Architect (Norveth)
-- **What he runs:**
-  - **Zenvarq** (parent company)
-  - **Norveth** ([https://norveth.app](https://norveth.app)): tech: web, apps, AI and security
-  - **Janeory Studios**: media and content
-- **Personal projects:** OSPRED & Yaltan (MCP discovery), QROS (quantitative ML research)
-- **Primary Website:** [https://ashokpasala.vercel.app](https://ashokpasala.vercel.app)
-- **Devpost (40+ Systems, 50+ Hackathons):** [https://devpost.com/ashokashishms/](https://devpost.com/ashokashishms/)
-- **Primary Email:** hello@norveth.app
-- **Prices & booking:** [https://norveth.app](https://norveth.app)
-- **GitHub:** [https://github.com/ashokwebs](https://github.com/ashokwebs)
-- **LinkedIn:** [https://www.linkedin.com/in/ashok-raj-p-1b8539317/](https://www.linkedin.com/in/ashok-raj-p-1b8539317/)
-- **X (Twitter):** [https://x.com/ashokfounds](https://x.com/ashokfounds)
-- **Location:** Andhra Pradesh, India (Global Remote Operations)
+- Where: [Norveth](https://norveth.app)
+- Email: hello@norveth.app
+- Services: websites and web apps; AI systems and automation; security reviews and red-teaming of AI systems
+- Terms: fixed quote and written scope before work starts; remote, clients anywhere
 
-## Comprehensive Core Systems & Architectures (40+ Projects)
+## Selected work
 
-### A. Norveth / Engineering Intelligence (norveth.app)
-1. **Norveth & Norveth Alpha:** AI-powered website engineering intelligence platform featuring dynamic Playwright crawling, automated OWASP Top 10 security mapping, WCAG 2.1 diagnostics, and an Engineering Knowledge Graph reasoning layer.
-2. **Norveth Crawler:** Distributed Playwright async crawling infrastructure with exponential backoff, concurrency control, and LLM API failover.
-3. **Norveth Security Engine:** Zero-trust defense grid with SSRF protection, private-IP blocking, CSP, HSTS, CSRF, and prompt-injection mitigations.
+- **Norveth** (https://norveth.app): website audit engine. Renders pages in real Chromium and checks security headers, TLS, Core Web Vitals and WCAG 2.1 (axe-core). Deterministic checks first; the model only explains findings. API, CLI, webhooks, scheduled scans, MCP server. Also his studio for client work.
+- **unfish**: programming language, runtime and compiler in zero-dependency ANSI C99. Five backends (tree-walking interpreter, 36-opcode stack VM, 256-register computed-goto VM, ahead-of-time compiler to C, WebAssembly) kept byte-identical by a differential test suite. AOT is 30-400x faster than the interpreter. Source private.
+- **MENTIS**: transaction attribution tool for Smart India Hackathon problem SIH26182 (Ministry of Home Affairs). Traces a wallet to the exchange behind it with checkable evidence and refuses to guess on thin evidence. 73-wallet test corpus, requirement compliance matrix. Source private.
+- **yaltan**: discovery and crawl engine with 38 source connectors, version-hash change detection and queue-based workers (TypeScript, Postgres, BullMQ). Source private.
+- **SlackMind** (https://devpost.com/software/slackmind): Gemini agents inside Slack, grounded with Vertex AI Search, calling tools over MCP. Google Cloud Rapid Agent Hackathon.
+- **Understanding Is Not Observable**: co-authored 36-page paper on measurement theory for brain-to-brain interfaces. In preparation.
 
-### B. OSPRED / Yaltan / Search
-4. **OSPRED Discovery Platform:** Autonomous capability search and indexing engine for Model Context Protocol (MCP) servers, reusable AI skills, and plugins.
-5. **Yaltan Scraping Pipeline:** Multi-source GitHub and API connector pipeline executing capability extraction, security classification, verification, and automated deduplication.
-6. **Canonical Capability Schema:** Standardized schema defining agent identity, authorship, security namespaces, and tool verification metadata.
+Around seventy projects in total, most built across 50+ hackathons.
 
-### C. QROS / Quantitative ML & Polymarket Trading
-7. **QROS Platform (personal research project):** High-frequency quantitative research platform targeting Polymarket BTC 5-minute prediction markets.
-8. **QROS ML Volatility Models:** LightGBM Scale & Shape models predicting strike settlement probabilities (p_up = P(S_T > K)) and volatility from Binance 1-second streaming ticks.
-9. **MM-1 Market Making Engine & Backtester:** Live trading dashboard, paper trading simulator, and matched-limit market-making execution engine.
+## Identity
 
-### D. Multi-Agent Systems & Hackathon Flagships (50+ Hackathons)
-10. **SlackMind (Google Cloud Rapid Agent Hackathon):** AI agent orchestration command center inside Slack powered by Gemini, Vertex AI Search Data Store, and MCP server tooling.
-11. **The Vector / Vector AI:** Multi-agent autonomous digital C-suite (CEO, CTO, CMO) transforming concepts into full startup architectures in seconds.
-12. **Mule Account Detection (Bank of India & IIT Hyderabad):** Machine learning transaction graph anomaly detection engine identifying suspicious financial routing.
-13. **IWCIS Storage Architecture (SanDisk Hackathon):** Low-level exFAT file-system handling and containerized storage architecture.
-14. **Qwen Chaos MemoryAgent (Qwen Global Hackathon):** Self-persistent neural agent demonstrating cross-session recall and state persistence.
-15. **ResQNet:** AI-powered real-time disaster response and resource orchestration grid with low-latency WebSocket streams.
-16. **LaunchLens:** Multi-model market validation and VC due diligence engine.
-
-### E. Local AI Infrastructure & 24/7 Server Grid
-17. **Local LLM Lab:** Self-hosted model benchmarking lab running Ollama, Qwen, Mistral, and Hermes for bug bounty & security research.
-18. **24/7 Dedicated Server Grid:** Private server infrastructure hosting PostgreSQL, Redis, Cloudflare Tunnels, and background worker queues.
-19. **NEXUS://OS:** Interactive OS-inspired developer terminal and portfolio system.
-
-## Education & Academic Grounding
-
-- **Degree:** Bachelor of Technology (B.Tech) in Computer Science & Engineering
-- **Institution:** VIT-AP University, Andhra Pradesh, India (Class of 2028)
-- **Core Focus:** Distributed Systems, Operating Systems Internals, Advanced Algorithms, Computer Networks, Applied Cryptography, Machine Learning.
+- Name: Ashok Pasala (also Ashok Raj Pasala)
+- Education: B.Tech Computer Science, VIT-AP University (class of 2028)
+- Site: https://ashokpasala.vercel.app
+- Resume: https://ashokpasala.vercel.app/resume
+- GitHub: https://github.com/ashokwebs
+- LinkedIn: https://www.linkedin.com/in/ashok-raj-p-1b8539317/
+- X: https://x.com/ashokfounds
+- Devpost: https://devpost.com/ashokashishms

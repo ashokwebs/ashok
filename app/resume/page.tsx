@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft, Download } from 'lucide-react'
-import { BRANDS } from '@/lib/config'
+import { NORVETH } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Executive Resume & Systems Architecture Spec',
+  title: 'Resume',
   description:
-    'Resume of Ashok Pasala — founder of Zenvarq and Norveth, AI systems and security engineer. Projects include OSPRED and QROS. 50+ Hackathons, 40+ Shipped Architectures.',
+    'Resume of Ashok Pasala — founder of Norveth, AI systems and security engineer. Projects include OSPRED and QROS. 50+ Hackathons, 40+ Shipped Architectures.',
   // Without this the root layout's `alternates.canonical: '/'` is inherited and
   // this page declares itself a duplicate of the homepage, which keeps it out
   // of the index entirely.
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     canonical: '/resume',
   },
   openGraph: {
-    title: 'Executive Resume & Systems Architecture Spec | Ashok Pasala',
+    title: 'Resume | Ashok Pasala',
     description:
-      'Resume of Ashok Pasala — founder of Zenvarq and Norveth, AI systems and security engineer.',
+      'Resume of Ashok Pasala — founder of Norveth, AI systems and security engineer.',
     url: 'https://ashokpasala.vercel.app/resume',
     type: 'profile',
   },
@@ -27,7 +27,7 @@ const resumeJsonLd = {
   '@type': 'WebPage',
   '@id': 'https://ashokpasala.vercel.app/resume#webpage',
   url: 'https://ashokpasala.vercel.app/resume',
-  name: 'Executive Resume & Systems Architecture Spec — Ashok Pasala',
+  name: 'Resume — Ashok Pasala',
   // Bind this page to the Person entity declared in the root layout so search
   // and generative engines treat the two as one identity rather than two.
   about: { '@id': 'https://ashokpasala.vercel.app/#person' },
@@ -39,8 +39,8 @@ const resumeJsonLd = {
   breadcrumb: {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Executive Hub', item: 'https://ashokpasala.vercel.app' },
-      { '@type': 'ListItem', position: 2, name: 'Executive Resume', item: 'https://ashokpasala.vercel.app/resume' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ashokpasala.vercel.app' },
+      { '@type': 'ListItem', position: 2, name: 'Resume', item: 'https://ashokpasala.vercel.app/resume' },
     ],
   },
 }
@@ -60,13 +60,13 @@ export default function ResumePage() {
           className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-neutral-400 hover:text-white transition-colors"
         >
           <ArrowLeft size={14} />
-          <span>Return to Executive Hub</span>
+          <span>Back to homepage</span>
         </Link>
 
         <div className="flex items-center gap-3">
           <a
             href="/resume.pdf"
-            download="Ashok_Pasala_Executive_Resume.pdf"
+            download="Ashok_Pasala_Resume.pdf"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black font-semibold text-xs font-mono uppercase tracking-wider hover:bg-neutral-200 transition-colors shadow-md"
           >
             <Download size={14} />
@@ -84,7 +84,7 @@ export default function ResumePage() {
               Ashok Pasala
             </h1>
             <p className="text-sm font-semibold text-neutral-700">
-              Founder (Zenvarq: Norveth &amp; Janeory Studios) • AI Systems &amp; Security Engineer
+              Founder (Norveth) • AI Systems &amp; Security Engineer
             </p>
           </div>
 
@@ -116,13 +116,13 @@ export default function ResumePage() {
           </div>
         </header>
 
-        {/* Executive Summary */}
+        {/* Summary */}
         <section className="mb-6 space-y-2">
           <h2 className="text-xs font-mono font-extrabold uppercase tracking-widest text-[#0f172a] border-b border-neutral-300 pb-1">
-            Executive Summary
+            Summary
           </h2>
-          <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed text-justify">
-            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder of <strong>Zenvarq</strong>, parent of <strong>Norveth</strong> (<a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>; tech: web, apps, AI and security) and <strong>Janeory Studios</strong> (media and content). Personal projects include <strong>OSPRED</strong> and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
+          <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed">
+            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder of <strong>Norveth</strong> (<a href={NORVETH} target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>; web, apps, AI systems and security reviews). Personal projects include <strong>OSPRED</strong> and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
           </p>
         </section>
 
@@ -136,7 +136,7 @@ export default function ResumePage() {
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
               <div>
                 <span className="text-sm font-bold text-[#0f172a]">Norveth</span>
-                <span className="text-xs font-semibold text-neutral-600"> — Founder &amp; Systems Architect (<a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>)</span>
+                <span className="text-xs font-semibold text-neutral-600"> — Founder &amp; Systems Architect (<a href={NORVETH} target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>)</span>
               </div>
               <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | ENGINEERING INTELLIGENCE</span>
             </div>

@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-export const alt = 'Ashok Pasala — Founder & AI Systems Architect | Norveth'
+export const alt = 'Ashok Pasala, AI systems and security engineer'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -55,7 +55,7 @@ export default function Image() {
           >
             <div style={{ width: '10px', height: '10px', backgroundColor: '#10b981', borderRadius: '9999px' }} />
             <span style={{ fontSize: 18, color: '#e5e5e5', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-              Founder & Systems Architect — Norveth
+              AI systems · Security · Hire via Norveth
             </span>
           </div>
 
@@ -83,7 +83,7 @@ export default function Image() {
               maxWidth: '900px',
             }}
           >
-            Autonomous AI Infrastructure • Multi-Agent Systems • Distributed Architecture
+            I build AI systems, break them, and explain why they broke.
           </p>
 
           <div

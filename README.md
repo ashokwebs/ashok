@@ -1,50 +1,15 @@
-# Ashok Pasala — Founder & AI Systems Architect
+# ashokpasala.vercel.app
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100-success?style=for-the-badge)
+Personal site of Ashok Pasala, AI systems and security engineer. Hire: [norveth.app](https://norveth.app).
 
-The official executive portal and systems architecture hub of **Ashok Pasala** — founder of **Zenvarq** (parent of **Norveth** and **Janeory Studios**) and Founder & Systems Architect of **Norveth** ([norveth.app](https://norveth.app)), AI Systems Architect, and Deep Tech Engineer.
+- Next.js (App Router), server-rendered, no client-side JavaScript beyond analytics.
+- `lib/config.ts` holds every contact link. `components/work.tsx` holds the project list, which also feeds the JSON-LD.
+- SEO/GEO: Person + Organization JSON-LD (`app/layout.tsx`), `public/llms.txt`, `app/sitemap.ts`, `app/robots.ts`.
+- `npm run build` runs `scripts/check-banned.mjs` first and fails on private contact details or retired names.
 
-Repository and production codebase for [ashokpasala.vercel.app](https://ashokpasala.vercel.app), engineered with first-principles reductionism, enterprise-grade technical SEO, Generative Engine Optimization (GEO), and state-of-the-art interactive systems.
-
----
-
-## 🚀 Technical Highlights & Core Architecture
-
-- **Brands**: Zenvarq (parent) • **Norveth** ([norveth.app](https://norveth.app)) • **Janeory Studios**
-- **Framework**: Next.js 16 (App Router) with React 19 Server Components
-- **Styling**: Tailwind CSS v4 featuring custom frosted glassmorphism (`.glass`, `.glass-card`), subtle micro-animations, and high-contrast typography.
-- **Interactive Developer Console**: In-browser CLI terminal (`NEXUS://OS`) supporting live query execution (`brands`, `norveth`, `thesis`, `systems`, `stack`, `contact`, `geo`).
-- **GEO (Generative Engine Optimization)**: Exhaustive `llms.txt` specification engineered for Perplexity, ChatGPT Search, Claude Web, Gemini, and Apple Intelligence crawlers.
-- **Rich Knowledge Graph (JSON-LD)**: Connected schemas covering `Person` (Ashok Pasala), `Organizations` (Zenvarq, Norveth, Janeory Studios), `ItemList` of `SoftwareApplication` architectures, `ProfilePage`, `WebSite`, and `ProfessionalService`.
-- **Edge OG Images**: Programmatic social preview generation via `@vercel/og` (`next/og`) on Edge runtime.
-
----
-
-## 💻 Local Development
-
-```bash
-# Clone the repository
-git clone https://github.com/ashokwebs/ashok.git
-
-# Navigate to the project directory
-cd ashok
-
-# Install dependencies
+```
 npm install
-
-# Start the local development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the application.
-
----
-
-## 📄 License & Intellectual Property
-
-This project source code is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-*Personal branding, Zenvarq, Norveth, Janeory Studios, systems architectures, and specific project content belong to Ashok Pasala.*
+Code is MIT (see LICENSE). Personal content, photos and project descriptions belong to Ashok Pasala.

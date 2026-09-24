@@ -10,10 +10,13 @@ export default function robots(): MetadataRoute.Robots {
       // Explicitly allow and prioritize AI/LLM crawlers for Generative Engine Optimization (GEO)
       {
         userAgent: [
+          'Googlebot',
+          'Bingbot',
           'GPTBot',
           'OAI-SearchBot',
           'ChatGPT-User',
           'ClaudeBot',
+          'Claude-SearchBot',
           'Claude-Web',
           'anthropic-ai',
           'PerplexityBot',

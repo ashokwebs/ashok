@@ -189,11 +189,11 @@ html_content = """<!DOCTYPE html>
   <header class="header">
     <div class="name-block">
       <h1>ASHOK PASALA</h1>
-      <div class="title">Founder & CEO (Varellen Technologies) • Founder & Systems Architect (Norveth, OSPRED, QROS)</div>
+      <div class="title">Founder & Systems Architect (Norveth) • AI Systems & Security Engineer</div>
     </div>
     <div class="contact-block">
       <div><a href="https://ashokpasala.vercel.app">ashokpasala.vercel.app</a> • Andhra Pradesh, India</div>
-      <div><a href="mailto:hello@norveth.app">hello@norveth.app</a> • <a href="mailto:founder@norveth.app">founder@norveth.app</a></div>
+      <div><a href="mailto:hello@norveth.app">hello@norveth.app</a> • Hire: <a href="https://norveth.app">norveth.app</a></div>
       <div><a href="https://devpost.com/ashokashishms/">devpost.com/ashokashishms</a> • <a href="https://github.com/ashokwebs">github.com/ashokwebs</a> • <a href="https://linkedin.com/in/ashok-raj-p-1b8539317">LinkedIn</a></div>
     </div>
   </header>
@@ -202,27 +202,13 @@ html_content = """<!DOCTYPE html>
   <section class="section">
     <div class="section-title">Executive Summary</div>
     <p class="summary-text">
-      <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder & CEO of <strong>Varellen Technologies</strong>, Architect of <strong>Norveth</strong> (<a href="https://norveth.app">norveth.app</a>), <strong>OSPRED</strong>, and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, Qwen Global). Computer Science & Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
+      <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder of <strong>Norveth</strong> (<a href="https://norveth.app">norveth.app</a>; web, apps, AI systems and security reviews). Personal projects include <strong>OSPRED</strong> and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, Qwen Global). Computer Science & Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
     </p>
   </section>
 
   <!-- Venture & Leadership Experience -->
   <section class="section">
     <div class="section-title">Venture Leadership &amp; Systems Engineering</div>
-
-    <div class="item">
-      <div class="item-header">
-        <div>
-          <span class="item-title">Varellen Technologies</span>
-          <span class="item-subtitle">— Founder &amp; Chief Executive Officer</span>
-        </div>
-        <span class="item-date">2024 – PRESENT | ENTERPRISE &amp; SYSTEMS</span>
-      </div>
-      <ul class="bullets">
-        <li>Guiding venture roadmap and system design for enterprise digital platforms, closed-loop AI automation pipelines, and high-throughput cloud infrastructure.</li>
-        <li>Architected fault-tolerant microservice meshes with sub-millisecond API dispatch, zero-trust security postures, and automated Docker/K8s CI/CD pipelines.</li>
-      </ul>
-    </div>
 
     <div class="item">
       <div class="item-header">
