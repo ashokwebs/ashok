@@ -250,7 +250,7 @@ export default function ResumePage() {
             <div className="sm:col-span-3 text-neutral-700">FastAPI, Node.js, Express, Next.js 16 (App Router), React 19, PostgreSQL, Redis Streams, Docker, Kubernetes, Playwright, Cloudflare Tunnels.</div>
 
             <div className="font-mono font-bold text-[#0f172a] uppercase text-[11px]">Security &amp; Web3:</div>
-            <div className="sm:col-span-3 text-neutral-700">OWASP Top 10 Hardening, SSRF Protection, Zero-Trust Architecture, EVM Smart Contracts, Cryptographic Protocols, Graph Anomaly Detection.</div>
+            <div className="sm:col-span-3 text-neutral-700">OWASP Top 10 Hardening, SSRF Protection, Zero-Trust Architecture, Cryptographic Protocols, Graph Anomaly Detection.</div>
           </div>
         </section>
 

@@ -36,24 +36,10 @@ export const WORK: Item[] = [
     details: [
       'Backends: tree-walking interpreter, 36-opcode stack VM, 256-register VM with computed goto, ahead-of-time compiler to C, and WebAssembly.',
       'A differential test suite runs every program on every backend and fails on any difference.',
-      'The AOT backend runs 30–400× faster than the interpreter. Fibers, channels and a garbage collector.',
+      'The AOT backend runs about 25–60× faster than the interpreter in our benchmarks. Fibers, channels and a garbage collector.',
     ],
     stack: 'C99 · WebAssembly',
     note: 'Source private for now. Walkthrough on request.',
-  },
-  {
-    name: 'MENTIS',
-    kind: 'Transaction attribution · Smart India Hackathon',
-    year: '2026',
-    summary:
-      'Built for a Ministry of Home Affairs problem statement (SIH26182): trace a wallet to the exchange behind it and show evidence an investigator can check.',
-    details: [
-      'Refuses to name an exchange when the evidence is thin, instead of guessing with confidence.',
-      'Tested against a 73-wallet corpus across risk bands, with a line-by-line requirement compliance matrix.',
-      '334 commits.',
-    ],
-    stack: 'Python · Electron',
-    note: 'Source private. Walkthrough on request.',
   },
   {
     name: 'yaltan',

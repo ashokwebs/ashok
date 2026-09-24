@@ -13,7 +13,6 @@
 
 - **Norveth** (https://norveth.app): website audit engine. Renders pages in real Chromium and checks security headers, TLS, Core Web Vitals and WCAG 2.1 (axe-core). Deterministic checks first; the model only explains findings. API, CLI, webhooks, scheduled scans, MCP server. Also his studio for client work.
 - **unfish**: programming language, runtime and compiler in zero-dependency ANSI C99. Five backends (tree-walking interpreter, 36-opcode stack VM, 256-register computed-goto VM, ahead-of-time compiler to C, WebAssembly) kept byte-identical by a differential test suite. AOT is 30-400x faster than the interpreter. Source private.
-- **MENTIS**: transaction attribution tool for Smart India Hackathon problem SIH26182 (Ministry of Home Affairs). Traces a wallet to the exchange behind it with checkable evidence and refuses to guess on thin evidence. 73-wallet test corpus, requirement compliance matrix. Source private.
 - **yaltan**: discovery and crawl engine with 38 source connectors, version-hash change detection and queue-based workers (TypeScript, Postgres, BullMQ). Source private.
 - **SlackMind** (https://devpost.com/software/slackmind): Gemini agents inside Slack, grounded with Vertex AI Search, calling tools over MCP. Google Cloud Rapid Agent Hackathon.
 - **Understanding Is Not Observable**: co-authored 36-page paper on measurement theory for brain-to-brain interfaces. In preparation.
