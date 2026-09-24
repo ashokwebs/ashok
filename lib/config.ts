@@ -1,9 +1,9 @@
 // The three brands (see rich/docs/AGENCIES.md). Change a URL here and every link follows.
 // janeory and zenvarq domains are not bought yet: point these at a preview URL until they are.
 export const BRANDS = {
-  zenvarq: 'https://zenvarq.com',
+  zenvarq: 'https://zenvarq.vercel.app',
   norveth: 'https://norveth.app',
-  janeory: 'https://janeorystudios.com',
+  janeory: 'https://janeory-studios.vercel.app',
 } as const
 
 // Single source of truth for how buyers reach Ashok.
