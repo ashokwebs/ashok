@@ -3,7 +3,7 @@
 import Header from '@/components/header'
 import Hero from '@/components/hero'
 import About from '@/components/about'
-import Ventures from '@/components/ventures'
+import WhatIRun from '@/components/what-i-run'
 import Projects from '@/components/projects'
 import Expertise from '@/components/expertise'
 import TechStack from '@/components/tech-stack'
@@ -22,6 +22,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Services />
+      <WhatIRun />
       <Projects />
       <About />
       <Contact />
@@ -29,7 +30,6 @@ export default function Home() {
       <TechStack />
       <ResearchNotes />
       <Experience />
-      <Ventures />
       <SystemConsole />
       <Footer />
     </main>

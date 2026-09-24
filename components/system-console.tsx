@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect, type KeyboardEvent } from 'react'
 import { CornerDownLeft, Copy, Check } from 'lucide-react'
+import { BRANDS } from '@/lib/config'
 
 interface HistoryEntry {
   command: string
@@ -19,7 +20,7 @@ export default function SystemConsole() {
             [SYS_OK] NEXUS://OS v3.0.0 Kernel Initialized.
           </p>
           <p className="text-neutral-400 text-[11px] sm:text-xs">
-            Ashok Pasala &mdash; Founder @ Varellen Technologies, Norveth &amp; OSPRED | 50+ Hackathons • 40+ Architectures
+            Ashok Pasala &mdash; Zenvarq · Norveth · Janeory Studios | 50+ Hackathons • 40+ Architectures
           </p>
           <p className="text-neutral-500 text-[10px] sm:text-xs pt-0.5">
             Type <span className="text-white font-bold">&apos;help&apos;</span> or tap quick run chips below.
@@ -56,14 +57,14 @@ export default function SystemConsole() {
           <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">Available Commands:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-xs pt-1">
-              <div><span className="text-white font-bold">qros</span> : Quantitative ML &amp; Polymarket BTC trading</div>
-              <div><span className="text-white font-bold">ospred</span> : OSPRED &amp; Yaltan MCP discovery platform</div>
+              <div><span className="text-white font-bold">qros</span> : Quantitative ML &amp; Polymarket BTC research project</div>
+              <div><span className="text-white font-bold">ospred</span> : OSPRED &amp; Yaltan MCP discovery project</div>
               <div><span className="text-white font-bold">norveth</span> : Norveth crawler &amp; engineering intelligence</div>
               <div><span className="text-white font-bold">slackmind</span> : Google Cloud Rapid Agent Hackathon</div>
               <div><span className="text-white font-bold">hackathons</span> : 50+ Global Hackathons &amp; Wins</div>
               <div><span className="text-white font-bold">fintech</span> : Bank of India Mule Account Detection</div>
               <div><span className="text-white font-bold">infra</span> : 24/7 dedicated server &amp; local LLM lab</div>
-              <div><span className="text-white font-bold">varellen</span> : Varellen Technologies venture</div>
+              <div><span className="text-white font-bold">brands</span> : Zenvarq, Norveth &amp; Janeory Studios</div>
               <div><span className="text-white font-bold">thesis</span> : Founder &amp; engineering axioms</div>
               <div><span className="text-white font-bold">contact</span> : Executive contact &amp; email</div>
               <div><span className="text-white font-bold">clear</span> : Clear terminal screen</div>
@@ -75,7 +76,7 @@ export default function SystemConsole() {
       case 'qros':
         output = (
           <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[QUANTITATIVE ENGINE] QROS Platform</p>
+            <p className="text-emerald-400 font-semibold">[RESEARCH PROJECT] QROS</p>
             <p className="text-neutral-400 text-xs">
               • Target: Polymarket BTC 5-minute binary options &amp; prediction markets.
             </p>
@@ -96,7 +97,7 @@ export default function SystemConsole() {
       case 'yaltan':
         output = (
           <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[SEARCH &amp; DISCOVERY] OSPRED &amp; Yaltan Pipeline</p>
+            <p className="text-emerald-400 font-semibold">[PROJECT] OSPRED &amp; Yaltan Pipeline</p>
             <p className="text-neutral-400 text-xs">
               • Purpose: Autonomous discovery, capability search, and verification for Model Context Protocol (MCP) servers and AI skills.
             </p>
@@ -113,7 +114,7 @@ export default function SystemConsole() {
       case 'norveth':
         output = (
           <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[VENTURE] Norveth (norveth.app)</p>
+            <p className="text-emerald-400 font-semibold">[BRAND] Norveth (norveth.app)</p>
             <p className="text-neutral-400 text-xs">
               • Architecture: Playwright async crawling infrastructure with exponential backoff &amp; LLM failover.
             </p>
@@ -124,7 +125,7 @@ export default function SystemConsole() {
               • Knowledge Graph: AI reasoning layer mapping findings into interactive architecture diagrams and white-label reports.
             </p>
             <p className="text-xs text-emerald-400/80 pt-0.5">
-              Live SaaS: <a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">https://norveth.app</a>
+              Live SaaS: <a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">https://norveth.app</a>
             </p>
           </div>
         )
@@ -202,15 +203,16 @@ export default function SystemConsole() {
         )
         break
 
-      case 'varellen':
+      case 'brands':
+      case 'zenvarq':
         output = (
-          <div className="space-y-2 text-xs sm:text-sm font-mono text-neutral-300">
-            <p className="text-emerald-400 font-semibold">[VENTURE] Varellen Technologies</p>
+          <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
+            <p className="text-emerald-400 font-semibold">[BRANDS] Zenvarq (parent)</p>
             <p className="text-neutral-400 text-xs">
-              Enterprise digital platforms, closed-loop AI workflow automation, and high-throughput cloud infrastructure.
+              • Norveth: tech, security &amp; crypto intelligence — <a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">{BRANDS.norveth.replace(/^https?:\/\//, '')}</a>
             </p>
-            <p className="text-xs text-neutral-500 pt-0.5">
-              Founder &amp; CEO: Ashok Pasala • Global Operations
+            <p className="text-neutral-400 text-xs">
+              • Janeory Studios: media &amp; content — <a href={BRANDS.janeory} target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">{BRANDS.janeory.replace(/^https?:\/\//, '')}</a>
             </p>
           </div>
         )
@@ -238,7 +240,6 @@ export default function SystemConsole() {
           <div className="space-y-1 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">[CHANNELS]</p>
             <p className="text-xs text-neutral-400">• Primary: <span className="text-white">hello@norveth.app</span></p>
-            <p className="text-xs text-neutral-400">• Venture: <span className="text-white">founder@norveth.app</span></p>
             <p className="text-xs text-neutral-400">• Devpost: <span className="text-white">devpost.com/ashokashishms</span></p>
             <p className="text-xs text-neutral-400">• GitHub: <span className="text-white">github.com/ashokwebs</span></p>
             <p className="text-xs text-neutral-400">• X (Twitter): <span className="text-white">x.com/ashokfounds</span></p>
@@ -332,7 +333,7 @@ export default function SystemConsole() {
               <span className="text-neutral-500 text-[10px] sm:text-[11px] uppercase tracking-wider shrink-0 mr-1">
                 Run:
               </span>
-              {['qros', 'ospred', 'norveth', 'slackmind', 'hackathons', 'fintech', 'infra', 'varellen', 'clear'].map((cmd) => (
+              {['qros', 'ospred', 'norveth', 'slackmind', 'hackathons', 'fintech', 'infra', 'brands', 'clear'].map((cmd) => (
                 <button
                   key={cmd}
                   onClick={() => handleQuickCommand(cmd)}

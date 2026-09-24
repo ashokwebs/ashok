@@ -1,5 +1,6 @@
 'use client'
 
+import { BRANDS } from '@/lib/config'
 import { useState } from 'react'
 import {
   ArrowUpRight,
@@ -27,7 +28,7 @@ const systems = [
       'Deep engineering intelligence ecosystem executing automated website analysis, GitHub repository auditing, ZIP code inspections, and Playwright-based dynamic crawling. Features retry pipelines with exponential backoff, LLM failover, SSRF protection, and an Engineering Knowledge Graph reasoning layer.',
     metrics: 'Dynamic Playwright Crawler • Knowledge Graph • White-Label Reports • CI/CD',
     tags: ['norveth.app', 'Playwright', 'FastAPI', 'Next.js', 'Knowledge Graph', 'Python'],
-    liveUrl: 'https://norveth.app',
+    liveUrl: BRANDS.norveth,
     status: 'Flagship Ecosystem',
   },
   {
@@ -41,7 +42,7 @@ const systems = [
     metrics: 'MCP Indexing • Canonical Capability Schema • Security Metadata • Yaltan Scraping',
     tags: ['OSPRED', 'MCP Discovery', 'Yaltan Pipeline', 'Vector Search', 'FastAPI', 'Python'],
     devpost: 'https://devpost.com/ashokashishms',
-    status: 'Core Initiative',
+    status: 'Project',
   },
   {
     icon: TrendingUp,
@@ -53,7 +54,7 @@ const systems = [
       'High-frequency quantitative research and algorithmic trading platform targeting Polymarket BTC 5-minute prediction markets. Ingests Binance 1-second streaming ticks, calculates Price-to-Beat anchors, and forecasts volatility & strike probabilities using custom LightGBM Scale/Shape ML models, backtesters, and an MM-1 market-making engine.',
     metrics: 'Binance 1s Stream • Polymarket 5-Min Markets • LightGBM Volatility • MM-1 Engine',
     tags: ['QROS', 'Polymarket', 'Binance Websockets', 'LightGBM', 'Python', 'FastAPI'],
-    status: 'Active Quant Engine',
+    status: 'Research Project',
   },
   {
     icon: Bot,
@@ -353,7 +354,7 @@ export default function Projects() {
             </div>
 
             <a
-              href="https://norveth.app"
+              href={BRANDS.norveth}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 bg-white text-black font-semibold text-xs font-mono uppercase tracking-wider rounded-full hover:bg-neutral-200 transition-colors shrink-0 shadow-md"

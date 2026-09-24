@@ -1,5 +1,6 @@
 'use client'
 
+import { BRANDS } from '@/lib/config'
 import { useState, useEffect } from 'react'
 import {
   Search,
@@ -60,9 +61,9 @@ export default function CommandMenu() {
     },
     {
       category: 'Navigation',
-      label: 'Ventures (Varellen & Norveth)',
+      label: 'What I run (Zenvarq, Norveth, Janeory)',
       icon: Layers,
-      action: () => scrollTo('#ventures'),
+      action: () => scrollTo('#what-i-run'),
       shortcut: 'V',
     },
     {
@@ -108,14 +109,14 @@ export default function CommandMenu() {
       shortcut: 'PDF',
     },
     {
-      category: 'Ventures',
+      category: 'Links',
       label: 'Visit Norveth Platform (norveth.app)',
       icon: ExternalLink,
-      action: () => window.open('https://norveth.app', '_blank'),
+      action: () => window.open(BRANDS.norveth, '_blank'),
       shortcut: 'EXT',
     },
     {
-      category: 'Ventures',
+      category: 'Links',
       label: 'View GitHub Profile (@ashokwebs)',
       icon: ExternalLink,
       action: () => window.open('https://github.com/ashokwebs', '_blank'),

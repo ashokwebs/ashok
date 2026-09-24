@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft, Download } from 'lucide-react'
+import { BRANDS } from '@/lib/config'
 
 export const metadata: Metadata = {
   title: 'Executive Resume & Systems Architecture Spec',
   description:
-    'Official executive resume of Ashok Pasala — Founder & CEO of Varellen Technologies, Systems Architect of Norveth, OSPRED, QROS. 50+ Hackathons, 40+ Shipped Architectures.',
+    'Resume of Ashok Pasala — founder of Zenvarq and Norveth, AI systems and security engineer. Projects include OSPRED and QROS. 50+ Hackathons, 40+ Shipped Architectures.',
   // Without this the root layout's `alternates.canonical: '/'` is inherited and
   // this page declares itself a duplicate of the homepage, which keeps it out
   // of the index entirely.
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Executive Resume & Systems Architecture Spec | Ashok Pasala',
     description:
-      'Official executive resume of Ashok Pasala — Founder & CEO of Varellen Technologies, Systems Architect of Norveth, OSPRED, QROS.',
+      'Resume of Ashok Pasala — founder of Zenvarq and Norveth, AI systems and security engineer.',
     url: 'https://ashokpasala.vercel.app/resume',
     type: 'profile',
   },
@@ -83,7 +84,7 @@ export default function ResumePage() {
               Ashok Pasala
             </h1>
             <p className="text-sm font-semibold text-neutral-700">
-              Founder &amp; CEO (Varellen Technologies) • Founder &amp; Systems Architect (Norveth, OSPRED, QROS)
+              Founder (Zenvarq: Norveth &amp; Janeory Studios) • AI Systems &amp; Security Engineer
             </p>
           </div>
 
@@ -97,10 +98,6 @@ export default function ResumePage() {
             <div>
               <a href="mailto:hello@norveth.app" className="hover:underline">
                 hello@norveth.app
-              </a>{' '}
-              •{' '}
-              <a href="mailto:founder@norveth.app" className="hover:underline">
-                founder@norveth.app
               </a>
             </div>
             <div>
@@ -125,35 +122,21 @@ export default function ResumePage() {
             Executive Summary
           </h2>
           <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed text-justify">
-            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder &amp; CEO of <strong>Varellen Technologies</strong>, Architect of <strong>Norveth</strong> (<a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>), <strong>OSPRED</strong>, and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
+            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder of <strong>Zenvarq</strong>, parent of <strong>Norveth</strong> (<a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>; tech, security and crypto intelligence) and <strong>Janeory Studios</strong> (media and content). Personal projects include <strong>OSPRED</strong> and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
           </p>
         </section>
 
         {/* Venture Leadership & Systems Engineering */}
         <section className="mb-6 space-y-4">
           <h2 className="text-xs font-mono font-extrabold uppercase tracking-widest text-[#0f172a] border-b border-neutral-300 pb-1">
-            Venture Leadership &amp; Systems Engineering
+            Brands &amp; Systems Engineering
           </h2>
 
           <div className="space-y-1.5">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
               <div>
-                <span className="text-sm font-bold text-[#0f172a]">Varellen Technologies</span>
-                <span className="text-xs font-semibold text-neutral-600"> — Founder &amp; Chief Executive Officer</span>
-              </div>
-              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | ENTERPRISE &amp; SYSTEMS</span>
-            </div>
-            <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1 leading-relaxed">
-              <li>Guiding venture roadmap and system design for enterprise digital platforms, closed-loop AI automation pipelines, and high-throughput cloud infrastructure.</li>
-              <li>Architected fault-tolerant microservice meshes with sub-millisecond API dispatch, zero-trust security postures, and automated Docker/K8s CI/CD pipelines.</li>
-            </ul>
-          </div>
-
-          <div className="space-y-1.5">
-            <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-              <div>
                 <span className="text-sm font-bold text-[#0f172a]">Norveth</span>
-                <span className="text-xs font-semibold text-neutral-600"> — Founder &amp; Systems Architect (<a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>)</span>
+                <span className="text-xs font-semibold text-neutral-600"> — Founder &amp; Systems Architect (<a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>)</span>
               </div>
               <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | ENGINEERING INTELLIGENCE</span>
             </div>
@@ -167,7 +150,7 @@ export default function ResumePage() {
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
               <div>
                 <span className="text-sm font-bold text-[#0f172a]">OSPRED &amp; Yaltan</span>
-                <span className="text-xs font-semibold text-neutral-600"> — Creator &amp; Systems Architect</span>
+                <span className="text-xs font-semibold text-neutral-600"> — Personal Project</span>
               </div>
               <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | AI CAPABILITY SEARCH</span>
             </div>
@@ -180,13 +163,13 @@ export default function ResumePage() {
           <div className="space-y-1.5">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
               <div>
-                <span className="text-sm font-bold text-[#0f172a]">QROS Quantitative Research</span>
-                <span className="text-xs font-semibold text-neutral-600"> — Quantitative Systems Architect</span>
+                <span className="text-sm font-bold text-[#0f172a]">QROS</span>
+                <span className="text-xs font-semibold text-neutral-600"> — Personal Research Project</span>
               </div>
-              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | QUANT ML TRADING</span>
+              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | QUANT ML RESEARCH</span>
             </div>
             <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1 leading-relaxed">
-              <li>Built high-frequency trading platform targeting <strong>Polymarket BTC 5-minute prediction markets</strong> using Binance 1-second streaming tick feeds.</li>
+              <li>Built a high-frequency research platform targeting <strong>Polymarket BTC 5-minute prediction markets</strong> using Binance 1-second streaming tick feeds.</li>
               <li>Trained LightGBM Scale/Shape ML models predicting strike settlement probabilities (p_up = P(S_T &gt; K)) and volatility alongside an MM-1 market-making engine.</li>
             </ul>
           </div>

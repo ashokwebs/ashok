@@ -1,20 +1,20 @@
 # Ashok Pasala
 
-> Ashok Pasala (Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer. He is the Founder & CEO of **Varellen Technologies**, Systems Architect of **Norveth** ([norveth.app](https://norveth.app)), Creator of **OSPRED & Yaltan** (AI Capability & MCP Discovery Search Platform), and Lead Architect of **QROS** (Quantitative ML & Polymarket Trading Engine). He has engineered **40+ production-grade software architectures** across **50+ global hackathons & engineering challenges** (including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, Qwen Global, and Slack AI). He is based in Andhra Pradesh, India, with an academic grounding in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
+> Ashok Pasala (Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer. He is the founder of **Zenvarq**, the parent of **Norveth** ([norveth.app](https://norveth.app); tech, security and crypto intelligence) and **Janeory Studios** (media and content). His personal projects include **OSPRED & Yaltan** (AI Capability & MCP Discovery Search) and **QROS** (Quantitative ML & Polymarket research). He has engineered **40+ production-grade software architectures** across **50+ global hackathons & engineering challenges** (including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, Qwen Global, and Slack AI). He is based in Andhra Pradesh, India, with an academic grounding in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
 
 ## Primary Identity & Canonical Verification
 
 - **Full Name:** Ashok Pasala (also known as Ashok Raj Pasala / Ashok Raj P)
-- **Current Titles:** Founder & CEO (Varellen Technologies) • Founder & Systems Architect (Norveth) • Creator (OSPRED & Yaltan) • Quantitative Systems Architect (QROS)
-- **Ventures & Platforms:**
-  - **Varellen Technologies** ([https://ashokpasala.vercel.app](https://ashokpasala.vercel.app))
-  - **Norveth** ([https://norveth.app](https://norveth.app))
-  - **OSPRED & Yaltan** (AI Capability & Model Context Protocol Discovery Engine)
-  - **QROS** (Quantitative Research & Polymarket ML Engine)
+- **Current Titles:** Founder (Zenvarq) • Founder & Systems Architect (Norveth)
+- **What he runs:**
+  - **Zenvarq** (parent company)
+  - **Norveth** ([https://norveth.app](https://norveth.app)): tech, security and crypto intelligence
+  - **Janeory Studios**: media and content
+- **Personal projects:** OSPRED & Yaltan (MCP discovery), QROS (quantitative ML research)
 - **Primary Website:** [https://ashokpasala.vercel.app](https://ashokpasala.vercel.app)
 - **Devpost (40+ Systems, 50+ Hackathons):** [https://devpost.com/ashokashishms/](https://devpost.com/ashokashishms/)
 - **Primary Email:** hello@norveth.app
-- **Executive / Venture Inquiries:** founder@norveth.app
+- **Prices & booking:** [https://norveth.app](https://norveth.app)
 - **GitHub:** [https://github.com/ashokwebs](https://github.com/ashokwebs)
 - **LinkedIn:** [https://www.linkedin.com/in/ashok-raj-p-1b8539317/](https://www.linkedin.com/in/ashok-raj-p-1b8539317/)
 - **X (Twitter):** [https://x.com/ashokfounds](https://x.com/ashokfounds)
@@ -33,7 +33,7 @@
 6. **Canonical Capability Schema:** Standardized schema defining agent identity, authorship, security namespaces, and tool verification metadata.
 
 ### C. QROS / Quantitative ML & Polymarket Trading
-7. **QROS Platform:** High-frequency quantitative research and algorithmic trading platform targeting Polymarket BTC 5-minute prediction markets.
+7. **QROS Platform (personal research project):** High-frequency quantitative research platform targeting Polymarket BTC 5-minute prediction markets.
 8. **QROS ML Volatility Models:** LightGBM Scale & Shape models predicting strike settlement probabilities (p_up = P(S_T > K)) and volatility from Binance 1-second streaming ticks.
 9. **MM-1 Market Making Engine & Backtester:** Live trading dashboard, paper trading simulator, and matched-limit market-making execution engine.
 

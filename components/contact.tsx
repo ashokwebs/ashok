@@ -69,7 +69,7 @@ export default function Contact() {
               Get in touch
             </h2>
             <p className="text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
-              Tell me what you need built, fixed or reviewed. I reply within 24 hours. For fixed prices and booking, see <a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4">norveth.app</a>.
+              Tell me what you need built, fixed or reviewed. I reply within 24 hours. For fixed prices and booking, see <a href={CONTACT.studio} target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4">norveth.app</a>.
             </p>
           </div>
 

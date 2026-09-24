@@ -45,7 +45,7 @@ const publications = [
     date: 'May 2026',
     readTime: '8 min read',
     tags: ['Playwright', 'SSRF Hardening', 'OWASP Top 10', 'Knowledge Graph', 'Python'],
-    link: '#ventures',
+    link: '#what-i-run',
   },
 ]
 

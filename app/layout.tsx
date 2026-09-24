@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono, Inter, Syne } from 'next/font/google'
+import { BRANDS } from '@/lib/config'
 import './globals.css'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
@@ -22,25 +23,25 @@ export const metadata: Metadata = {
     template: '%s | Ashok Pasala',
   },
   description: siteDescription,
-  applicationName: 'Ashok Pasala Portfolio & Venture Hub',
+  applicationName: 'Ashok Pasala Portfolio',
   verification: {
     google: 'O0fymhvn25v7YUKhQs7MYjCdNjLKiaJ4-944i_48IG4',
   },
   keywords: [
-    'Ashok Pasala', 'Ashok Raj Pasala', 'Varellen Technologies', 'Founder of Varellen Technologies',
-    'Norveth', 'Founder of Norveth', 'Varellen',
+    'Ashok Pasala', 'Ashok Raj Pasala', 'Zenvarq', 'Founder of Zenvarq',
+    'Norveth', 'Founder of Norveth', 'Janeory Studios',
     'AI Systems Architect', 'AI Systems Engineer', 'Autonomous AI Systems',
     'Multi-Agent Orchestration', 'AI Agent Frameworks', 'Systems Architect',
     'Full Stack Architect', 'Distributed Systems Engineer', 'Deep Tech Founder',
     'Next.js 16', 'React 19', 'TypeScript', 'Python', 'FastAPI', 'Node.js', 'Rust', 'Go',
     'Retrieval Augmented Generation', 'RAG', 'LangChain', 'Vector Search',
-    'Cybersecurity Researcher', 'OSPRED Framework', 'ShadowForge Intelligence',
+    'Cybersecurity Researcher', 'OSPRED', 'ShadowForge Intelligence',
     'DevOps', 'Docker', 'Kubernetes', 'PostgreSQL', 'High-Scale Backend',
     'VIT-AP University Computer Science', 'India Tech Founders', 'Silicon Valley Style Engineer'
   ],
   authors: [{ name: 'Ashok Pasala', url: 'https://ashokpasala.vercel.app' }],
   creator: 'Ashok Pasala',
-  publisher: 'Ashok Pasala — Varellen Technologies & Norveth',
+  publisher: 'Ashok Pasala — Zenvarq & Norveth',
   category: 'Technology & Artificial Intelligence',
   formatDetection: {
     email: false,
@@ -129,9 +130,9 @@ export default function RootLayout({
         familyName: 'Pasala',
         image: 'https://ashokpasala.vercel.app/ashok.jpeg',
         url: 'https://ashokpasala.vercel.app',
-        email: ['mailto:hello@norveth.app', 'mailto:founder@norveth.app'],
+        email: 'mailto:hello@norveth.app',
         jobTitle: [
-          'Founder & CEO (Varellen Technologies)',
+          'Founder (Zenvarq)',
           'Founder & Systems Architect (Norveth)',
           'AI Systems Architect',
           'Autonomous Systems Engineer',
@@ -182,7 +183,7 @@ export default function RootLayout({
             '@id': 'https://ashokpasala.vercel.app/#norveth',
           },
           {
-            '@id': 'https://ashokpasala.vercel.app/#varellen',
+            '@id': 'https://ashokpasala.vercel.app/#zenvarq',
           },
         ],
         sameAs: [
@@ -198,10 +199,11 @@ export default function RootLayout({
         '@type': 'Organization',
         '@id': 'https://ashokpasala.vercel.app/#norveth',
         name: 'Norveth',
-        url: 'https://norveth.app',
-        email: 'founder@norveth.app',
+        url: BRANDS.norveth,
+        email: 'hello@norveth.app',
+        parentOrganization: { '@id': 'https://ashokpasala.vercel.app/#zenvarq' },
         description:
-          'Norveth is an engineering-first deep technology venture focused on building sovereign AI runtimes, multi-agent orchestration frameworks, developer infrastructure, and mission-critical website intelligence software.',
+          'Norveth is the tech brand of Zenvarq: websites, automation, AI systems, security reviews and crypto intelligence.',
         founder: {
           '@id': 'https://ashokpasala.vercel.app/#person',
         },
@@ -217,22 +219,24 @@ export default function RootLayout({
       },
       {
         '@type': 'Organization',
-        '@id': 'https://ashokpasala.vercel.app/#varellen',
-        name: 'Varellen Technologies',
-        url: 'https://ashokpasala.vercel.app',
+        '@id': 'https://ashokpasala.vercel.app/#zenvarq',
+        name: 'Zenvarq',
         email: 'hello@norveth.app',
-        description:
-          'Varellen Technologies is an advanced technology initiative and enterprise software engineering venture founded by Ashok Pasala, focused on high-performance digital platforms, scalable architectures, and intelligent software solutions.',
+        description: 'Zenvarq is the parent company of Norveth (tech, security, crypto intelligence) and Janeory Studios (media and content), founded by Ashok Pasala.',
         founder: {
           '@id': 'https://ashokpasala.vercel.app/#person',
         },
-        foundingDate: '2024',
-        knowsAbout: [
-          'Enterprise Software Platforms',
-          'Distributed Architectures',
-          'AI Automation Systems',
-          'Scalable Cloud Infrastructure',
+        subOrganization: [
+          { '@id': 'https://ashokpasala.vercel.app/#norveth' },
+          { '@id': 'https://ashokpasala.vercel.app/#janeory' },
         ],
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://ashokpasala.vercel.app/#janeory',
+        name: 'Janeory Studios',
+        description: 'Janeory Studios is the media and content brand of Zenvarq.',
+        parentOrganization: { '@id': 'https://ashokpasala.vercel.app/#zenvarq' },
       },
       {
         '@type': 'WebSite',
@@ -241,7 +245,7 @@ export default function RootLayout({
         url: 'https://ashokpasala.vercel.app',
         name: 'Ashok Pasala — Founder & AI Systems Architect',
         description:
-          'Official digital hub and system architecture portal of Ashok Pasala, Founder of Varellen Technologies & Norveth.',
+          'Official site of Ashok Pasala, founder of Zenvarq and Norveth.',
         inLanguage: 'en',
         publisher: {
           '@id': 'https://ashokpasala.vercel.app/#person',
@@ -294,7 +298,7 @@ export default function RootLayout({
           {
             '@type': 'SoftwareApplication',
             position: 3,
-            name: 'QROS Quant & Polymarket BTC Trading Engine',
+            name: 'QROS Quant & Polymarket BTC Research Project',
             applicationCategory: 'Quantitative Finance & ML',
             operatingSystem: 'Linux / Cloud',
             description:
@@ -365,7 +369,7 @@ export default function RootLayout({
       {
         // Generative engines quote FAQPage entities near-verbatim when answering
         // "who is / what is" queries, so these mirror the real questions an LLM
-        // gets asked about Ashok and the ventures. Every answer here is drawn
+        // gets asked about Ashok and his brands. Every answer here is drawn
         // from public/llms.txt so the two sources cannot drift apart.
         '@type': 'FAQPage',
         '@id': 'https://ashokpasala.vercel.app/#faq',
@@ -376,16 +380,16 @@ export default function RootLayout({
             acceptedAnswer: {
               '@type': 'Answer',
               text:
-                'Ashok Pasala (also known as Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer based in Andhra Pradesh, India. He is Founder & CEO of Varellen Technologies, Founder & Systems Architect of Norveth, creator of OSPRED & Yaltan, and lead architect of QROS. He has engineered 40+ production-grade software architectures across 50+ global hackathons, including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, and Qwen Global.',
+                'Ashok Pasala (also known as Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer based in Andhra Pradesh, India. He is founder of Zenvarq, the parent of Norveth (tech, security and crypto intelligence) and Janeory Studios (media and content). His personal projects include OSPRED & Yaltan and QROS. He has engineered 40+ production-grade software architectures across 50+ global hackathons, including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, and Qwen Global.',
             },
           },
           {
             '@type': 'Question',
-            name: 'What is Varellen Technologies?',
+            name: 'What is Zenvarq?',
             acceptedAnswer: {
               '@type': 'Answer',
               text:
-                'Varellen Technologies is an enterprise systems engineering and software venture founded by Ashok Pasala. It focuses on high-performance digital platforms, closed-loop AI automation frameworks, scalable cloud architectures, and resilient microservice systems.',
+                'Zenvarq is the parent company founded by Ashok Pasala. It owns two brands: Norveth (tech, security and crypto intelligence) and Janeory Studios (media and content).',
             },
           },
           {
@@ -403,7 +407,7 @@ export default function RootLayout({
             acceptedAnswer: {
               '@type': 'Answer',
               text:
-                'OSPRED is an autonomous capability discovery and indexing engine for Model Context Protocol (MCP) servers, reusable AI skills, and plugins. It is built on the Yaltan scraping connector pipeline, a Canonical Capability Schema, and automated security trust scoring.',
+                'OSPRED is a personal project by Ashok Pasala: an autonomous capability discovery and indexing engine for Model Context Protocol (MCP) servers, reusable AI skills, and plugins. It is built on the Yaltan scraping connector pipeline, a Canonical Capability Schema, and automated security trust scoring.',
             },
           },
           {
@@ -412,7 +416,7 @@ export default function RootLayout({
             acceptedAnswer: {
               '@type': 'Answer',
               text:
-                'QROS is a high-frequency quantitative research and algorithmic trading platform targeting Polymarket BTC 5-minute prediction markets, using LightGBM volatility models over Binance one-second streaming ticks, plus a market-making execution engine and backtester.',
+                'QROS is a personal research project by Ashok Pasala: a high-frequency quantitative research platform targeting Polymarket BTC 5-minute prediction markets, using LightGBM volatility models over Binance one-second streaming ticks, plus a market-making execution engine and backtester.',
             },
           },
           {
@@ -421,7 +425,7 @@ export default function RootLayout({
             acceptedAnswer: {
               '@type': 'Answer',
               text:
-                'Ashok Pasala can be reached at hello@norveth.app for general enquiries or founder@norveth.app for executive and venture enquiries. He is also on GitHub (github.com/ashokwebs), LinkedIn, and X (@ashokfounds).',
+                'Ashok Pasala can be reached at hello@norveth.app. Prices and booking are on norveth.app. He is also on GitHub (github.com/ashokwebs), LinkedIn, and X (@ashokfounds).',
             },
           },
         ],

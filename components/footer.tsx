@@ -1,5 +1,6 @@
 'use client'
 
+import { BRANDS } from '@/lib/config'
 import { ArrowUpRight, Cpu, ArrowUp, Terminal } from 'lucide-react'
 
 export default function Footer() {
@@ -13,12 +14,12 @@ export default function Footer() {
     { label: 'Skills', href: '#expertise' },
     { label: 'Research', href: '#research' },
     { label: 'Experience', href: '#experience' },
-    { label: 'Ventures', href: '#ventures' },
+    { label: 'What I run', href: '#what-i-run' },
     { label: 'Interactive CLI', href: '#console' },
   ]
 
   const resources = [
-    { label: 'Hire me: prices & booking (norveth.app)', href: 'https://norveth.app' },
+    { label: 'Hire me: prices & booking (norveth.app)', href: BRANDS.norveth },
     { label: 'Resume (PDF)', href: '/resume.pdf' },
     { label: 'AI Crawler Spec (llms.txt)', href: '/llms.txt' },
     { label: 'Sitemap (XML)', href: '/sitemap.xml' },
@@ -66,7 +67,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed max-w-sm">
-              I build AI systems, break them, and explain precisely why they broke. Websites, automation, AI assistants and security reviews for businesses and startups. Book through <a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline underline-offset-4">norveth.app</a>.
+              I build AI systems, break them, and explain precisely why they broke. Websites, automation, AI assistants and security reviews for businesses and startups. Book through <a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="text-white font-medium underline underline-offset-4">norveth.app</a>.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/[0.1] bg-white/[0.03] text-[11px] font-mono text-neutral-300">

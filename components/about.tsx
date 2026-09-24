@@ -118,10 +118,10 @@ export default function About() {
                   <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   <div className="text-[11px] sm:text-xs font-mono text-neutral-400 uppercase tracking-wider flex items-center gap-1.5 mb-1.5">
                     <ShieldCheck size={14} className="text-emerald-400/70" />
-                    Ventures
+                    What I run
                   </div>
                   <div className="text-xs sm:text-sm font-medium text-white">
-                    Varellen &amp; Norveth
+                    Zenvarq · Norveth
                   </div>
                 </div>
 

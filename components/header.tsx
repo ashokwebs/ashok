@@ -1,5 +1,6 @@
 'use client'
 
+import { BRANDS } from '@/lib/config'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Menu, X, ArrowUpRight, Search } from 'lucide-react'
@@ -24,7 +25,7 @@ export default function Header() {
     { label: 'Research', href: '#research' },
     { label: 'Contact', href: '#contact' },
   ]
-  const hireHref = 'https://norveth.app'
+  const hireHref = BRANDS.norveth
 
   const scrollTo = (href: string) => {
     setIsOpen(false)

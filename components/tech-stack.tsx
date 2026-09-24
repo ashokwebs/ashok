@@ -114,7 +114,7 @@ export default function TechStack() {
               Engineering Arsenal
             </h2>
             <p className="text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
-              The high-leverage frameworks, runtimes, distributed protocols, and infrastructure tools powering Varellen Technologies, Norveth, and production deployments.
+              The high-leverage frameworks, runtimes, distributed protocols, and infrastructure tools powering Norveth, client work, and my own projects.
             </p>
           </div>
 

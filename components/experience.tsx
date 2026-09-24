@@ -4,16 +4,6 @@ import { Trophy } from 'lucide-react'
 
 const milestones = [
   {
-    role: 'Founder & CEO',
-    organization: 'Varellen Technologies',
-    domain: 'Enterprise Systems & Digital Platforms',
-    period: '2024 — Present',
-    badge: 'Flagship Enterprise',
-    description:
-      'Guiding venture strategy, high-performance digital platform architecture, and enterprise software engineering at Varellen Technologies. Leading development of scalable systems, closed-loop AI automation frameworks, and resilient cloud architectures.',
-    tags: ['Enterprise Software', 'Scalable Systems', 'AI Automation', 'Cloud Architecture', 'TypeScript', 'Python'],
-  },
-  {
     role: 'Founder & Systems Architect',
     organization: 'Norveth',
     domain: 'norveth.app',
@@ -24,21 +14,21 @@ const milestones = [
     tags: ['Playwright', 'Model Context Protocol (MCP)', 'OWASP Top 10', 'Engineering Knowledge Graph', 'FastAPI', 'Next.js'],
   },
   {
-    role: 'Creator & Systems Architect',
+    role: 'Personal Project',
     organization: 'OSPRED & Yaltan',
     domain: 'Search & MCP Discovery',
     period: '2024 — Present',
-    badge: 'Discovery Platform',
+    badge: 'Project',
     description:
       'Architected OSPRED—the discovery and search engine for AI agent capabilities, Model Context Protocol (MCP) servers, and reusable skills. Engineered the Yaltan scraping and extraction pipeline, the Canonical Capability Schema, and an automated trust & security verification system.',
     tags: ['OSPRED', 'Yaltan Pipeline', 'MCP Discovery', 'Canonical Schema', 'Trust & Verification', 'FastAPI'],
   },
   {
-    role: 'Quantitative Systems Architect',
-    organization: 'QROS Quant Research',
+    role: 'Personal Research Project',
+    organization: 'QROS',
     domain: 'Polymarket & ML Trading',
     period: '2024 — Present',
-    badge: 'Quantitative Trading',
+    badge: 'Research Project',
     description:
       'Engineered QROS—a high-frequency quantitative research and algorithmic trading platform targeting Polymarket BTC 5-minute prediction markets. Ingests Binance 1-second streaming ticks, trains LightGBM volatility and strike prediction models, and executes backtested paper trading and MM-1 market-making strategies.',
     tags: ['QROS', 'Polymarket 5-Min', 'Binance 1s Stream', 'LightGBM Models', 'Volatility Forecasting', 'MM-1 Strategy'],
@@ -88,10 +78,10 @@ export default function Experience() {
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
-              Venture &amp; Systems Trajectory
+              Systems Trajectory
             </h2>
             <p className="text-sm sm:text-lg text-neutral-400 font-light leading-relaxed">
-              From founding Varellen Technologies, Norveth, and OSPRED to engineering 40+ shipped architectures across 50+ global hackathons.
+              From building Norveth and research projects like OSPRED and QROS to engineering 40+ shipped architectures across 50+ global hackathons.
             </p>
           </div>
 
