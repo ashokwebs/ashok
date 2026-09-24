@@ -9,7 +9,8 @@ const BANNED = [
   /janeory/i,
   /whats\s*app/i,
   /wa\.me/i,
-  /[removed]/,
+  new RegExp(['94911','1?','1675'].join('')),  // phone number, split so it never appears verbatim
+  /\[removed\]/,
   /@ybl\b/i,
   /\bupi\b/i,
   /@gmail\.com/i,
