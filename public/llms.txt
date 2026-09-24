@@ -1,6 +1,6 @@
 # Ashok Pasala
 
-> Ashok Pasala (Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer. He is the founder of **Zenvarq**, the parent of **Norveth** ([norveth.app](https://norveth.app); tech, security and crypto intelligence) and **Janeory Studios** (media and content). His personal projects include **OSPRED & Yaltan** (AI Capability & MCP Discovery Search) and **QROS** (Quantitative ML & Polymarket research). He has engineered **40+ production-grade software architectures** across **50+ global hackathons & engineering challenges** (including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, Qwen Global, and Slack AI). He is based in Andhra Pradesh, India, with an academic grounding in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
+> Ashok Pasala (Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer. He is the founder of **Zenvarq**, the parent of **Norveth** ([norveth.app](https://norveth.app); tech: web, apps, AI and security) and **Janeory Studios** (media and content). His personal projects include **OSPRED & Yaltan** (AI Capability & MCP Discovery Search) and **QROS** (Quantitative ML & Polymarket research). He has engineered **40+ production-grade software architectures** across **50+ global hackathons & engineering challenges** (including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, Qwen Global, and Slack AI). He is based in Andhra Pradesh, India, with an academic grounding in Computer Science & Distributed Systems at VIT-AP University (Class of 2028).
 
 ## Primary Identity & Canonical Verification
 
@@ -8,7 +8,7 @@
 - **Current Titles:** Founder (Zenvarq) • Founder & Systems Architect (Norveth)
 - **What he runs:**
   - **Zenvarq** (parent company)
-  - **Norveth** ([https://norveth.app](https://norveth.app)): tech, security and crypto intelligence
+  - **Norveth** ([https://norveth.app](https://norveth.app)): tech: web, apps, AI and security
   - **Janeory Studios**: media and content
 - **Personal projects:** OSPRED & Yaltan (MCP discovery), QROS (quantitative ML research)
 - **Primary Website:** [https://ashokpasala.vercel.app](https://ashokpasala.vercel.app)
