@@ -203,7 +203,7 @@ export default function RootLayout({
         email: 'hello@norveth.app',
         parentOrganization: { '@id': 'https://ashokpasala.vercel.app/#zenvarq' },
         description:
-          'Norveth is the tech brand of Zenvarq: websites, automation, AI systems, security reviews and crypto intelligence.',
+          'Norveth is the tech brand of Zenvarq: websites, apps, AI systems, automation and security reviews.',
         founder: {
           '@id': 'https://ashokpasala.vercel.app/#person',
         },
@@ -222,7 +222,7 @@ export default function RootLayout({
         '@id': 'https://ashokpasala.vercel.app/#zenvarq',
         name: 'Zenvarq',
         email: 'hello@norveth.app',
-        description: 'Zenvarq is the parent company of Norveth (tech, security, crypto intelligence) and Janeory Studios (media and content), founded by Ashok Pasala.',
+        description: 'Zenvarq is the parent company of Norveth (tech: web, apps, AI and security) and Janeory Studios (media and content), founded by Ashok Pasala.',
         founder: {
           '@id': 'https://ashokpasala.vercel.app/#person',
         },
@@ -380,7 +380,7 @@ export default function RootLayout({
             acceptedAnswer: {
               '@type': 'Answer',
               text:
-                'Ashok Pasala (also known as Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer based in Andhra Pradesh, India. He is founder of Zenvarq, the parent of Norveth (tech, security and crypto intelligence) and Janeory Studios (media and content). His personal projects include OSPRED & Yaltan and QROS. He has engineered 40+ production-grade software architectures across 50+ global hackathons, including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, and Qwen Global.',
+                'Ashok Pasala (also known as Ashok Raj Pasala) is a Founder, AI & Quantitative Systems Architect, and Deep Tech Engineer based in Andhra Pradesh, India. He is founder of Zenvarq, the parent of Norveth (tech: web, apps, AI and security) and Janeory Studios (media and content). His personal projects include OSPRED & Yaltan and QROS. He has engineered 40+ production-grade software architectures across 50+ global hackathons, including Google Cloud Rapid Agent, Bank of India & IIT Hyderabad, SanDisk, and Qwen Global.',
             },
           },
           {
@@ -389,7 +389,7 @@ export default function RootLayout({
             acceptedAnswer: {
               '@type': 'Answer',
               text:
-                'Zenvarq is the parent company founded by Ashok Pasala. It owns two brands: Norveth (tech, security and crypto intelligence) and Janeory Studios (media and content).',
+                'Zenvarq is the parent company founded by Ashok Pasala. It owns two brands: Norveth (tech: web, apps, AI and security) and Janeory Studios (media and content).',
             },
           },
           {

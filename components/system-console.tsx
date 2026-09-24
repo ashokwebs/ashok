@@ -209,7 +209,7 @@ export default function SystemConsole() {
           <div className="space-y-1.5 text-xs sm:text-sm font-mono text-neutral-300">
             <p className="text-emerald-400 font-semibold">[BRANDS] Zenvarq (parent)</p>
             <p className="text-neutral-400 text-xs">
-              • Norveth: tech, security &amp; crypto intelligence — <a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">{BRANDS.norveth.replace(/^https?:\/\//, '')}</a>
+              • Norveth: tech company: web, apps, AI and security — <a href={BRANDS.norveth} target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">{BRANDS.norveth.replace(/^https?:\/\//, '')}</a>
             </p>
             <p className="text-neutral-400 text-xs">
               • Janeory Studios: media &amp; content — <a href={BRANDS.janeory} target="_blank" rel="noopener noreferrer" className="underline text-emerald-400">{BRANDS.janeory.replace(/^https?:\/\//, '')}</a>
