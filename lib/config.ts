@@ -3,7 +3,8 @@ export const CONTACT = {
   // WhatsApp number in international format, digits only, no "+" or spaces
   // (e.g. '919876543210'). Leave empty to hide every WhatsApp button.
   whatsapp: '[removed]', // [removed]
-  email: 'founder@norveth.app',
+  // founder@norveth.app forwarding (Cloudflare Email Routing) is unverified. Switch once a test mail arrives.
+  email: 'hello@norveth.app',
   // Services studio: prices + booking live here, not on this site.
   studio: 'https://norveth.app',
 } as const
