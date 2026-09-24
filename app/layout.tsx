@@ -11,9 +11,9 @@ const geistMono = Geist_Mono({
 const inter = Inter({ variable: '--font-inter', subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 const syne = Syne({ variable: '--font-syne', subsets: ['latin'], weight: ['400', '500', '600', '700', '800'] })
 
-const siteTitle = 'Ashok Pasala — Founder (Varellen Technologies & Norveth) | AI Systems Architect'
+const siteTitle = 'Ashok Pasala: AI engineer for hire (AI systems, automation, security reviews)'
 const siteDescription =
-  'Ashok Pasala is a Founder, AI Systems Architect, and Deep Tech Engineer. Founder of Varellen Technologies & Norveth, engineering autonomous multi-agent orchestration frameworks, sovereign AI infrastructure, enterprise software platforms, and high-scale distributed backends.'
+  'Ashok Pasala builds AI systems, breaks them, and explains precisely why they broke. Available for paid work: websites, automation, AI systems and security reviews. Fixed quotes, delivery in days.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ashokpasala.vercel.app'),
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteTitle,
     description:
-      'Founder of Varellen Technologies & Norveth. Architecting autonomous multi-agent infrastructure, enterprise software, and resilient distributed backends.',
+      'Available for paid work: websites, automation, AI systems and security reviews. Fixed quotes, delivery in days.',
     creator: '@ashokfounds',
     site: '@ashokfounds',
   },

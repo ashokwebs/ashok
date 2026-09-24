@@ -11,7 +11,7 @@ export default function Ventures() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-                <span>02 // Core Ventures &amp; Platforms</span>
+                <span>Core Ventures &amp; Platforms</span>
               </div>
               <h2
                 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"

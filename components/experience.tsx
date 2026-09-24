@@ -82,7 +82,7 @@ export default function Experience() {
           {/* Section Header */}
           <div className="space-y-4 max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-              <span>07 // Trajectory &amp; Leadership</span>
+              <span>Trajectory &amp; Leadership</span>
             </div>
             <h2
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"

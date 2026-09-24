@@ -38,14 +38,13 @@ export default function About() {
           {/* Section Heading */}
           <div className="space-y-6 max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-              <span className="text-emerald-400">01 //</span>
-              <span>Venture &amp; Philosophy</span>
+              <span>About</span>
             </div>
             <h2
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
-              Founder Thesis &amp; Systems Mindset
+              About me
             </h2>
             <p className="text-lg sm:text-xl text-neutral-400 font-light leading-relaxed">
               Software is not merely code—it is an engine of radical operational leverage.
@@ -59,7 +58,7 @@ export default function About() {
               <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden glass-card group border border-white/[0.08] shadow-2xl">
                 <Image
                   src="/ashok.jpeg"
-                  alt="Ashok Pasala — Founder of Varellen Technologies & Norveth"
+                  alt="Ashok Pasala"
                   fill
                   sizes="(max-width: 1024px) 100vw, 450px"
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -68,7 +67,7 @@ export default function About() {
                 {/* Dramatic gradient overlay with emerald tint */}
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
                   <div className="text-xs font-mono uppercase tracking-widest text-emerald-400/90 mb-2">
-                    Founder &amp; Systems Architect
+                    AI Engineer • Security
                   </div>
                   <div
                     className="text-2xl sm:text-3xl font-bold text-white tracking-tight"
@@ -77,7 +76,7 @@ export default function About() {
                     Ashok Pasala
                   </div>
                   <div className="text-sm text-neutral-300 font-light mt-1.5">
-                    Varellen Technologies • Norveth
+                    Available for projects
                   </div>
                 </div>
               </div>
@@ -94,16 +93,16 @@ export default function About() {
                 </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-emerald-400/80 flex items-center gap-2">
                   <Terminal size={14} />
-                  <span>The Founder Mandate</span>
+                  <span>What I do</span>
                 </div>
                 <p className="text-lg sm:text-xl text-white font-medium leading-relaxed">
-                  &ldquo;Through Varellen Technologies and Norveth, I engineer high-performance digital platforms, sovereign AI runtimes, and resilient developer tooling designed to transform complex cognitive workflows into autonomous, unstoppable infrastructure.&rdquo;
+                  &ldquo;I build AI systems, break them, and explain precisely why they broke. You get working software and an honest account of where it can fail.&rdquo;
                 </p>
               </div>
 
               <div className="space-y-5 text-neutral-300 text-sm sm:text-base font-light leading-relaxed px-1">
                 <p>
-                  As Founder &amp; CEO of <strong className="text-white font-medium">Varellen Technologies</strong> and Systems Architect at <strong className="text-white font-medium">Norveth</strong>, I bridge the gap between high-level autonomous agent orchestration and metal-level backend resilience. My work spans high-throughput distributed systems, vector memory architectures, proactive cybersecurity tooling, and full-stack web platforms.
+                  I built <strong className="text-white font-medium">Norveth</strong> (norveth.app) and I take on client work: websites, automation, AI assistants and security reviews. I bridge the gap between high-level autonomous agent orchestration and metal-level backend resilience. My work spans high-throughput distributed systems, vector memory architectures, proactive cybersecurity tooling, and full-stack web platforms.
                 </p>
                 <p>
                   My technical foundations are grounded in Computer Science &amp; Engineering at <strong className="text-white font-medium">VIT-AP University</strong>, with deep independent research in distributed consensus, operating system internals, applied cryptography, and large language model architectures.

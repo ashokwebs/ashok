@@ -21,16 +21,16 @@ export default function Home() {
       <CommandMenu />
       <Header />
       <Hero />
-      <About />
-      <Ventures />
+      <Services />
       <Projects />
+      <About />
+      <Contact />
       <Expertise />
       <TechStack />
       <ResearchNotes />
       <Experience />
-      <Services />
+      <Ventures />
       <SystemConsole />
-      <Contact />
       <Footer />
     </main>
   )

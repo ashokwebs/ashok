@@ -288,7 +288,7 @@ export default function SystemConsole() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6">
             <div className="space-y-3 sm:space-y-4 max-w-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-                <span>09 // Developer Terminal</span>
+                <span>Developer Terminal</span>
               </div>
               <h2
                 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"

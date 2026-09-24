@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { Mail, Briefcase, MapPin, Copy, Check, Send } from 'lucide-react'
+import { Mail, Briefcase, MapPin, Copy, Check, MessageCircle } from 'lucide-react'
+import { CONTACT, whatsappLink } from '@/lib/config'
 import {
   GitHubIcon,
   LinkedInIcon,
@@ -20,31 +21,36 @@ const socials = [
 
 export default function Contact() {
   const [copiedPrimary, setCopiedPrimary] = useState(false)
-  const [copiedVenture, setCopiedVenture] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
+  const [emailOpened, setEmailOpened] = useState(false)
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })
 
-  const copyToClipboard = (text: string, type: 'primary' | 'venture') => {
+  const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text)
-    if (type === 'primary') {
-      setCopiedPrimary(true)
-      setTimeout(() => setCopiedPrimary(false), 2000)
-    } else {
-      setCopiedVenture(true)
-      setTimeout(() => setCopiedVenture(false), 2000)
-    }
+    setCopiedPrimary(true)
+    setTimeout(() => setCopiedPrimary(false), 2000)
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // TODO(formspree): once a Formspree form exists that delivers to founder@norveth.app,
+  // POST formData to https://formspree.io/f/<FORM_ID> here and show a success panel ONLY
+  // when the response is ok. Until then there is no backend: never claim a message was sent.
+  const buildMessage = () =>
+    `Hi Ashok, I'm ${formData.name} (${formData.email}).\n\nProject: ${formData.subject}\n\n${formData.message}`
+
+  const formIsComplete = () =>
+    formData.name.trim() && formData.email.trim() && formData.subject.trim() && formData.message.trim()
+
+  const handleWhatsApp = (e: React.FormEvent) => {
     e.preventDefault()
-    // Open mailto with prefilled form details
-    const mailto = `mailto:hello@norveth.app?subject=${encodeURIComponent(
-      formData.subject || 'Engineering Mandate / Venture Discussion'
-    )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`
+    const link = whatsappLink(buildMessage())
+    if (link) window.open(link, '_blank', 'noopener,noreferrer')
+  }
+
+  const handleEmail = () => {
+    const mailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(
+      formData.subject || 'Project enquiry'
+    )}&body=${encodeURIComponent(buildMessage())}`
     window.location.href = mailto
-    setSubmitted(true)
+    setEmailOpened(true)
   }
 
   return (
@@ -54,16 +60,16 @@ export default function Contact() {
           {/* Section Heading */}
           <div className="space-y-4 max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-              <span>10 // Direct Communication</span>
+              <span>Contact</span>
             </div>
             <h2
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
               style={{ fontFamily: 'var(--font-syne)' }}
             >
-              Initiate Contact
+              Get in touch
             </h2>
             <p className="text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
-              Available for technical advisory, autonomous AI mandates, venture collaborations (Varellen Technologies &amp; Norveth), and institutional systems engineering.
+              Tell me what you need built, fixed or reviewed. I reply within 24 hours. For fixed prices and booking, see <a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4">norveth.app</a>.
             </p>
           </div>
 
@@ -77,31 +83,31 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
-                    Primary Direct
+                    Email
                   </div>
                   <h3
                     className="text-base sm:text-lg font-bold text-white mt-0.5 break-all sm:break-normal"
                     style={{ fontFamily: 'var(--font-syne)' }}
                   >
-                    hello@norveth.app
+                    {CONTACT.email}
                   </h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Direct personal inbox for technical discussions &amp; architecture advisory.
+                    Project enquiries, quotes and questions. Replies within 24 hours.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2 pt-4 border-t border-white/[0.08]">
                 <a
-                  href="mailto:hello@norveth.app"
+                  href={`mailto:${CONTACT.email}`}
                   className="flex-1 py-2 text-center text-xs font-mono font-medium rounded-lg bg-white text-black hover:bg-neutral-200 transition-colors"
                 >
                   Send Email
                 </a>
                 <button
-                  onClick={() => copyToClipboard('hello@norveth.app', 'primary')}
+                  onClick={() => copyToClipboard(CONTACT.email)}
                   className="p-2 rounded-lg border border-white/[0.1] hover:bg-white/[0.08] text-neutral-400 hover:text-white transition-colors cursor-pointer"
-                  aria-label="Copy primary email"
+                  aria-label="Copy email address"
                 >
                   {copiedPrimary ? <Check size={16} className="text-emerald-400" /> : <Copy size={16} />}
                 </button>
@@ -116,34 +122,29 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
-                    Venture &amp; Enterprise
+                    Prices &amp; booking
                   </div>
                   <h3
                     className="text-base sm:text-lg font-bold text-white mt-0.5 break-all sm:break-normal"
                     style={{ fontFamily: 'var(--font-syne)' }}
                   >
-                    founder@norveth.app
+                    norveth.app
                   </h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Varellen Technologies &amp; Norveth enterprise partnerships and venture inquiries.
+                    Fixed-price services: websites, automation, AI systems and security reviews.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2 pt-4 border-t border-white/[0.08]">
                 <a
-                  href="mailto:founder@norveth.app"
+                  href={CONTACT.studio}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 py-2 text-center text-xs font-mono font-medium rounded-lg bg-white text-black hover:bg-neutral-200 transition-colors"
                 >
-                  Send Email
+                  See prices &amp; book
                 </a>
-                <button
-                  onClick={() => copyToClipboard('founder@norveth.app', 'venture')}
-                  className="p-2 rounded-lg border border-white/[0.1] hover:bg-white/[0.08] text-neutral-400 hover:text-white transition-colors cursor-pointer"
-                  aria-label="Copy founder email"
-                >
-                  {copiedVenture ? <Check size={16} className="text-emerald-400" /> : <Copy size={16} />}
-                </button>
               </div>
             </div>
 
@@ -155,7 +156,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs font-mono uppercase tracking-wider text-neutral-400">
-                    Global Base &amp; Location
+                    Location
                   </div>
                   <h3
                     className="text-base sm:text-lg font-bold text-white mt-0.5"
@@ -171,7 +172,7 @@ export default function Contact() {
 
               <div className="pt-4 border-t border-white/[0.08] text-xs font-mono text-neutral-400 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span>Active for Strategic Engagements</span>
+                <span>Available for projects · Oct 2026</span>
               </div>
             </div>
           </div>
@@ -185,23 +186,14 @@ export default function Contact() {
                   className="text-2xl font-bold text-white tracking-tight"
                   style={{ fontFamily: 'var(--font-syne)' }}
                 >
-                  Direct Message Dispatch
+                  Send a project brief
                 </h3>
                 <p className="text-xs font-mono text-neutral-400">
-                  Encrypted transmission directly to Ashok Pasala&apos;s executive triage queue.
+                  Fill this in, then send it on WhatsApp or by email. Nothing is sent until you do.
                 </p>
               </div>
 
-              {submitted ? (
-                <div className="p-6 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 space-y-2">
-                  <p className="font-semibold text-sm">Dispatched to Email Client.</p>
-                  <p className="text-xs">
-                    Your transmission has been forwarded. You can also reach out directly via{' '}
-                    <strong>hello@norveth.app</strong>.
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleWhatsApp} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-xs font-mono uppercase tracking-wider text-neutral-400">
@@ -212,7 +204,7 @@ export default function Contact() {
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="e.g. Elon Musk"
+                        placeholder="Jane Doe"
                         className="w-full px-4 py-3 rounded-xl border border-white/[0.1] bg-white/[0.03] text-white text-sm outline-none focus:border-white/[0.3] transition-colors font-sans"
                       />
                     </div>
@@ -226,7 +218,7 @@ export default function Contact() {
                         required
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="elon@x.com"
+                        placeholder="jane@company.com"
                         className="w-full px-4 py-3 rounded-xl border border-white/[0.1] bg-white/[0.03] text-white text-sm outline-none focus:border-white/[0.3] transition-colors font-sans"
                       />
                     </div>
@@ -234,41 +226,68 @@ export default function Contact() {
 
                   <div className="space-y-1.5">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-400">
-                      Mandate / Subject
+                      What do you need?
                     </label>
                     <input
                       type="text"
                       required
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="Autonomous Agent Architecture / Venture Advisory"
+                      placeholder="New website / automation / AI assistant / security review"
                       className="w-full px-4 py-3 rounded-xl border border-white/[0.1] bg-white/[0.03] text-white text-sm outline-none focus:border-white/[0.3] transition-colors font-sans"
                     />
                   </div>
 
                   <div className="space-y-1.5">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-400">
-                      Brief Specification / Inquiry
+                      Details
                     </label>
                     <textarea
                       required
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Outline technical requirements, timeline, or venture collaboration parameters..."
+                      placeholder="What you have today, what you want, and your deadline."
                       className="w-full px-4 py-3 rounded-xl border border-white/[0.1] bg-white/[0.03] text-white text-sm outline-none focus:border-white/[0.3] transition-colors font-sans resize-none"
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    className="w-full py-3.5 bg-white text-black font-semibold rounded-xl text-xs font-mono uppercase tracking-wider hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
-                  >
-                    <span>Transmit Message</span>
-                    <Send size={14} />
-                  </button>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    {CONTACT.whatsapp && (
+                      <button
+                        type="submit"
+                        className="flex-1 py-3.5 bg-white text-black font-semibold rounded-xl text-xs font-mono uppercase tracking-wider hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
+                      >
+                        <MessageCircle size={14} />
+                        <span>Message on WhatsApp</span>
+                      </button>
+                    )}
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        const form = (e.currentTarget as HTMLButtonElement).form
+                        if (form && !form.reportValidity()) return
+                        if (formIsComplete()) handleEmail()
+                      }}
+                      className={
+                        CONTACT.whatsapp
+                          ? 'flex-1 py-3.5 rounded-xl border border-white/[0.15] text-white text-xs font-mono uppercase tracking-wider hover:bg-white/[0.08] transition-colors flex items-center justify-center gap-2 cursor-pointer'
+                          : 'flex-1 py-3.5 bg-white text-black font-semibold rounded-xl text-xs font-mono uppercase tracking-wider hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg'
+                      }
+                    >
+                      <Mail size={14} />
+                      <span>{CONTACT.whatsapp ? 'Email instead' : 'Send by email'}</span>
+                    </button>
+                  </div>
+                  <p className="text-xs text-neutral-400">
+                    {emailOpened ? 'Your email app should have opened with this message. ' : ''}
+                    If your email app didn&apos;t open, write to{' '}
+                    <a href={`mailto:${CONTACT.email}`} className="text-white underline underline-offset-4">
+                      {CONTACT.email}
+                    </a>
+                    .
+                  </p>
                 </form>
-              )}
             </div>
 
             {/* Verified Social Profiles Grid */}

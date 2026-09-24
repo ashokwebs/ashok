@@ -58,7 +58,7 @@ export default function ResearchNotes() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-                <span>06 // Systems R&amp;D &amp; Publications</span>
+                <span>Systems R&amp;D &amp; Publications</span>
               </div>
               <h2
                 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"

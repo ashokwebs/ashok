@@ -1,25 +1,25 @@
 'use client'
 
-import { ArrowUpRight, Cpu, ArrowUp } from 'lucide-react'
+import { ArrowUpRight, Cpu, ArrowUp, Terminal } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const links = [
-    { label: 'Founder Thesis', href: '#about' },
-    { label: 'Core Ventures', href: '#ventures' },
-    { label: 'Flagship Systems', href: '#projects' },
-    { label: 'Technical Arsenal', href: '#expertise' },
-    { label: 'Systems R&D', href: '#research' },
-    { label: 'Venture Trajectory', href: '#experience' },
-    { label: 'Engineering Mandates', href: '#services' },
-    { label: 'System Console', href: '#console' },
-    { label: 'Executive Contact', href: '#contact' },
+    { label: 'Services', href: '#services' },
+    { label: 'Work', href: '#projects' },
+    { label: 'About', href: '#about' },
+    { label: 'Contact', href: '#contact' },
+    { label: 'Skills', href: '#expertise' },
+    { label: 'Research', href: '#research' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Ventures', href: '#ventures' },
+    { label: 'Interactive CLI', href: '#console' },
   ]
 
   const resources = [
-    { label: 'Norveth Platform (norveth.app)', href: 'https://norveth.app' },
-    { label: 'Executive Resume (PDF)', href: '/resume.pdf' },
+    { label: 'Hire me: prices & booking (norveth.app)', href: 'https://norveth.app' },
+    { label: 'Resume (PDF)', href: '/resume.pdf' },
     { label: 'AI Crawler Spec (llms.txt)', href: '/llms.txt' },
     { label: 'Sitemap (XML)', href: '/sitemap.xml' },
   ]
@@ -60,18 +60,18 @@ export default function Footer() {
                   Ashok Pasala
                 </h3>
                 <p className="text-[11px] font-mono text-neutral-400 uppercase tracking-widest mt-0.5">
-                  Varellen Technologies • Norveth
+                  AI Systems • Security • Automation
                 </p>
               </div>
             </div>
 
             <p className="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed max-w-sm">
-              Founder &amp; CEO of <strong className="text-white font-medium">Varellen Technologies</strong> and Systems Architect at <strong className="text-white font-medium">Norveth</strong> (norveth.app). Engineering sovereign AI infrastructure, enterprise software, and high-scale distributed backend systems from first principles.
+              I build AI systems, break them, and explain precisely why they broke. Websites, automation, AI assistants and security reviews for businesses and startups. Book through <a href="https://norveth.app" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline underline-offset-4">norveth.app</a>.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/[0.1] bg-white/[0.03] text-[11px] font-mono text-neutral-300">
               <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-              <span>Available for Strategic Mandates &amp; Advisory</span>
+              <span>Available for projects · Oct 2026</span>
             </div>
           </div>
 
@@ -102,7 +102,7 @@ export default function Footer() {
             <h4
               className="text-xs font-mono uppercase tracking-widest text-white font-bold"
             >
-              Ventures &amp; Specs
+              Links
             </h4>
             <ul className="space-y-2.5 text-xs font-mono">
               {resources.map((item) => (
@@ -152,8 +152,16 @@ export default function Footer() {
           <div className="absolute top-0 left-0 w-8 h-[1px] bg-gradient-to-r from-white/40 to-transparent" />
           <div className="absolute top-0 right-0 w-8 h-[1px] bg-gradient-to-l from-white/40 to-transparent" />
           
-          <p>© {currentYear} Ashok Pasala • Varellen Technologies &amp; Norveth. All rights reserved.</p>
+          <p>© {currentYear} Ashok Pasala. All rights reserved.</p>
           <div className="flex items-center gap-6">
+            <button
+              onClick={() => scrollTo('#console')}
+              className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors cursor-pointer"
+              aria-label="Open the interactive CLI"
+            >
+              <Terminal size={12} className="text-emerald-500" />
+              <span>Interactive CLI</span>
+            </button>
             <p className="flex items-center gap-2">
               <Cpu size={12} className="text-emerald-500" />
               <span>Engineered from First Principles • Next.js 16</span>

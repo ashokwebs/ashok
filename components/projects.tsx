@@ -27,7 +27,6 @@ const systems = [
       'Deep engineering intelligence ecosystem executing automated website analysis, GitHub repository auditing, ZIP code inspections, and Playwright-based dynamic crawling. Features retry pipelines with exponential backoff, LLM failover, SSRF protection, and an Engineering Knowledge Graph reasoning layer.',
     metrics: 'Dynamic Playwright Crawler • Knowledge Graph • White-Label Reports • CI/CD',
     tags: ['norveth.app', 'Playwright', 'FastAPI', 'Next.js', 'Knowledge Graph', 'Python'],
-    github: 'https://github.com/ashokwebs',
     liveUrl: 'https://norveth.app',
     status: 'Flagship Ecosystem',
   },
@@ -41,7 +40,6 @@ const systems = [
       'Discovery and search infrastructure for Model Context Protocol (MCP) servers, reusable AI skills, and plugins. Powered by the Yaltan scraping connector pipeline, Canonical Capability Schema, and an automated trust & security verification system with intent-based semantic search.',
     metrics: 'MCP Indexing • Canonical Capability Schema • Security Metadata • Yaltan Scraping',
     tags: ['OSPRED', 'MCP Discovery', 'Yaltan Pipeline', 'Vector Search', 'FastAPI', 'Python'],
-    github: 'https://github.com/ashokwebs',
     devpost: 'https://devpost.com/ashokashishms',
     status: 'Core Initiative',
   },
@@ -55,7 +53,6 @@ const systems = [
       'High-frequency quantitative research and algorithmic trading platform targeting Polymarket BTC 5-minute prediction markets. Ingests Binance 1-second streaming ticks, calculates Price-to-Beat anchors, and forecasts volatility & strike probabilities using custom LightGBM Scale/Shape ML models, backtesters, and an MM-1 market-making engine.',
     metrics: 'Binance 1s Stream • Polymarket 5-Min Markets • LightGBM Volatility • MM-1 Engine',
     tags: ['QROS', 'Polymarket', 'Binance Websockets', 'LightGBM', 'Python', 'FastAPI'],
-    github: 'https://github.com/ashokwebs',
     status: 'Active Quant Engine',
   },
   {
@@ -68,7 +65,6 @@ const systems = [
       'Autonomous AI agent orchestration kernel built for the Google Cloud Rapid Agent Hackathon. Coordinates intelligent agent swarms inside Slack utilizing Gemini foundation models, Vertex AI Search Data Store, and Model Context Protocol (MCP) tool routing with shared context delegation.',
     metrics: 'Google Cloud Rapid Agent • Gemini • Vertex AI Data Store • MCP Server',
     tags: ['Google Cloud', 'Gemini', 'Vertex AI', 'Slack Bolt', 'MCP Server', 'Python'],
-    github: 'https://github.com/ashokwebs',
     devpost: 'https://devpost.com/software/slackmind',
     status: 'Hackathon Flagship',
   },
@@ -82,7 +78,7 @@ const systems = [
       'Multi-agent AI executive council (CEO, CTO, CMO) that turns ideas into startups in 8 seconds. Generates complete business plans, distributed tech stacks, and financial models simultaneously with deterministic cross-agent consensus.',
     metrics: 'Multi-Agent Consensus • Instant Spec Generation • Cross-Agent Memory',
     tags: ['The Vector', 'Multi-Agent Swarms', 'Python', 'LangChain', 'FastAPI', 'Next.js 16'],
-    github: 'https://github.com/ashokwebs',
+    github: 'https://github.com/ashokwebs/Business_ai',
     devpost: 'https://devpost.com/software/the_vector',
     status: 'Production System',
   },
@@ -96,7 +92,6 @@ const systems = [
       'Financial crime and suspicious transaction detection system engineered for the Bank of India & IIT Hyderabad Hackathon. Employs advanced machine learning models, graph traversal algorithms, and transaction pattern recognition to identify illicit mule account networks in real-time.',
     metrics: 'IIT Hyderabad + Bank of India • Graph ML • Real-Time Anomaly Triage',
     tags: ['Bank of India', 'Graph ML', 'Python', 'FastAPI', 'FinTech Security'],
-    github: 'https://github.com/ashokwebs',
     status: 'National Hackathon Project',
   },
   {
@@ -109,7 +104,6 @@ const systems = [
       'Low-level storage architecture and container concept engineered for the SanDisk Hackathon. Features optimized exFAT file-system handling, containerized storage abstraction layers, and high-throughput I/O pipelines.',
     metrics: 'SanDisk Hackathon • exFAT Internals • Storage Containers • I/O Optimization',
     tags: ['SanDisk', 'File Systems', 'exFAT', 'C / C++', 'Linux Kernel'],
-    github: 'https://github.com/ashokwebs',
     status: 'SanDisk Hackathon Project',
   },
   {
@@ -122,7 +116,7 @@ const systems = [
       'Autonomous enterprise executive connecting contracts, financials, and roadmaps to eliminate organizational blind spots, paired with Qwen Chaos—a self-persistent MemoryAgent built for the Qwen Global Hackathon demonstrating cross-session neural recall.',
     metrics: 'Qwen Global Hackathon • Contract Parsing • Neural Memory Persistence',
     tags: ['CompanyBrain', 'Qwen LLM', 'Vector Persistence', 'FastAPI', 'PostgreSQL'],
-    github: 'https://github.com/ashokwebs',
+    github: 'https://github.com/ashokwebs/qwen-chaos',
     devpost: 'https://devpost.com/software/companybrain_ai',
     status: 'Shipped System',
   },
@@ -136,7 +130,6 @@ const systems = [
       'AI-powered disaster response platform that coordinates rescue operations, detects incident severity in real-time, and connects affected citizens with life-saving resources through low-latency telemetry.',
     metrics: 'Real-Time Triage • Geospatial Mapping • Low-Latency WebSocket Stream',
     tags: ['ResQNet', 'Next.js', 'Node.js', 'WebSockets', 'PostgreSQL', 'Geospatial AI'],
-    github: 'https://github.com/ashokwebs',
     devpost: 'https://devpost.com/software/resqnet',
     status: 'Shipped System',
   },
@@ -150,7 +143,6 @@ const systems = [
       'Dedicated private server infrastructure and local model laboratory. Operates Ollama, Qwen, Mistral, and Hermes models for bug-bounty security research alongside a 24/7 cluster hosting PostgreSQL, Redis, Cloudflare Tunnels, and background worker queues.',
     metrics: 'Ollama Lab • 24/7 Infrastructure • Cloudflare Tunnels • Worker Queues',
     tags: ['Local LLMs', 'PostgreSQL', 'Redis', 'Cloudflare Tunnels', 'Linux Server'],
-    github: 'https://github.com/ashokwebs',
     status: 'Live Infrastructure',
   },
 ]
@@ -171,7 +163,7 @@ export default function Projects() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-neutral-400">
-                <span>03 // 40+ Master Architectures</span>
+                <span>40+ Master Architectures</span>
               </div>
               <h2
                 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight"
@@ -315,18 +307,21 @@ export default function Projects() {
                           <span>Devpost</span>
                         </a>
                       )}
-                      <a
-                        href={system.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Inspect source repository for ${system.title}`}
-                        className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-neutral-300 hover:text-white transition-colors"
-                      >
-                        <GitHubIcon size={14} />
-                        <span>Source</span>
-                      </a>
+                      {system.github && (
+                        <a
+                          href={system.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Inspect source repository for ${system.title}`}
+                          className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-neutral-300 hover:text-white transition-colors"
+                        >
+                          <GitHubIcon size={14} />
+                          <span>Source</span>
+                        </a>
+                      )}
                     </div>
 
+                    {(system.liveUrl || system.devpost || system.github) && (
                     <a
                       href={system.liveUrl || system.devpost || system.github}
                       target="_blank"
@@ -336,6 +331,7 @@ export default function Projects() {
                     >
                       <ArrowUpRight size={14} />
                     </a>
+                    )}
                   </div>
                 </article>
               )
@@ -349,18 +345,20 @@ export default function Projects() {
                 className="text-xl sm:text-2xl font-bold tracking-tight text-white"
                 style={{ fontFamily: 'var(--font-syne)' }}
               >
-                Looking for Sovereign AI Architecture or High-Frequency Quant Systems?
+                Want something like this built for you?
               </h3>
               <p className="text-xs sm:text-sm text-neutral-400 font-light max-w-xl">
-                I partner with ambitious founders, quantitative trading teams, and engineering organizations to design multi-agent runtimes, MCP search grids, and low-latency platforms.
+                Websites, automation, AI assistants and security reviews. Fixed quotes, delivery in days.
               </p>
             </div>
 
             <a
-              href="#contact"
+              href="https://norveth.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3.5 bg-white text-black font-semibold text-xs font-mono uppercase tracking-wider rounded-full hover:bg-neutral-200 transition-colors shrink-0 shadow-md"
             >
-              Initiate Project Mandate
+              Hire me
             </a>
           </div>
         </div>

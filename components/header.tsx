@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, Terminal, ArrowUpRight, Search } from 'lucide-react'
+import { Menu, X, ArrowUpRight, Search } from 'lucide-react'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,14 +17,14 @@ export default function Header() {
   }, [])
 
   const navItems = [
-    { label: 'Thesis', href: '#about' },
-    { label: 'Ventures', href: '#ventures' },
-    { label: 'Systems', href: '#projects' },
-    { label: 'Arsenal', href: '#expertise' },
+    { label: 'Services', href: '#services' },
+    { label: 'Work', href: '#projects' },
+    { label: 'About', href: '#about' },
+    { label: 'Skills', href: '#expertise' },
     { label: 'Research', href: '#research' },
-    { label: 'Console', href: '#console' },
     { label: 'Contact', href: '#contact' },
   ]
+  const hireHref = 'https://norveth.app'
 
   const scrollTo = (href: string) => {
     setIsOpen(false)
@@ -53,7 +53,7 @@ export default function Header() {
           <Link
             href="/"
             className="group flex items-center gap-2.5 sm:gap-3 focus-visible:ring-2 focus-visible:ring-ring focus:outline-none rounded-lg"
-            aria-label="Ashok Pasala — Founder & Systems Architect Home"
+            aria-label="Ashok Pasala home"
           >
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-white to-neutral-200 text-black font-bold flex items-center justify-center text-xs tracking-wider transition-transform group-hover:scale-105 shadow-md shrink-0">
               AP
@@ -66,7 +66,7 @@ export default function Header() {
                 Ashok Pasala
               </span>
               <span className="text-[10px] font-mono text-neutral-400 uppercase tracking-widest leading-tight mt-0.5">
-                Varellen • Norveth
+                AI Systems • Security
               </span>
             </div>
           </Link>
@@ -83,6 +83,15 @@ export default function Header() {
                 <span className="absolute -bottom-1 left-1/2 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
               </button>
             ))}
+            <a
+              href={hireHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-white text-black text-xs font-semibold uppercase tracking-wider font-mono hover:bg-neutral-200 transition-colors shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.4)]"
+            >
+              <span>Hire</span>
+              <ArrowUpRight size={12} />
+            </a>
           </div>
 
           {/* Action CTAs */}
@@ -96,22 +105,15 @@ export default function Header() {
               <span>⌘K</span>
             </button>
 
-            <button
-              onClick={() => scrollTo('#console')}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-card-interactive text-xs font-mono text-neutral-400 hover:text-white transition-all cursor-pointer"
-              aria-label="Jump to interactive terminal console"
+            <a
+              href={hireHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lg:hidden inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-white text-black text-xs font-semibold hover:bg-neutral-200 transition-colors shadow-md"
             >
-              <Terminal size={12} />
-              <span>CLI</span>
-            </button>
-
-            <button
-              onClick={() => scrollTo('#contact')}
-              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-white text-black text-xs font-semibold hover:bg-neutral-200 transition-colors cursor-pointer shadow-md hover:shadow-[0_0_15px_rgba(255,255,255,0.4)]"
-            >
-              <span>Contact</span>
+              <span>Hire</span>
               <ArrowUpRight size={12} />
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Action Row */}
@@ -157,12 +159,15 @@ export default function Header() {
                 </button>
               ))}
               <div className="pt-2 border-t border-white/[0.08] mt-2 flex flex-col gap-2">
-                <button
-                  onClick={() => scrollTo('#contact')}
-                  className="w-full py-3 bg-white text-black text-xs font-semibold rounded-xl text-center cursor-pointer active:bg-neutral-200"
+                <a
+                  href={hireHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="w-full py-3 bg-white text-black text-xs font-semibold uppercase tracking-wider font-mono rounded-xl text-center cursor-pointer active:bg-neutral-200"
                 >
-                  Initiate Contact
-                </button>
+                  Hire
+                </a>
               </div>
             </div>
           </>
