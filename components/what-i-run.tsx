@@ -9,7 +9,7 @@ const brands = [
   {
     name: 'Norveth',
     url: BRANDS.norveth,
-    line: 'Tech, security and crypto intelligence: websites, automation, AI systems and security reviews.',
+    line: 'Technology company: websites, apps, AI and automation, and security reviews.',
   },
   {
     name: 'Janeory Studios',
