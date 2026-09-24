@@ -6,7 +6,7 @@ import { NORVETH } from '@/lib/config'
 export const metadata: Metadata = {
   title: 'Resume',
   description:
-    'Resume of Ashok Pasala — founder of Norveth, AI systems and security engineer. Projects include OSPRED and QROS. 50+ Hackathons, 40+ Shipped Architectures.',
+    'Resume of Ashok Pasala — founder of Norveth, AI systems and security engineer. 50+ Hackathons, 40+ Shipped Architectures.',
   // Without this the root layout's `alternates.canonical: '/'` is inherited and
   // this page declares itself a duplicate of the homepage, which keeps it out
   // of the index entirely.
@@ -122,7 +122,7 @@ export default function ResumePage() {
             Summary
           </h2>
           <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed">
-            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, quantitative ML trading systems, MCP discovery search engines, and high-concurrency distributed backends. Founder of <strong>Norveth</strong> (<a href={NORVETH} target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>; web, apps, AI systems and security reviews). Personal projects include <strong>OSPRED</strong> and <strong>QROS</strong>. Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
+            <strong>Founder, AI Systems Architect, and Deep Tech Engineer</strong> engineering autonomous multi-agent orchestration frameworks, MCP discovery search engines, and high-concurrency distributed backends. Founder of <strong>Norveth</strong> (<a href={NORVETH} target="_blank" rel="noopener noreferrer" className="underline font-medium">norveth.app</a>; web, apps, AI systems and security reviews). Builder of <strong>40+ shipped software systems across 50+ global hackathons</strong> (Google Cloud Rapid Agent, Bank of India &amp; IIT Hyderabad, SanDisk, Qwen Global). Computer Science &amp; Distributed Systems at <strong>VIT-AP University</strong> (2024–2028).
           </p>
         </section>
 
@@ -149,7 +149,7 @@ export default function ResumePage() {
           <div className="space-y-1.5">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
               <div>
-                <span className="text-sm font-bold text-[#0f172a]">OSPRED &amp; Yaltan</span>
+                <span className="text-sm font-bold text-[#0f172a]">Yaltan</span>
                 <span className="text-xs font-semibold text-neutral-600"> — Personal Project</span>
               </div>
               <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | AI CAPABILITY SEARCH</span>
@@ -160,19 +160,6 @@ export default function ResumePage() {
             </ul>
           </div>
 
-          <div className="space-y-1.5">
-            <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-              <div>
-                <span className="text-sm font-bold text-[#0f172a]">QROS</span>
-                <span className="text-xs font-semibold text-neutral-600"> — Personal Research Project</span>
-              </div>
-              <span className="text-xs font-mono text-neutral-500">2024 – PRESENT | QUANT ML RESEARCH</span>
-            </div>
-            <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1 leading-relaxed">
-              <li>Built a high-frequency research platform targeting <strong>Polymarket BTC 5-minute prediction markets</strong> using Binance 1-second streaming tick feeds.</li>
-              <li>Trained LightGBM Scale/Shape ML models predicting strike settlement probabilities (p_up = P(S_T &gt; K)) and volatility alongside an MM-1 market-making engine.</li>
-            </ul>
-          </div>
         </section>
 
         {/* Flagship Architectures & Hackathon Systems (50+ Hackathons) */}
